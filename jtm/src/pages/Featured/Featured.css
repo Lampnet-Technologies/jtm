@@ -1,0 +1,135 @@
+.banner img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+.featured-content{
+overflow: hidden;
+}
+.featured-content {
+  width: 80%;
+  margin: 3% auto;
+}
+.brand-text {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.advert-left p{
+    font-size: 14px;
+}
+.advert-right img {
+  width: 100%;
+}
+/* Form section */
+.message-form {
+  margin: 40px 0;
+}
+.form {
+  background-color: #2B2D38;
+  color: white;
+  padding: 40px 30px;
+  border-radius: 5px;
+}
+.form span {
+  color: red;
+}
+.form input {
+  width: 98%;
+  border: 1px solid white;
+  outline: none;
+  margin-bottom: 10px;
+  height: 30px;
+  border-radius: 5px;
+  padding-left: 5px;
+  margin: 20px 0;
+}
+.form textarea {
+  width: 98%;
+  border: 1px solid white;
+  outline: none;
+  margin-bottom: 10px;
+  height: 100px;
+  border-radius: 5px;
+  padding-left: 5px;
+  margin: 20px 0;
+  margin: 20px 0;
+}
+.form select {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid white;
+  outline: none;
+  height: 30px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+.form button {
+  outline: none;
+  border: none;
+  padding: 8px;
+  margin: auto;
+  width: 30%;
+  display: block;
+  border-radius: 40px;
+  background-color: #fabc52;
+}
+
+/* FAQ Section */
+.faq-item{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    padding: 8px;
+    background-color: #FCFCFC;
+}
+.featured .faq-container span{
+  padding: 10px 8px;
+}
+.faq-question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.chevron-icon{
+    border: 1px solid black;
+    padding: 2px;
+    border-radius: 100px;
+}
+@media screen and (min-width: 768px) {
+  .banner img {
+    height: 90vh;
+  }
+  .advert {
+    display: flex;
+    gap: 30px;
+  }
+  .advert-left {
+    width: 50%;
+  }
+  .advert-left p {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  /* Form Section */
+  .message-form form{
+    width: 40%;
+    margin: auto;
+    height: 500px !important;
+    padding-top: 60px;
+  }
+  .message-form input,
+  textarea,
+  select {
+    margin-bottom: 20px !important;
+    margin-top: 30px !important;
+}
+
+  /* FAQ Section */
+.faq-item{
+    width: 60%;
+    margin: 30px auto;
+}
+}

@@ -1,0 +1,629 @@
+body{
+  background-color: black;
+  color: white;
+}
+p{
+  font-size: 18px;
+}
+.background-left {
+  color: white;
+  height: 80vh;
+  padding: 5px;
+  background: linear-gradient(#fabc52, purple);
+}
+.left-content {
+  padding: 190px 40px;
+}
+.background-right {
+  display: none;
+}
+.left-content button {
+  outline: none;
+  background-color: #fabc52;
+  padding: 8px 15px;
+  text-align: center;
+  border-radius: 40px;
+  border: none;
+  transition: 0.3s ease;
+}
+.left-content button:hover {
+  background-color: transparent;
+  border: 2px solid #fabc52;
+  color: white;
+}
+.left-content .bg-btn {
+  text-decoration: none;
+  color: black;
+}
+.background-left h2 {
+  font-weight: 500;
+  margin-top: 30px;
+}
+.background-bottom {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(#e3e2e2, #7d7c7c);
+}
+.background-bottom {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.express {
+  display: flex;
+  min-width: 100%;
+  align-items: center;
+  gap: 15px;
+}
+
+.express p{
+  color: #000;
+}
+
+.express-link {
+  display: flex;
+  flex: 0 0 auto;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #000;
+  align-items: flex-end;
+}
+
+.express img {
+  margin-right: 8px;
+}
+/* Know us */
+.know-us {
+  overflow: hidden;
+  width: 80%;
+  margin: 30px auto;
+}
+.know-us-left img {
+  width: 100%;
+}
+.know-us-right {
+  margin-top: 30px;
+}
+.know-us-right button {
+  outline: none;
+  background-color: #fabc52;
+  padding: 8px 15px;
+  text-align: center;
+  border-radius: 40px;
+  border: none;
+  transition: 0.3s ease;
+}
+.know-us-right button:hover {
+  background-color: transparent;
+  border: 2px solid #fabc52;
+  color: white;
+}
+.know-us-right .bg-btn {
+  text-decoration: none;
+  color: black;
+}
+.know-us-right p {
+  font-size: 14px;
+}
+
+/* Yellow mail */
+.yellow-mail-content {
+  width: 80%;
+  margin: 60px auto;
+}
+.yellow-mail-left button {
+  outline: none;
+  background-color: #fabc52;
+  padding: 8px 15px;
+  text-align: center;
+  border-radius: 40px;
+  border: none;
+  transition: 0.3s ease;
+}
+.yellow-mail-left button:hover {
+  background-color: transparent;
+  border: 2px solid #fabc52;
+  color: white;
+}
+.yellow-mail-left .bg-btn {
+  text-decoration: none;
+  color: black;
+}
+.yellow-mail-right img {
+  width: 100%;
+}
+.yellow-mail {
+  overflow: hidden;
+}
+.yello-mail-bottom {
+  width: 70%;
+  margin: auto;
+}
+.yellow-mail-bottom-card {
+  display: flex;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: #444444;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  color: white;
+}
+.yellow-mail-icon {
+  margin-top: 18px;
+}
+
+/* Radio section */
+.radio {
+  overflow: hidden;
+  width: 80%;
+  margin: 70px auto;
+}
+.radio-right img {
+  width: 100%;
+}
+.radio-left button {
+  outline: none;
+  background-color: #fabc52;
+  padding: 8px 15px;
+  text-align: center;
+  border-radius: 40px;
+  border: none;
+  transition: 0.3s ease;
+}
+.radio-left button:hover {
+  background-color: transparent;
+  border: 2px solid #fabc52;
+  color: white;
+}
+.radio-left .bg-btn {
+  text-decoration: none;
+  color: black;
+}
+
+/* Social media */
+.social-media {
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+}
+.social-media-right img {
+  width: 100%;
+}
+.social-media-right img {
+  width: 100%;
+}
+.social-media-left h3 {
+  width: 60%;
+}
+.social-lists p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.social-lists img {
+  width: 20px;
+}
+.social-media-left button {
+  outline: none;
+  background-color: #fabc52;
+  padding: 8px 15px;
+  text-align: center;
+  border-radius: 40px;
+  border: none;
+  transition: 0.3s ease;
+  margin: 20px 0;
+}
+.social-media-left button:hover {
+  background-color: transparent;
+  border: 2px solid #fabc52;
+  color: white;
+}
+.social-media-left .bg-btn {
+  text-decoration: none;
+  color: black;
+}
+
+/* Youtube Section */
+.youtube {
+  width: 80%;
+  margin: 40px auto;
+}
+.youtube-up {
+  text-align: center;
+  margin: 20px 0;
+}
+.youtube-up p {
+  font-size: 14px;
+}
+.youtube-down {
+  position: relative;
+}
+.youtube-down img {
+  width: 100%;
+}
+.play {
+  position: absolute;
+  top: 80px;
+  font-size: 40px;
+  left: 200px;
+}
+.play-icon {
+  color: white;
+}
+.youtube-btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.youtube button {
+  outline: none;
+  border: 1px #fabc52 solid;
+  padding: 8px 20px;
+  text-align: center;
+  border-radius: 40px;
+  transition: 0.3s ease;
+}
+.youtube .link-btn2,
+.link-btn1 {
+  text-decoration: none;
+}
+.youtube-btn .link-btn1 {
+  color: black;
+}
+.youtube-btn .link-btn2 {
+  color: #fabc52;
+}
+.youtube-btn .btn1 {
+  background-color: #fabc52;
+}
+.youtube-btn .btn2 {
+  border: 2px solid #fabc52;
+  background-color: transparent;
+}
+
+/* Yellow blog */
+.yellow-blog {
+  width: 80%;
+  margin: 50px auto;
+  overflow: hidden;
+}
+.yellow-blog-content img {
+  width: 100%;
+}
+.yellow-blog-right p {
+  font-size: 14px;
+}
+.yellow-blog-right img {
+  margin-top: 20px;
+}
+.see-more {
+  text-align: center;
+  display: block;
+  color: black !important;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.blog-link {
+  color: #006efd;
+}
+.see-more:hover {
+  text-decoration: underline;
+  color: blue;
+}
+/* Word on the street */
+.wots {
+  width: 80%;
+  margin: auto;
+}
+
+.wots-content {
+  overflow: hidden;
+  padding: 20px;
+}
+
+.splide1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wots-left,
+.wots-right {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.wots-left img,
+.wots-right img {
+  max-width: 100%;
+  height: auto;
+}
+.wots p{
+  color: #000;
+  border-radius: 5px;
+  font-weight: 400;
+}
+
+/* Additional styles for larger screens */
+@media (min-width: 600px) {
+  .splide1 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .wots-left,
+  .wots-right {
+    width: 48%;
+    margin-bottom: 0;
+  }
+}
+
+.wots h3 {
+  text-align: center;
+}
+.wots img {
+  width: 100%;
+  object-fit: fill;
+  height: 300px;
+  margin-bottom: 20px;
+}
+.wots p {
+  background-color: #f0ce91;
+  padding: 20px 20px 0;
+  height: 100px;
+  margin: 0;
+}
+.splide__pagination__page.is-active {
+  background-color: #fabc52 !important;
+}
+
+@media screen and (min-width: 768px) {
+  p{
+    font-size: 18px !important;
+  }
+
+  .background {
+    display: flex;
+  }
+  .homePage {
+    height: 80vh;
+  }
+   button{
+    font-size: 20px;
+  }
+  .background-right {
+    width: 50%;
+    display: block;
+  }
+  .background-left {
+    width: 50%;
+    height: 79vh;
+  }
+  .background-right img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+  }
+  .left-content {
+    width: 80%;
+    margin: 20px 90px;
+    width: 70%;
+  }
+  .left-content h2 {
+    font-size: 34px;
+  }
+  .express{
+    justify-content: center;
+  }
+ 
+
+  /* Know us section */
+  .know-us {
+    display: flex;
+    margin-top: 40px;
+    gap: 90px;
+  }
+  .know-us-right {
+    width: 50%;
+    margin-top: 100px;
+  }
+  .know-us-right button {
+    padding: 8px 25px;
+  }
+  .know-us-right p {
+    width: 80%;
+    font-size: 16px;
+    opacity: .8;
+    margin-bottom: 20px;
+  }
+  .know-us-right h3 {
+    font-size: 25px;
+  }
+
+  /* Yellow mail */
+  .yellow-mail-content {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 80px auto;
+  }
+  .yellow-mail-left {
+    width: 50%;
+    margin-top: 100px;
+  }
+  .yellow-mail-left p {
+    width: 80%;
+    font-size: 16px;
+    opacity: .8;
+  }
+  .yello-mail-bottom {
+    display: flex;
+    gap: 20px;
+  }
+
+  /* Radio section */
+  .radio {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-direction: row-reverse;
+  }
+  .radio-left {
+    width: 50%;
+    margin-top: 40px;
+  }
+  .radio-left p {
+    width: 80%;
+    font-size: 16px;
+    opacity: .8;
+  }
+  .radio-right {
+    width: 50%;
+  }
+  .radio-left button {
+    padding: 8px 25px;
+    text-align: center;
+  }
+
+  /* Social Media */
+  .social-media {
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    /* flex-direction: row-reverse; */
+    justify-content: space-between;
+  }
+  .social-media-left {
+    width: 50%;
+    margin-top: 90px;
+  }
+  .social-media-left h3{
+    width: 80%;
+    margin-bottom: 40px;
+  }
+  .social-media-left button {
+    padding: 8px 25px;
+    text-align: center;
+  }
+  .youtube-up p {
+    width: 50%;
+    font-size: 13px;
+    margin: 20px auto;
+  }
+
+  .social-media-right img{
+    position: relative;
+    top: 50px;
+  }
+
+  /* Youtube */
+  .youtube button {
+    padding: 8px 25px;
+    text-align: center;
+  }
+  .play {
+    top: 260px;
+    font-size: 60px;
+    left: 580px;
+  }
+
+/* Social media2 podcast2 */
+.podcast2 .social-media-left{
+  width: 50%;
+}
+.podcast2 .social-media-left p{
+  opacity: .8;
+}
+  /* Yellow blog section */
+  .yellow-blog-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .yellow-mail-left button {
+    padding: 8px 25px;
+    text-align: center;
+  }
+  .yellow-blog p {
+    font-size: 16px;
+    opacity: .8;
+  }
+  .blog-intro {
+    width: 40%;
+  }
+  .yellow-blog-left {
+    margin-top: 20px;
+  }
+  .yellow-blog-right img {
+    width: 350px;
+    height: 150px;
+    object-fit: cover;
+  }
+  .right1,
+  .right2,
+  .right3 {
+    display: flex;
+    gap: 30px;
+  }
+  .right1-text,
+  .right2-text,
+  .right3-text {
+    width: 80%;
+  }
+  .yellow-blog-right h3{
+    font-size: 17px;
+  }
+  /* Word on the street */
+  .wots-content {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .wots-left {
+    display: flex;
+    gap: 10px;
+  }
+  .wots-right {
+    display: flex;
+    gap: 10px;
+  }
+  .wots img{
+    width: 50%;
+  }
+  .splide1 {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 150px;
+    width: 100%;
+  }
+  .splide__pagination__page {
+    position: relative;
+    top: -20px;
+  }
+  .splide__arrow {
+    position: absolute;
+    top: 410px; 
+    left: 40%;
+    transform: translateX(-50%); 
+    cursor: pointer; 
+    z-index: 10; 
+}
+
+.splide__arrow--prev {
+    margin-right: 30px; 
+}
+
+.splide__arrow--next {
+    margin-left: 250px; 
+}
+.wots p {
+  background-color: #f0ce91;
+  padding: 40px 20px 0;
+  height: 200px;
+  margin: 0;
+}
+
+}
