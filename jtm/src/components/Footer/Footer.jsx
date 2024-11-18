@@ -29,9 +29,10 @@ export default function Footer() {
       <div className="footer">
         <div className="footer-items">
           <div className="footer-logo">
-            <img src={logo} alt="" />
+          <Link to='/'>
+           <img src={logo} alt="logo" />
+           </Link>
             <div className="subscribe">
-              <p>Subscribe to Our Newsletter</p>
               <form onSubmit={handleSubmit}>
                 <div>
                   <label>Subscribe to our Newsletter</label><br />
@@ -57,12 +58,12 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link className="link" to="">
+                  <Link className="link" to="/services">
                     Services
                   </Link>
                 </li>
                 <li>
-                  <Link className="link" to="/blog">
+                  <Link className="link" to="/blog-posts">
                     Blog
                   </Link>
                 </li>
@@ -81,22 +82,22 @@ export default function Footer() {
             <div className="second-link">
               <ul>
                 <li>
-                  <Link className="link" to="">
+                  <Link className="link" to="/services">
                     Advertising and Sponsorship
                   </Link>
                 </li>
                 <li>
-                  <Link className="link" to="">
+                  <Link className="link" to="/services">
                     Consulting and Training
                   </Link>
                 </li>
                 <li>
-                  <Link className="link" to="">
+                  <Link className="link" to="/services">
                     Content Creation Service
                   </Link>
                 </li>
                 <li>
-                  <Link className="link" to="">
+                  <Link className="link" to="/services">
                     Digital Media Services
                   </Link>
                 </li>
@@ -105,22 +106,22 @@ export default function Footer() {
             <div className="third-link">
               <ul>
                 <li>
-                  <Link className="link" to="">
+                  <Link className="link" to="/services">
                     Educational Resources
                   </Link>
                 </li>
                 <li>
-                  <Link className="link" to="">
+                  <Link className="link" to="/services">
                     Event Management
                   </Link>
                 </li>
                 <li>
-                  <Link className="link" to="">
+                  <Link className="link" to="/services">
                     International Outreach
                   </Link>
                 </li>
                 <li>
-                  <Link className="link" to="">
+                  <Link className="link" to="/services">
                     Merchandise and Product Development
                   </Link>
                 </li>

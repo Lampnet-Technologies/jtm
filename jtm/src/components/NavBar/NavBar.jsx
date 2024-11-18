@@ -51,23 +51,43 @@ export default function NavBar() {
                 {show && (
                   <ul id="dropdown-services" className="dropdown">
                     <li onClick={() => { handleLinkClick(); handleClose(); }}>
-                      <Link className="links" to="">
-                        Podcast
+                      <Link className="links" to="/services">
+                      Advertising and Sponsorship
                       </Link>
                     </li>
                     <li onClick={() => { handleLinkClick(); handleClose(); }}>
-                      <Link className="links" to="">
-                        Meeting
+                      <Link className="links" to="/services">
+                      Consulting and Training
                       </Link>
                     </li>
                     <li onClick={() => { handleLinkClick(); handleClose(); }}>
-                      <Link className="links" to="">
-                        Bible debates
+                      <Link className="links" to="/services">
+                      Content Creation Service
                       </Link>
                     </li>
                     <li onClick={() => { handleLinkClick(); handleClose(); }}>
-                      <Link className="links" to="">
-                        Prayers
+                      <Link className="links" to="/services">
+                      Digital Media Services
+                      </Link>
+                    </li>
+                    <li onClick={() => { handleLinkClick(); handleClose(); }}>
+                      <Link className="links" to="/services">
+                      Educational Resources
+                      </Link>
+                    </li>
+                    <li onClick={() => { handleLinkClick(); handleClose(); }}>
+                      <Link className="links" to="/services">
+                      Event Management
+                      </Link>
+                    </li>
+                    <li onClick={() => { handleLinkClick(); handleClose(); }}>
+                      <Link className="links" to="/services">
+                      International Outreach
+                      </Link>
+                    </li>
+                    <li onClick={() => { handleLinkClick(); handleClose(); }}>
+                      <Link className="links" to="/services">
+                      Merchandise and Product Development
                       </Link>
                     </li>
                   </ul>
@@ -99,25 +119,41 @@ export default function NavBar() {
               {show && (
                 <ul className="dropdown">
                   <li onClick={handleLinkClick}>
-                    <Link className="links" to="">
-                      Podcast
-                    </Link>
+                  <Link className="links" to="/services">
+                      Advertising and Sponsorship
+                      </Link>
                   </li>
                   <li onClick={handleLinkClick}>
-                    <Link className="links" to="">
-                      Meeting
-                    </Link>
+                  <Link className="links" to="/services">
+                      Educational Resources
+                      </Link>
                   </li>
                   <li onClick={handleLinkClick}>
-                    <Link className="links" to="">
-                      Bible debates
-                    </Link>
+                  <Link className="links" to="/services">
+                      Consulting and Training
+                      </Link>
                   </li>
                   <li onClick={handleLinkClick}>
-                    <Link className="links" to="">
-                      Prayers
-                    </Link>
+                  <Link className="links" to="/services">
+                      Content Creation Service
+                      </Link>
                   </li>
+                  <li onClick={handleLinkClick}>
+                  <Link className="links" to="/services">
+                      International Outreach
+                      </Link>
+                  </li>
+                  <li onClick={handleLinkClick}>
+                  <Link className="links" to="/services">
+                      Event Management
+                      </Link>
+                  </li>
+                  <li onClick={handleLinkClick}>
+                  <Link className="links" to="/services">
+                      Merchandise and Product Development
+                      </Link>
+                  </li>
+                  
                 </ul>
               )}
               <li onClick={handleLinkClick}>

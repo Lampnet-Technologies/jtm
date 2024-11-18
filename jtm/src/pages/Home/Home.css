@@ -409,11 +409,11 @@ p{
   }
   .left-content {
     width: 80%;
-    margin: 20px 90px;
+    margin: -20px 90px;
     width: 70%;
   }
   .left-content h2 {
-    font-size: 34px;
+    font-size: 45px;
   }
   .express{
     justify-content: center;
@@ -430,6 +430,9 @@ p{
     width: 50%;
     margin-top: 100px;
   }
+  .know-us-right h3{
+    font-size: 30px;
+  }
   .know-us-right button {
     padding: 8px 25px;
   }
@@ -438,9 +441,6 @@ p{
     font-size: 16px;
     opacity: .8;
     margin-bottom: 20px;
-  }
-  .know-us-right h3 {
-    font-size: 25px;
   }
 
   /* Yellow mail */
@@ -452,6 +452,9 @@ p{
   .yellow-mail-left {
     width: 50%;
     margin-top: 100px;
+  }
+  .yellow-mail-left h3{
+    font-size: 30px;
   }
   .yellow-mail-left p {
     width: 80%;
@@ -468,11 +471,15 @@ p{
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    align-items: center;
     flex-direction: row-reverse;
   }
   .radio-left {
     width: 50%;
     margin-top: 40px;
+  }
+  .radio-left h3{
+    font-size: 30px;
   }
   .radio-left p {
     width: 80%;
@@ -503,14 +510,18 @@ p{
   .social-media-left h3{
     width: 80%;
     margin-bottom: 40px;
+    font-size: 30px;
   }
   .social-media-left button {
     padding: 8px 25px;
     text-align: center;
   }
+  .youtube-up h3{
+    font-size: 40px;
+  }
   .youtube-up p {
     width: 50%;
-    font-size: 13px;
+    font-size: 20px !important;
     margin: 20px auto;
   }
 
@@ -547,6 +558,9 @@ p{
     padding: 8px 25px;
     text-align: center;
   }
+  .yellow-blog h3{
+    font-size: 30px;
+  }
   .yellow-blog p {
     font-size: 16px;
     opacity: .8;
@@ -556,6 +570,9 @@ p{
   }
   .yellow-blog-left {
     margin-top: 20px;
+  }
+  .yellow-blog-right h3{
+    font-size: 25px;
   }
   .yellow-blog-right img {
     width: 350px;
@@ -572,9 +589,6 @@ p{
   .right2-text,
   .right3-text {
     width: 80%;
-  }
-  .yellow-blog-right h3{
-    font-size: 17px;
   }
   /* Word on the street */
   .wots-content {

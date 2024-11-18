@@ -91,6 +91,10 @@ overflow: hidden;
     align-items: center;
     cursor: pointer;
     transition: .3s ease;
+    color: black;
+}
+.faq-answer p{
+  color: black;
 }
 .chevron-icon{
     border: 1px solid black;

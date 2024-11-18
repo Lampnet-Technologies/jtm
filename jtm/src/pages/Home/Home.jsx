@@ -429,7 +429,7 @@ export default function Home() {
                     understanding of Christ Jesus and envisioning all mankind as
                     being firmly
                   </p>
-                  <Link className="blog-link" to="">
+                  <Link className="blog-link" to="/blog-posts">
                     Read more
                   </Link>
                 </div>
@@ -447,7 +447,7 @@ export default function Home() {
                     understanding of Christ Jesus and envisioning all mankind as
                     being firmly
                   </p>
-                  <Link className="blog-link" to="">
+                  <Link className="blog-link" to="/blog-posts">
                     Read more
                   </Link>
                 </div>
@@ -464,14 +464,14 @@ export default function Home() {
                     understanding of Christ Jesus and envisioning all mankind as
                     being firmly
                   </p>
-                  <Link className="blog-link" to="">
+                  <Link className="blog-link" to="/blog-posts">
                     Read more
                   </Link>
                 </div>
               </div>
             </div>
           </div>
-          <Link to="/blog" className="blog-link see-more">
+          <Link to="/blog-posts" className="blog-link see-more">
             See all
           </Link>
         </section>
@@ -522,7 +522,7 @@ export default function Home() {
               <SplideSlide>
                 <div className="splide1">
                   <div className="wots-left">
-                    <img src={image9} alt="person" />
+                    <img src={image9} alt="person" /> 
                     <p>
                       Lorem Ipsum has been the industry's standard dummy text
                       ever since the 1500s, when an unknown printer took a

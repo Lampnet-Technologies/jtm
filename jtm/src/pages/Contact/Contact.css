@@ -94,11 +94,17 @@
     padding-top: 170px;
     padding-left: 180px;
   }
+  .contact-left h3{
+    font-size: 38px;
+  }
   .contact-left p {
     width: 80%;
+    font-size: 20px;
+    margin-top: -10px;
   }
   .contact-team-left h3 {
     width: 70%;
+    font-size: 30px;
   }
   .contact-right {
     width: 70%;
@@ -114,7 +120,7 @@
   .contact-team {
     display: flex;
     margin-top: 30px;
-    gap: 20px;
+    justify-content: space-between;
   }
   .contact-team-right {
     width: 50%;

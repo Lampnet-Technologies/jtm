@@ -216,12 +216,13 @@ export default function AboutPage() {
                 We are a Christian Media Company driven by a profound vision: to
                 anchor individuals deeply in their faith through the
                 transformative power of media. At the core of our mission lies
-                our unwavering commitment to people. We aspire to make a
+                our unwavering commitment to people.
+              </p>
+              <p> We aspire to make a
                 meaningful impact on lives by delivering edifying Christian
                 content. Join us on this faith-filled journey as we use the
                 power of media to deepen connections with Christ and positively
-                impact lives.
-              </p>
+                impact lives.</p>
             </div>
             <div className="section-right" data-aos="fade-left" data-aos-duration="1500">
               <img src={image1} alt="" />

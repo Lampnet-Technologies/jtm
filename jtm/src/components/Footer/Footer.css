@@ -22,10 +22,10 @@
     color: #fabc52;
 }
 .subscribe input{
-    padding: 13px 30px;
+    padding: 11px;
     border: none;
     outline: none;
-    width: 200px;
+    width: 250px;
     margin-top: 10px;
 }
 .subscribe button{
@@ -89,7 +89,7 @@
     font-size: 18px;
    }
    .subscribe button{
-    padding: 7px 24px;
-    top: 2px;
+    padding: 9px 24px;
+    top: -1px;
 }
 }

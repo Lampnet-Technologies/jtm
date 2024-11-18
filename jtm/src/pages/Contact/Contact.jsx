@@ -100,23 +100,23 @@ export default function Contact() {
             <div className="contact-team-left">
               <h3>You can also reach out to our dedicated team </h3>
               <div className="tv-admin">
-                <p>
-                  <b>Jesustalk Tv admin</b>
-                </p>
+                <h2>
+                  Jesustalk Tv admin
+                </h2>
                 <p>Email: thejesustalkstv@gmail.com </p>
                 <p>Phone number: 07086432110</p>
               </div>
               <div className="radio-admin">
-                <p>
-                  <b>Jesus talk radio admin </b>
-                </p>
+                <h2>
+                Jesus talk radio admin
+                </h2>
                 <p>Email: https://mailchi.mp/a40e02724e7b/theyellowmail</p>
                 <p>Phone number : 07086432110</p>
               </div>
               <div className="yellow-blog-admin">
-                <p>
-                  <b>Yellow blog admin</b>
-                </p>
+                <h2>
+                Yellow blog admin
+                </h2>
                 <p>Email: mailtheyellowblog@gmail.com </p>
                 <p>Phone number : 07086432110</p>
               </div>
