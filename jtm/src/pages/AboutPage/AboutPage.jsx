@@ -200,8 +200,8 @@ export default function AboutPage() {
           <img src={banner} alt="banner" />
           <div className="banner-overlay">
             <div className="banner-header">
-              <h2>About Us</h2>
-              <p>
+              <h2 data-aos="zoom-in-down" data-aos-duration= '1000'>About Us</h2>
+              <p data-aos="zoom-in-down" data-aos-duration= '1500'>
                 We exist to provide you with strategies and ways that will
                 elevate your brand without going to the extreme
               </p>
@@ -210,15 +210,15 @@ export default function AboutPage() {
         </div>
         <div className="about-sections">
           <div className="about-section1">
-            <div className="section-left" data-aos="fade-right" data-aos-duration="1000">
-              <h3>About Us</h3>
-              <p>
+            <div className="section-left" >
+              <h3 data-aos="fade-right" data-aos-duration="1000">About Us</h3>
+              <p data-aos="fade-right" data-aos-duration="1500">
                 We are a Christian Media Company driven by a profound vision: to
                 anchor individuals deeply in their faith through the
                 transformative power of media. At the core of our mission lies
                 our unwavering commitment to people.
               </p>
-              <p> We aspire to make a
+              <p data-aos="fade-right" data-aos-duration="2000"> We aspire to make a
                 meaningful impact on lives by delivering edifying Christian
                 content. Join us on this faith-filled journey as we use the
                 power of media to deepen connections with Christ and positively
@@ -231,8 +231,8 @@ export default function AboutPage() {
 
           <div className="about-section1">
             <div className="section-left" data-aos="fade-right" data-aos-duration="1000">
-              <h3>Our Mission</h3>
-              <p>
+              <h3 data-aos="fade-right" data-aos-duration="1000">Our Mission</h3>
+              <p data-aos="fade-right" data-aos-duration="1500">
                 To impact people’s lives by delivering edifying Christian
                 content - through media. 
               </p>
@@ -243,8 +243,8 @@ export default function AboutPage() {
           </div>
           <div className="about-section1">
             <div className="section-left" data-aos="fade-right" data-aos-duration="1000">
-              <h3>Our Vision</h3>
-              <p>
+              <h3 data-aos="fade-right" data-aos-duration="1000">Our Vision</h3>
+              <p data-aos="fade-right" data-aos-duration="1500">
                 To see all men come to know Christ Jesus by using media to share
                 the Gospel
               </p>
@@ -259,12 +259,12 @@ export default function AboutPage() {
           <div className="programs-table">{renderTable()}</div>
         </div>
         <div className="team">
-          <h3>
+          <h3 data-aos="fade-down" data-aos-duration="1000">
             Meet the team unlocking new possibilities for the promotion of
             gospel contents
           </h3>
           <div className="team-card">
-            <div className="card1">
+            <div className="card1" data-aos="zoom-in" data-aos-duration="1000">
               <img className="team-img" src={team1} alt="" />
               <div className="card1-content">
                 <div className="card1-text">
@@ -280,7 +280,7 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="card1">
+            <div className="card1" data-aos="zoom-in" data-aos-duration="1500">
               <img className="team-img" src={team2} alt="" />
               <div className="card1-content">
                 <div className="card1-text">
@@ -296,7 +296,7 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="card1">
+            <div className="card1" data-aos="zoom-in" data-aos-duration="2000">
               <img className="team-img" src={team3} alt="" />
               <div className="card1-content">
                 <div className="card1-text">

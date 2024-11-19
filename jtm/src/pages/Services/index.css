@@ -2,14 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body{
-  scroll-behavior: smooth;
-  padding: 0;
-  margin: 0;
+body{
+  /* padding: 0;
+  margin: 0; */
   background-color: black;
   color: white;
-  font-family: "Montserrat", sans-serif;
 }
-ul{
+
+li{
   list-style: none;
 }

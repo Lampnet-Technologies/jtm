@@ -7,7 +7,8 @@ import DigitalService from '../../components/servicesComponents/DIgitalService'
 import Educational from '../../components/servicesComponents/Educational'
 import Event from '../../components/servicesComponents/Event'
 import InternationalOutreach from '../../components/servicesComponents/InternationalOutreach'
-
+import './index.css'
+import Footer from '../../components/Footer/Footer'
 const Services = () => {
   return (
     <div className='space-y-32 md:space-y-0 bg-white text-black dark:bg-black dark:text-white'>
@@ -19,6 +20,7 @@ const Services = () => {
       <Educational/>
       <Event/>
       <InternationalOutreach/> 
+      <Footer/>
     </div>
   )
 }

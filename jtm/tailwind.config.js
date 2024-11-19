@@ -1,12 +1,12 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}", // Adjust paths to include only files where Tailwind is needed
+    "./src/pages/Services/*.jsx",
+    "./src/pages/TheYellowBlogPage/*.jsx",
+    "./src/pages/FullBlogPost/*.jsx"
   ],
   theme: {
     extend: {},
   },
   plugins: [],
-}
-
+};

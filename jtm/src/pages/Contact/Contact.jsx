@@ -1,12 +1,21 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "./Contact.css";
 import banner from "../../assets/images/contact-banner.png";
 import contact from "../../assets/images/contact.png";
 import Footer from "../../components/Footer/Footer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 export default function Contact() {
+   //AOS
+   useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+    });
+  }, []);
+
   const [email, setEmail] = useState("");
   const [service, setService] = useState("");
   const [message, setMessage] = useState("");
@@ -47,8 +56,8 @@ export default function Contact() {
         <div className="contact-content">
           <div className="contact-detail">
             <div className="contact-left">
-              <h3>Lets chat</h3>
-              <p>
+              <h3 data-aos="fade-right" data-aos-duration="1000">Lets chat</h3>
+              <p data-aos="fade-right" data-aos-duration="1500">
                 Whether you have a question, want to get featured, or simply
                 want to connect.
               </p>
@@ -98,22 +107,22 @@ export default function Contact() {
           </div>
           <div className="contact-team">
             <div className="contact-team-left">
-              <h3>You can also reach out to our dedicated team </h3>
-              <div className="tv-admin">
-                <h2>
+              <h3 data-aos="fade-right" data-aos-duration="1000">You can also reach out to our dedicated team </h3>
+              <div className="tv-admin" data-aos="fade-right" data-aos-duration="1500">
+                <h2 >
                   Jesustalk Tv admin
                 </h2>
                 <p>Email: thejesustalkstv@gmail.com </p>
                 <p>Phone number: 07086432110</p>
               </div>
-              <div className="radio-admin">
+              <div className="radio-admin" data-aos="fade-right" data-aos-duration="2000">
                 <h2>
                 Jesus talk radio admin
                 </h2>
                 <p>Email: https://mailchi.mp/a40e02724e7b/theyellowmail</p>
                 <p>Phone number : 07086432110</p>
               </div>
-              <div className="yellow-blog-admin">
+              <div className="yellow-blog-admin" data-aos="fade-right" data-aos-duration="2500">
                 <h2>
                 Yellow blog admin
                 </h2>
@@ -121,7 +130,7 @@ export default function Contact() {
                 <p>Phone number : 07086432110</p>
               </div>
             </div>
-            <div className="contact-team-right">
+            <div className="contact-team-right" data-aos="fade-left" data-aos-duration="1500">
               <img src={contact} alt="" />
             </div>
           </div>

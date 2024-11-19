@@ -113,13 +113,13 @@ export default function Featured() {
           <section>
             <h2 className="brand-text">Adverts and Promotions</h2>
             <div className="advert">
-              <div className="advert-left" data-aos="fade-right" data-aos-duration="1000">
-                <p>
+              <div className="advert-left" >
+                <p data-aos="fade-right" data-aos-duration="1000">
                   Effective advertising and promotional strategies are crucial
                   for capturing your audience's attention and driving
                   engagement.
                 </p>
-                <p>
+                <p data-aos="fade-right" data-aos-duration="1500">
                   Go Scholar designs and implements creative and strategic
                   advertising campaigns that enhance your brand’s visibility
                   across various platforms. From crafting compelling copy to

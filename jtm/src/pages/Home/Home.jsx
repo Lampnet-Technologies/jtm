@@ -51,12 +51,14 @@ export default function Home() {
         <div className="background">
           <div className="background-left">
             <div className="left-content">
-              <h2>We promote gospel contents</h2>
-              <p>
+              <h2 data-aos="fade-right" data-aos-duration="1000">
+                We promote gospel contents
+              </h2>
+              <p data-aos="fade-right" data-aos-duration="1500">
                 We are here to promote your Christian contents through any
                 social media of your choice
               </p>
-              <button>
+              <button data-aos="fade-right" data-aos-duration="2000">
                 <Link className="bg-btn" to="/featured">
                   Get Featured
                 </Link>
@@ -107,27 +109,25 @@ export default function Home() {
           >
             <img src={image2} alt="image" />
           </div>
-          <div
-            className="know-us-right"
-            data-aos="fade-left"
-            data-aos-duration="1500"
-          >
-            <h3>Get to know us</h3>
-            <p>
+          <div className="know-us-right">
+            <h3 data-aos="fade-left" data-aos-duration="1000">
+              Get to know us
+            </h3>
+            <p data-aos="fade-left" data-aos-duration="1500">
               We are a Christian Media Company driven by a profound vision: to
               anchor individuals deeply in their faith through the
               transformative power of media; and our different expressions which
               include: Jesus talks radio, Jesus talks Tv, The yellow blog and
               The yellow email
             </p>
-            <p>
+            <p data-aos="fade-left" data-aos-duration="2000">
               We are a Christian Media Company driven by a profound vision: to
               anchor individuals deeply in their faith through the
               transformative power of media; and our different expressions which
               include: Jesus talks radio, Jesus talks Tv, The yellow blog and
               The yellow email
             </p>
-            <button>
+            <button data-aos="fade-left" data-aos-duration="2500">
               <Link className="bg-btn" to="https://theyellowblog.medium.com/">
                 Read more
               </Link>
@@ -143,30 +143,28 @@ export default function Home() {
             >
               <img src={image3} alt="image" />
             </div>
-            <div
-              className="yellow-mail-left"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-            >
-              <h3>The Yellow Mail</h3>
-              <p>
+            <div className="yellow-mail-left">
+              <h3 data-aos="fade-right" data-aos-duration="1000">
+                The Yellow Mail
+              </h3>
+              <p data-aos="fade-right" data-aos-duration="1500">
                 The Yellow Mail is our weekly newsletter that provides
                 Christians with edifying written content and brings
                 representation to all aspects of their lives.{" "}
               </p>
-              <button>
+              <button data-aos="fade-right" data-aos-duration="2000">
                 <Link className="bg-btn" to="">
                   Subscribe
                 </Link>
               </button>
             </div>
           </div>
-          <div
-            className="yello-mail-bottom"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <div className="yellow-mail-bottom-card">
+          <div className="yello-mail-bottom">
+            <div
+              className="yellow-mail-bottom-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               <div className="yellow-mail-icon">
                 <img src={icon2} alt="icon" />
               </div>
@@ -178,7 +176,11 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="yellow-mail-bottom-card">
+            <div
+              className="yellow-mail-bottom-card"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <div className="yellow-mail-icon">
                 <img src={icon1} alt="icon" />
               </div>
@@ -190,7 +192,11 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="yellow-mail-bottom-card">
+            <div
+              className="yellow-mail-bottom-card"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <div className="yellow-mail-icon">
                 <img src={icon1} alt="icon" />
               </div>
@@ -211,21 +217,19 @@ export default function Home() {
           >
             <img src={image4} alt="image" />
           </div>
-          <div
-            className="radio-left"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-          >
-            <h3>The Jesus Talks Radio+</h3>
-            <p>
+          <div className="radio-left">
+            <h3 data-aos="fade-right" data-aos-duration="1000">
+              The Jesus Talks Radio+
+            </h3>
+            <p data-aos="fade-right" data-aos-duration="1500">
               We spread the gospel of spirit-filled and edifying Jesus music
               through our radio broadcasts.
             </p>
-            <p>
+            <p data-aos="fade-right" data-aos-duration="2000">
               Listen to and engage in insightful conversations about
               Christianity, music, and everyday life on our radio shows
             </p>
-            <button>
+            <button data-aos="fade-right" data-aos-duration="2500">
               <Link
                 className="bg-btn"
                 to="https://the-jesus-talks-radio.mixlr.com/"
@@ -237,32 +241,30 @@ export default function Home() {
           </div>
         </section>
         <section className="social-media">
-        <div
-            className="social-media-left"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-          >
-            <h3>We match faith with modern media</h3>
+          <div className="social-media-left">
+            <h3 data-aos="fade-right" data-aos-duration="1000">
+              We match faith with modern media
+            </h3>
             <div className="social-lists">
-              <p>
+              <p data-aos="fade-right" data-aos-duration="1500">
                 <img src={icon3} alt="checkmark" />
                 Interviews
               </p>
-              <p>
+              <p data-aos="fade-right" data-aos-duration="2000">
                 <img src={icon3} alt="checkmark" />
                 Music promotions
               </p>
-              <p>
+              <p data-aos="fade-right" data-aos-duration="2500">
                 <img src={icon3} alt="checkmark" />
                 Press release
               </p>
 
-              <p>
+              <p data-aos="fade-right" data-aos-duration="3000">
                 <img src={icon3} alt="checkmark" />
                 Social media promotions
               </p>
             </div>
-            <button>
+            <button data-aos="fade-right" data-aos-duration="3500">
               <Link className="bg-btn" to="/featured">
                 Get featured
               </Link>
@@ -278,14 +280,20 @@ export default function Home() {
         </section>
         <section className="youtube">
           <div className="youtube-up">
-            <h3>Our Youtube</h3>
-            <p>
+            <h3 data-aos="fade-up" data-aos-duration="1000">
+              Our Youtube
+            </h3>
+            <p data-aos="fade-rught" data-aos-duration="1500">
               We are here to see all men rooted deeply in the love and knowledge
               of Christ Jesus by experiencing the message of Christ Jesus
               through our captivatving visual content
             </p>
             <div className="youtube-btn">
-              <button className="btn1">
+              <button
+                className="btn1"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
                 <Link
                   to="https://youtu.be/Aaa8POkhn34?si=XchPEAWsX29pWQn3"
                   target="_blank"
@@ -294,7 +302,11 @@ export default function Home() {
                   Watch now
                 </Link>
               </button>
-              <button className="btn2">
+              <button
+                className="btn2"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+              >
                 <Link
                   to="http://www.youtube.com/@thejesustalkstv"
                   target="_blank"
@@ -351,31 +363,29 @@ export default function Home() {
           </div>
         </section>
         <section className="social-media podcast2">
-          <div
-            className="social-media-left"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-          >
-            <h3>Faith, God, Life Pod </h3>
-            <p>
+          <div className="social-media-left">
+            <h3 data-aos="fade-right" data-aos-duration="1000">
+              Faith, God, Life Pod{" "}
+            </h3>
+            <p data-aos="fade-right" data-aos-duration="1000">
               Dive into the intersection of Faith,God, and everyday life through
               our enriching podcast.
             </p>
             <div className="social-lists">
-              <p>
+              <p data-aos="fade-right" data-aos-duration="1500">
                 <img src={icon3} alt="checkmark" />
                 Faith Struggles
               </p>
-              <p>
+              <p data-aos="fade-right" data-aos-duration="2000">
                 <img src={icon3} alt="checkmark" />
                 Christian events & highlights
               </p>
-              <p>
+              <p data-aos="fade-right" data-aos-duration="2500">
                 <img src={icon3} alt="checkmark" />
                 Christian songs & playlists
               </p>
             </div>
-            <button>
+            <button data-aos="fade-right" data-aos-duration="3000">
               <Link
                 className="bg-btn"
                 to="https://the-jesus-talks-radio.mixlr.com/"
@@ -393,70 +403,95 @@ export default function Home() {
           </div>
         </section>
         <section className="yellow-blog">
-          <h3>The Yellow Blog</h3>
-          <p className="blog-intro">
+          <h3 data-aos="fade-right" data-aos-duration="1000">
+            The Yellow Blog
+          </h3>
+          <p
+            className="blog-intro"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             Subscribe to our blog where we provide Christians with edifying
             written Christian content that brings representation to all aspects
             of their lives.
           </p>
           <div className="yellow-blog-content">
-            <div
-              className="yellow-blog-left"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-            >
-              <img src={image8} alt="image" />
-              <h3>Thriving in a new work place</h3>
-              <p>
+            <div className="yellow-blog-left">
+              <img
+                src={image8}
+                alt="image"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              />
+              <h3 data-aos="fade-right" data-aos-duration="2000">
+                Thriving in a new work place
+              </h3>
+              <p data-aos="fade-right" data-aos-duration="2500">
                 The Jesus Talks Radio is a Christian radio station that
                 broadcasts with the goal of bringing men to a deeper
                 understanding of Christ Jesus and envisioning all mankind as
                 being firmly anchored in Him.
               </p>
             </div>
-            <div
-              className="yellow-blog-right"
-              data-aos="fade-left"
-              data-aos-duration="1500"
-            >
+            <div className="yellow-blog-right">
               <div className="right1">
-                <img src={image8} alt="image" />
-                <div className="right1-text">
+                <img
+                  src={image8}
+                  alt="image"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                />
+                <div
+                  className="right1-text"
+                  
+                >
                   <h3>The Effect of Christian Music on New Converts</h3>
-                  <p>
+                  <p data-aos="fade-left" data-aos-duration="1500">
                     The Jesus Talks Radio is a Christian radio station that
                     broadcasts with the goal of bringing men to a deeper
                     understanding of Christ Jesus and envisioning all mankind as
                     being firmly
                   </p>
-                  <Link className="blog-link" to="/blog-posts">
+                  <Link
+                    className="blog-link"
+                    to="/blog-posts"
+                    data-aos="fade-left"
+                    data-aos-duration="1500"
+                  >
                     Read more
                   </Link>
                 </div>
               </div>
               <div className="right2">
-                <img src={image8} alt="image" />
+                <img src={image8} alt="image" data-aos="fade-right" />
                 <div className="right2-text">
-                  <h3>
+                  <h3 data-aos="fade-left" data-aos-duration="1500">
                     Exploring the Evolution of Contemporary and Alternative
                     Gospel Music
                   </h3>
-                  <p>
+                  <p data-aos="fade-left" data-aos-duration="1500">
                     The Jesus Talks Radio is a Christian radio station that
                     broadcasts with the goal of bringing men to a deeper
                     understanding of Christ Jesus and envisioning all mankind as
                     being firmly
                   </p>
-                  <Link className="blog-link" to="/blog-posts">
+                  <Link
+                    data-aos="fade-left"
+                    data-aos-duration="1500"
+                    className="blog-link"
+                    to="/blog-posts"
+                  >
                     Read more
                   </Link>
                 </div>
               </div>
               <div className="right3">
-                <img src={image8} alt="image" />
+                <img src={image8} alt="image" data-aos="fade-right" data-aos-duration="1000" />
                 <div className="right3-text">
-                  <h3>Aigbeh Dgong’s Upcoming Single ‘Sandalili’ </h3>
-                  <p>
+                  <h3 data-aos="fade-left" data-aos-duration="1500">
+                    Aigbeh Dgong’s Upcoming Single ‘Sandalili’{" "}
+                  </h3>
+                  <p data-aos="fade-left" data-aos-duration="1500">
                     {" "}
                     A Joyful Fusion of Childhood Memories and Divine Love The
                     Jesus Talks Radio is a Christian radio station that
@@ -464,7 +499,12 @@ export default function Home() {
                     understanding of Christ Jesus and envisioning all mankind as
                     being firmly
                   </p>
-                  <Link className="blog-link" to="/blog-posts">
+                  <Link
+                    data-aos="fade-left"
+                    data-aos-duration="1500"
+                    className="blog-link"
+                    to="/blog-posts"
+                  >
                     Read more
                   </Link>
                 </div>
@@ -522,7 +562,7 @@ export default function Home() {
               <SplideSlide>
                 <div className="splide1">
                   <div className="wots-left">
-                    <img src={image9} alt="person" /> 
+                    <img src={image9} alt="person" />
                     <p>
                       Lorem Ipsum has been the industry's standard dummy text
                       ever since the 1500s, when an unknown printer took a
