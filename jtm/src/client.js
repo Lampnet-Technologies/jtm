@@ -1,8 +1,8 @@
-import { createClient } from '@sanity/client';
+import { createClient } from "@sanity/client";
 
-const client = createClient({
-  projectId: 'le59ttvl', 
-  dataset: 'production',      
-  apiVersion: '2023-10-10',    
-  useCdn: true,            
+export default createClient({
+  projectId: "orubexp3", 
+  dataset: "production", 
+  useCdn: true, 
+  apiVersion: "2024-10-19" 
 });
