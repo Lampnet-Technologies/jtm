@@ -5,6 +5,12 @@ body{
 p{
   font-size: 18px;
 }
+h1,h2{
+  font-size: 30px !important;
+}
+h3{
+  font-size: 28px !important;
+}
 .background-left {
   color: white;
   height: 80vh;
@@ -12,7 +18,10 @@ p{
   background: linear-gradient(#fabc52, purple);
 }
 .left-content {
-  padding: 190px 40px;
+  padding: 180px 40px;
+}
+.left-content h2{
+  font-size: 32px;
 }
 .background-right {
   display: none;
@@ -25,6 +34,8 @@ p{
   border-radius: 40px;
   border: none;
   transition: 0.3s ease;
+  margin-top: 20px;
+  font-size: 20px;
 }
 .left-content button:hover {
   background-color: transparent;
@@ -85,6 +96,13 @@ p{
 .know-us-right {
   margin-top: 30px;
 }
+.know-us-right h3{
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.know-us-left p{
+  font-size: 16px;
+}
 .know-us-right button {
   outline: none;
   background-color: #fabc52;
@@ -93,6 +111,8 @@ p{
   border-radius: 40px;
   border: none;
   transition: 0.3s ease;
+  margin-top: 20px;
+  font-size: 20px;
 }
 .know-us-right button:hover {
   background-color: transparent;
@@ -103,10 +123,9 @@ p{
   text-decoration: none;
   color: black;
 }
-.know-us-right p {
-  font-size: 14px;
+.know-us-left img{
+  margin-bottom: 80px !important;
 }
-
 /* Yellow mail */
 .yellow-mail-content {
   width: 80%;
@@ -120,6 +139,7 @@ p{
   border-radius: 40px;
   border: none;
   transition: 0.3s ease;
+  font-size: 20px;
 }
 .yellow-mail-left button:hover {
   background-color: transparent;
@@ -170,6 +190,7 @@ p{
   border-radius: 40px;
   border: none;
   transition: 0.3s ease;
+  font-size: 20px;
 }
 .radio-left button:hover {
   background-color: transparent;
@@ -213,6 +234,7 @@ p{
   border: none;
   transition: 0.3s ease;
   margin: 20px 0;
+  font-size: 20px;
 }
 .social-media-left button:hover {
   background-color: transparent;
@@ -263,6 +285,7 @@ p{
   text-align: center;
   border-radius: 40px;
   transition: 0.3s ease;
+  font-size: 20px;
 }
 .youtube .link-btn2,
 .link-btn1 {
@@ -373,7 +396,7 @@ p{
 .wots p {
   background-color: #f0ce91;
   padding: 20px 20px 0;
-  height: 100px;
+  height: 160px;
   margin: 0;
 }
 .splide__pagination__page.is-active {

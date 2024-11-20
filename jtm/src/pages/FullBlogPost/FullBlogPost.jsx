@@ -6,6 +6,7 @@ import SocialProps from "../../components/FullBlogPostComponents/SocialProps";
 import HeroImage from "../../components/FullBlogPostComponents/HeroImage";
 import BlogText from "../../components/FullBlogPostComponents/BlogText";
 import Footer from "../../components/Footer/Footer";
+import './index.css'
 
 const FullBlogPost = () => {
   return (
