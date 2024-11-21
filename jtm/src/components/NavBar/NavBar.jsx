@@ -18,7 +18,7 @@ export default function NavBar() {
   }
 
   function handleLinkClick() {
-    setShow(false); // Close dropdown on link click
+    if (show) setShow(false);
   }
 
   function handleToggle() {
@@ -97,6 +97,7 @@ export default function NavBar() {
                     About Us
                   </Link>
                 </li>
+                
                 <li onClick={() => { handleLinkClick(); handleClose(); }}>
                   <Link className="links" to="/contact">
                     Contact Us
