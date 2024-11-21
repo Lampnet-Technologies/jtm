@@ -55,7 +55,7 @@ const Adverts = () => {
 
         {/* Right texts */}
         <div
-          className="flex flex-col w-11/12 mx-auto lg:w-1/2 gap-4 lg:gap-10"
+          className="flex flex-col w-11/12 mx-auto  lg:w-1/2 gap-4 lg:gap-10"
           data-aos="fade-left"
         >
           <div>

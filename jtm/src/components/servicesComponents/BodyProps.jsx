@@ -17,16 +17,16 @@ const BodyProps = (props) => {
   return (
     <section className="w-full bg-black">
       <div className="">
-        <div className="space-y-5 lg:space-y-10 flex flex-col items-start lg:items-start lg:text-start">
+        <div className="space-y-5 lg:space-y-10 flex flex-col items-start lg:items-start lg:text-start" data-aos="fade-right" > 
           <h1 className="font-inter font-semibold text-2xl text-[#fcfcfc]">
             {props.header}
           </h1>
-          <p className="text-xl font-normal font-inter text-[#fcfcfc] lg:text-start text-left">
+          <p className="text-xl font-normal font-inter text-[#fcfcfc] lg:text-start text-left" data-aos="fade-right">
             {props.paragraph}
           </p>
           <button
             onClick={handleRequestServiceClick}
-            className={`bg-[#fabc52] text-[#fcfcfc] font-inter font-normal text-base rounded-full w-48 h-12 
+            className={`bg-[#fabc52] text-black font-inter font-normal text-base rounded-full w-48 h-12 
               ${clicked ? "animate-click" : ""}`}
             style={{
               transition: "all 0.5s ease",
@@ -35,15 +35,18 @@ const BodyProps = (props) => {
               display: "inline-block",
             }}
             onMouseOver={(e) => {
-              e.target.style.backgroundColor = "white";
-              e.target.style.color = "#fabc52";
-              e.target.style.border = "2px solid #fabc52";
+              e.target.style.backgroundColor = "#f8c66f";
+              e.target.style.color = "#000";
+              e.target.style.border = "2px solid #f8c66f";
             }}
             onMouseOut={(e) => {
               e.target.style.backgroundColor = "#fabc52";
               e.target.style.color = "black";
               e.target.style.border = "2px solid transparent";
             }}
+            data-aos="fade-right"
+            data-aos-duration="4000" 
+             data-aos-delay="200"
           >
             {props.button}
           </button>

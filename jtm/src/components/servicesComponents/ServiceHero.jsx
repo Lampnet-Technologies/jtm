@@ -15,11 +15,11 @@ const ServiceHero = () => {
       <div className="absolute inset-0 bg-black opacity-30 z-10"></div>
 
       {/* Content container */}
-      <div className="relative z-20 flex flex-col justify-center items-start h-full w-11/12 md:w-9/12 mx-auto text-center md:text-start">
-        <h1 className="text-[#fcfcfc] p-4 text-4xl md:text-5xl lg:text-6xl font-normal font-monstserrat">
+      <div className="relative z-20 flex flex-col justify-center items-center md:items-start h-full w-11/12 md:w-9/12 mx-auto text-center md:text-start">
+        <h1 className="text-[#fcfcfc] p-4 text-4xl md:text-5xl lg:text-6xl font-normal font-monstserrat" data-aos="zoom-in-down">
           Our services
         </h1>
-        <h2 className="text-[#fcfcfc] font-light text-base md:text-xl lg:text-2xl mt-4 max-w-2xl font-inter">
+        <h2 className="text-[#fcfcfc] font-light text-base md:text-xl lg:text-2xl mt-4 max-w-2xl font-inter" data-aos="zoom-in-down" data-aos-duration="1500"  >
           We exist to provide you with strategies and ways that will elevate your
           brand without going to through the extreme
         </h2>

@@ -49,10 +49,10 @@ const Event = () => {
           </div>
 
           {/* Main div containing the two separate lists */}
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 ">
             
             {/* First list */}
-            <div className="flex items-center justify-center lg:justify-normal gap-2 lg:gap-3">
+            <div className="flex items-center justify-start  lg:justify-normal gap-2 lg:gap-3">
               {firstList.map((item) => (
                 <li
                   key={item.id}
