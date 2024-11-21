@@ -6,7 +6,11 @@ module.exports = {
     "./src/pages/FullBlogPost/*.jsx"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        montserrat: ['Montserrat', "sans-serif"]
+      },
+    },
   },
   plugins: [],
 };

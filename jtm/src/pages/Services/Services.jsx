@@ -11,7 +11,7 @@ import './index.css'
 import Footer from '../../components/Footer/Footer'
 const Services = () => {
   return (
-    <div className='space-y-32 md:space-y-0 bg-white text-black dark:bg-black dark:text-white'>
+    <div className='space-y-28 md:space-y-0  bg-black text-black  dark:bg-black dark:text-white'>
       <ServiceHero/>
       <Adverts/>
       <Consulting/>
