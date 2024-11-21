@@ -25,7 +25,7 @@ export default function AboutPage() {
     return (
       <table style={{ borderCollapse: "collapse", width: "100%" }}>
         <thead>
-          <tr style={{ backgroundColor: "#333", color: "#fff" }}>
+          <tr style={{ backgroundColor: "white", color: "black" }}>
             <th style={{ padding: "10px" }}>Shows</th>
             <th style={{ padding: "10px" }}>Description</th>
             <th style={{ padding: "10px" }}>Day</th>
@@ -41,6 +41,7 @@ export default function AboutPage() {
                   padding: "10px",
                   border: "1px solid #ddd",
                   backgroundColor: "#FABC52",
+                  color: 'black'
                 }}
               >
                 {show.title}
@@ -289,7 +290,6 @@ export default function AboutPage() {
                 </div>
                 <div className="card1-icon">
                   <Link to="">
-                    {" "}
                     <img src={icon} alt="" />
                   </Link>
                 </div>
