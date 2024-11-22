@@ -75,7 +75,7 @@ const BlogPost = () => {
             state={{ post }}
           >
             <article
-              className="blog-card space-y-4 border border-gray-600  min-h-auto w-10/12 lg:w-full mx-auto p-5 rounded-2xl shadow transition-transform duration-300 ease-out hover:scale-105 hover:shadow-lg"
+              className="blog-card space-y-3 border border-gray-600  min-h-auto w-10/12 lg:w-full mx-auto p-5 rounded-2xl shadow transition-transform duration-300 ease-out hover:scale-105 hover:shadow-lg"
             >
               <div className="overflow-hidden rounded-2xl">
                 <img
@@ -83,16 +83,16 @@ const BlogPost = () => {
                   alt={post.title}
                   className="w-96 rounded-2xl transition-transform duration-300 ease-out hover:scale-110"
                 />
-              </div>
+              </div> 
               <div className="font-inter space-y-4 lg:w-full">
-                <h2 className="text-xl">{post.title}</h2>
+                <h2 className="text-2xl ">{post.title}</h2>
 
                 {/* Render only the first paragraph, if it exists */}
                 {firstParagraph && <PortableText value={[firstParagraph]} />}
               </div>
               <div className="flex items-center justify-between">
                 {/* Display the author name */}
-                <h3 className="font-inter font-normal text-base text-pink-400">
+                <h3 className="font-inter font-normal text-base text-[#DB2A6B]">
                   {post.author?.name}
                 </h3>
                 {/* Display the publication date */}
