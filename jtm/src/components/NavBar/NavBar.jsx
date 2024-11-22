@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/jtm-logo.png";
+import logo from '../../../public/assets/images/jtm-logo.png';
 import { FaChevronDown } from "react-icons/fa";
 import Hamburger from "hamburger-react";
 

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./Footer.css";
-import logo from "../../assets/images/jtm-logo.png";
+import logo from "../../../public/assets/images/jtm-logo.png";
 import { Link } from "react-router-dom";
 import { FaEnvelope, FaInstagram, FaTimes, FaYoutube } from "react-icons/fa";
 

@@ -1,25 +1,25 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import image from "../../assets/images/bg-image.png";
-import image2 from "../../assets/images/know-us.png";
-import image3 from "../../assets/images/mail-picture.png";
-import image4 from "../../assets/images/radio-picture.png";
-import image5 from "../../assets/images/social-media-picture.png";
-import image6 from "../../assets/images/podcast-picture.png";
-import image7 from "../../assets/images/video.png";
-import image8 from "../../assets/images/yellow-blog.png";
-import image9 from "../../assets/images/person1.png";
-import image10 from "../../assets/images/person2.png";
-import icon1 from "../../assets/images/yellow-icon1.png";
-import icon2 from "../../assets/images/yellow-icon2.png";
-import icon3 from "../../assets/images/checkmark.png";
+import image from "../../../public/assets/images/bg-image.png";
+import image2 from "../../../public/assets/images/know-us.png";
+import image3 from "../../../public/assets/images/mail-picture.png";
+import image4 from "../../../public/assets/images/radio-picture.png";
+import image5 from "../../../public/assets/images/social-media-picture.png";
+import image6 from "../../../public/assets/images/podcast-picture.png";
+import image7 from "../../../public/assets/images/video.png";
+import image8 from "../../../public/assets/images/yellow-blog.png";
+import image9 from "../../../public/assets/images/person1.png";
+import image10 from "../../../public/assets/images/person2.png";
+import icon1 from "../../../public/assets/images/yellow-icon1.png";
+import icon2 from "../../../public/assets/images/yellow-icon2.png";
+import icon3 from "../../../public/assets/images/checkmark.png";
 import Footer from "../../components/Footer/Footer";
 import { FaPlay } from "react-icons/fa";
-import radio from "../../assets/images/radio.png";
-import podcast from "../../assets/images/podcast.png";
-import tv from "../../assets/images/tv.png";
-import vector from "../../assets/images/Vector.png";
-import email from "../../assets/images/email.png";
+import radio from "../../../public/assets/images/radio.png";
+import podcast from "../../../public/assets/images/podcast.png";
+import tv from "../../../public/assets/images/tv.png";
+import vector from "../../../public/assets/images/Vector.png";
+import email from "../../../public/assets/images/email.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import Modal from "react-modal";
@@ -86,7 +86,11 @@ export default function Home() {
             >
               <img src={tv} alt="" /> Our Youtube
             </Link>
-            <Link to='https://the-jesus-talks-radio.mixlr.com/' target="_blank" className="express-link">
+            <Link
+              to="https://the-jesus-talks-radio.mixlr.com/"
+              target="_blank"
+              className="express-link"
+            >
               <img src={podcast} alt="" /> Life Podcast
             </Link>
             <Link
@@ -445,10 +449,7 @@ export default function Home() {
                   data-aos="fade-right"
                   data-aos-duration="1000"
                 />
-                <div
-                  className="right1-text"
-                  
-                >
+                <div className="right1-text">
                   <h3>The Effect of Christian Music on New Converts</h3>
                   <p data-aos="fade-left" data-aos-duration="1500">
                     The Jesus Talks Radio is a Christian radio station that
@@ -490,7 +491,12 @@ export default function Home() {
                 </div>
               </div>
               <div className="right3">
-                <img src={image8} alt="image" data-aos="fade-right" data-aos-duration="1000" />
+                <img
+                  src={image8}
+                  alt="image"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                />
                 <div className="right3-text">
                   <h3 data-aos="fade-left" data-aos-duration="1500">
                     Aigbeh Dgong’s Upcoming Single ‘Sandalili’{" "}

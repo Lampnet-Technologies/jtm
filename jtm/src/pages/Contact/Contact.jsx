@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from "react";
 import "./Contact.css";
-import banner from "../../assets/images/contact-banner.png";
-import contact from "../../assets/images/contact.png";
+import banner from "../../../public/assets/images/contact-banner.png";
+import contact from "../../../public/assets/images/contact.png";
 import Footer from "../../components/Footer/Footer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

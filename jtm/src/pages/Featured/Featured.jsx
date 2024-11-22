@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Featured.css";
-import banner from "../../assets/images/feature-img1.png";
-import advertImage from "../../assets/images/feature-img2.png";
+import banner from "../../../public/assets/images/feature-img1.png";
+import advertImage from "../../../public/assets/images/feature-img2.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
