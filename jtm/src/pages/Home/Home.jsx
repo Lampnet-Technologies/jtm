@@ -75,26 +75,30 @@ export default function Home() {
             <Link
               className="express-link"
               to="https://the-jesus-talks-radio.mixlr.com/"
+              target="_blank"
             >
               <img src={radio} alt="" /> The Jesus Radio
             </Link>
             <Link
               to="http://www.youtube.com/@thejesustalkstv"
+              target="_blank"
               className="express-link"
             >
               <img src={tv} alt="" /> Our Youtube
             </Link>
-            <Link className="express-link">
+            <Link to='https://the-jesus-talks-radio.mixlr.com/' target="_blank" className="express-link">
               <img src={podcast} alt="" /> Life Podcast
             </Link>
             <Link
               to='mailto:thejesustalksradio@gmail.com?subject=Your Subject&body=Your message body"'
               className="express-link"
+              target="_blank"
             >
               <img src={email} alt="" /> The Yellow Mail
             </Link>
             <Link
               to="https://theyellowblog.medium.com/"
+              target="_blank"
               className="express-link"
             >
               <img src={vector} alt="" /> The Yellow Blog
@@ -128,7 +132,7 @@ export default function Home() {
               The yellow email
             </p>
             <button data-aos="fade-left" data-aos-duration="2500">
-              <Link className="bg-btn" to="https://theyellowblog.medium.com/">
+              <Link className="bg-btn" to="/about">
                 Read more
               </Link>
             </button>
@@ -153,7 +157,7 @@ export default function Home() {
                 representation to all aspects of their lives.{" "}
               </p>
               <button data-aos="fade-right" data-aos-duration="2000">
-                <Link className="bg-btn" to="">
+                <Link className="bg-btn" to="/">
                   Subscribe
                 </Link>
               </button>
@@ -357,7 +361,7 @@ export default function Home() {
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-                style={{ aspectRatio: "16/9", width: "80%", height: "80%" }}
+                style={{ aspectRatio: "16/9", width: "70%", height: "70%" }}
               ></iframe>
             </Modal>
           </div>

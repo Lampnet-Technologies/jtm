@@ -72,6 +72,10 @@ th, td {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #FCFCFC;
+  color: black;
+  padding: 8px;
+  border-radius: 0 0 8px 8px;
 }
 /* FAQ */
 .about .faq{
@@ -178,11 +182,11 @@ padding: 10px 8px;
   }
   /* FAQ */
 .about .faq{
-    width: 60%;
+    width: 50%;
 }
 
 .faq .faq-question{
-  padding: 8px;
+  padding: 5px;
 }
 .faq .faq-question{
   font-size: 25px;

@@ -115,9 +115,7 @@ h3{
   font-size: 20px;
 }
 .know-us-right button:hover {
-  background-color: transparent;
-  border: 2px solid #fabc52;
-  color: white;
+  background-color: #969191;
 }
 .know-us-right .bg-btn {
   text-decoration: none;
@@ -142,9 +140,7 @@ h3{
   font-size: 20px;
 }
 .yellow-mail-left button:hover {
-  background-color: transparent;
-  border: 2px solid #fabc52;
-  color: white;
+  background-color: #969191;
 }
 .yellow-mail-left .bg-btn {
   text-decoration: none;
@@ -193,9 +189,7 @@ h3{
   font-size: 20px;
 }
 .radio-left button:hover {
-  background-color: transparent;
-  border: 2px solid #fabc52;
-  color: white;
+  background-color: #969191;
 }
 .radio-left .bg-btn {
   text-decoration: none;
@@ -237,9 +231,7 @@ h3{
   font-size: 20px;
 }
 .social-media-left button:hover {
-  background-color: transparent;
-  border: 2px solid #fabc52;
-  color: white;
+  background-color: #969191;
 }
 .social-media-left .bg-btn {
   text-decoration: none;
@@ -286,6 +278,9 @@ h3{
   border-radius: 40px;
   transition: 0.3s ease;
   font-size: 20px;
+}
+.youtube button:hover{
+  background-color: #969191;
 }
 .youtube .link-btn2,
 .link-btn1 {
