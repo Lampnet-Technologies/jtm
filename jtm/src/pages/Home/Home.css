@@ -258,9 +258,9 @@ h3{
 }
 .play {
   position: absolute;
-  top: 80px;
+  top: 60px;
   font-size: 40px;
-  left: 200px;
+  left: 150px;
 }
 .play-icon {
   color: white;

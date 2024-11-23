@@ -48,8 +48,8 @@ const buttonStyle = {
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  minWidth: "50px",
-  minHeight: "45px",
+  minWidth: "40px",
+  minHeight: "50px",
 };
 
 export default ScrollToTopButton;
