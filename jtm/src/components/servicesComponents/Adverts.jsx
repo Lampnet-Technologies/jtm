@@ -6,7 +6,6 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 
 const Adverts = () => {
-  
   const containerRef = useRef(null);
 
   const image =
@@ -20,11 +19,8 @@ const Adverts = () => {
   );
 
   const secondList = button.filter(
-    (item) =>
-      item.text === "Newsletters" || item.text === "Sponsorships"
+    (item) => item.text === "Newsletters" || item.text === "Sponsorships"
   );
-
-  
 
   useEffect(() => {
     AOS.init({
@@ -38,26 +34,21 @@ const Adverts = () => {
   };
 
   return (
-    <section
-      className="w-full text-[#fcfcfc] bg-black"
-      ref={containerRef}
-    >
-      <div
-        className="w-full lg:w-10/12 mx-auto flex flex-col lg:flex-row items-center justify-center gap-2 lg:gap-8 lg:p-10"
-      >
+    // className="w-full text-[#fcfcfc] bg-black"
+    <section ref={containerRef}>
+      {/* className="w-full lg:w-10/12 mx-auto flex flex-col lg:flex-row items-center justify-center gap-2 lg:gap-8 lg:p-10" */}
+      <div className="advert-section sections">
         {/* Left side (Image) */}
-        <div
-          className="w-11/12 mx-auto lg:w-1/2"
-          data-aos="fade-right"
-        >
+        {/* className="w-11/12 mx-auto lg:w-1/2" */}
+        {/* data-aos="fade-right" */}
+        <div className="advert-image">
           <ImageProps img={image} />
         </div>
 
         {/* Right texts */}
-        <div
-          className="flex flex-col w-11/12 mx-auto  lg:w-1/2 gap-4 lg:gap-10"
-          data-aos="fade-left"
-        >
+        {/* className="flex flex-col w-11/12 mx-auto  lg:w-1/2 gap-4 lg:gap-10"
+          data-aos="fade-left" */}
+        <div className="advert-content">
           <div>
             <BodyProps
               header="Advertising and Sponsorship"

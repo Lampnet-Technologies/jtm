@@ -97,6 +97,11 @@ export default function NavBar() {
                     About Us
                   </Link>
                 </li>
+                <li onClick={() => { handleLinkClick(); handleClose(); }}>
+                  <Link className="links" to="/blog-posts">
+                    Yellow Blog
+                  </Link>
+                </li>
                 
                 <li onClick={() => { handleLinkClick(); handleClose(); }}>
                   <Link className="links" to="/contact">
@@ -162,6 +167,11 @@ export default function NavBar() {
                   About Us
                 </Link>
               </li>
+              <li onClick={handleLinkClick}>
+                  <Link className="links" to="/blog-posts">
+                    Yellow Blog
+                  </Link>
+                </li>
               <li onClick={handleLinkClick}>
                 <Link className="links" to="/contact">
                   Contact Us

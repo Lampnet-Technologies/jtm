@@ -1,0 +1,151 @@
+
+/*General button styling*/
+.request-btn{
+    background-color: #fabc52;
+    color: black;
+    border: none;
+    padding: 8px;
+    width: 50%;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.services-bg img{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+.services{
+    overflow: hidden;
+}
+.services-bg{
+    position: relative;
+
+}
+.services-overlay{
+    position: absolute;
+    top: 0;
+    height: 90vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    left: 0;
+}
+.services-content{
+    color: white;
+    width: 80%;
+    margin: auto;
+    padding: 250px 50px;
+}
+.services-content p{
+    font-size: 20px;
+}
+/* Advert */
+.advert-img{
+    width: 100%;
+}
+.advert-section img{
+    width: 100%;
+}
+.advert-content{
+    width: 80%;
+    margin: auto;
+}
+
+/* Educational */
+.education-section img{
+    width: 100%;
+}
+.education-section .list-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebdfc9;
+    color: #1b1a1a;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    width: 70%;
+    padding: 10px;
+  }
+
+/* Consulting */
+.text-container{
+    width: 80%;
+    margin: auto;
+}
+.list-container {
+    justify-content: flex-start;
+    gap: 12px;
+  }
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebdfc9;
+  color: #1b1a1a;
+  text-align: center;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+.list-item--social-media {
+  width: 284px;
+  height: 64px;
+}
+
+.list-item--content-creation {
+  width: 200px;
+  height: 64px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.list-item--audience-engagement {
+  width: 100%;
+  max-width: 249px;
+  height: 64px;
+
+}
+@media screen and (min-width: 1120px){
+.services-content h1{
+   font-size: 40px !important;
+}
+.services-content p{
+    width: 60%;
+    font-size:25px;
+}
+/* Advert */
+.sections{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    gap: 80px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.advert-content{
+    width: 50%;
+}
+/* Consulting */
+/* Digital */
+.digital-content{
+    width: 50%;
+}
+/* Event */
+.event-content{
+    width: 50%;
+}
+/* Eduction */
+.text-container{
+    width: 50%;
+}
+/* International */
+.international-content{
+    width: 50%;
+}
+}

@@ -25,11 +25,11 @@ const Event = () => {
 
   return (
     <section className="w-full bg-black text-[#fcfcfc]">
-      <div className="w-full lg:w-10/12 mx-auto flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-8 lg:p-10">
+      <div className="sections">
         
         {/* Left side (Image) */}
         <div
-          className="w-11/12 mx-auto lg:w-1/2"
+          // className="w-11/12 mx-auto lg:w-1/2"
           data-aos="fade-right"
         >
           <ImageProps img={image} />
@@ -37,7 +37,8 @@ const Event = () => {
 
         {/* Right texts */}
         <div
-          className="flex flex-col w-11/12 mx-auto lg:w-1/2 gap-4 lg:gap-10"
+        className="event-content"
+          // className="flex flex-col w-11/12 mx-auto lg:w-1/2 gap-4 lg:gap-10"
           data-aos="fade-left"
         >
           <div>
@@ -49,7 +50,7 @@ const Event = () => {
           </div>
 
           {/* Main div containing the two separate lists */}
-          <div className="flex flex-col gap-2 ">
+          <div>
             
             {/* First list */}
             <div className="flex items-center justify-start  lg:justify-normal gap-2 lg:gap-3">

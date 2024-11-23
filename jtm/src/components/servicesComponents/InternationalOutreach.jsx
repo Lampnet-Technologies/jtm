@@ -18,11 +18,11 @@ const InternationalOutreach = () => {
 
   return (
     <section className="w-full bg-black text-[#fcfcfc]  pb-20 lg:pb-0">
-      <div className="w-full lg:w-10/12 mx-auto flex flex-col-reverse lg:flex-row items-center justify-center gap-4 lg:gap-8 lg:p-10">
+      <div className="sections ">
         
         {/* Left texts */}
         <div
-          className="flex flex-col w-11/12 mx-auto lg:w-1/2 gap-10"
+         className="international-content"
           data-aos="fade-right"
         >
           <div>
@@ -36,7 +36,7 @@ const InternationalOutreach = () => {
 
         {/* Right side (Image) */}
         <div
-          className="w-11/12 mx-auto lg:w-1/2"
+          
           data-aos="fade-left"
         >
           <ImageProps img={image} />

@@ -201,8 +201,8 @@ export default function AboutPage() {
           <img src={banner} alt="banner" />
           <div className="banner-overlay">
             <div className="banner-header">
-              <h2 data-aos="zoom-in-down" data-aos-duration= '1000'>About Us</h2>
-              <p data-aos="zoom-in-down" data-aos-duration= '1500'>
+              <h2 data-aos="zoom-in" data-aos-duration= '1000'>About Us</h2>
+              <p data-aos="zoom-in" data-aos-duration= '1500'>
                 We exist to provide you with strategies and ways that will
                 elevate your brand without going to the extreme
               </p>
