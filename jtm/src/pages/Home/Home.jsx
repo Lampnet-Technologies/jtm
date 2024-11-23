@@ -5,6 +5,11 @@ import image2 from "../../../public/assets/images/know-us.png";
 import image3 from "../../../public/assets/images/mail-picture.png";
 import image4 from "../../../public/assets/images/radio-picture.png";
 import image5 from "../../../public/assets/images/social-media-picture.png";
+// import instagram from "../../../public/assets/images/instagram.png";
+// import youtube from "../../../public/assets/images/youtube.png";
+// import twitter from "../../../public/assets/images/twitter.png";
+// import facebook from "../../../public/assets/images/facebook.png";
+// import tiktok from "../../../public/assets/images/tiktok.png";
 import image6 from "../../../public/assets/images/podcast-picture.png";
 import image7 from "../../../public/assets/images/video.png";
 import image8 from "../../../public/assets/images/yellow-blog.png";
@@ -367,12 +372,15 @@ export default function Home() {
               </Link>
             </button>
           </div>
+          
           <div
             className="social-media-right"
             data-aos="fade-left"
             data-aos-duration="1500"
           >
+            
             <img src={image5} alt="image5" />
+           
           </div>
         </section>
         <section className="youtube">
@@ -554,6 +562,14 @@ export default function Home() {
                 understanding of Christ Jesus and envisioning all mankind as
                 being firmly anchored in Him.
               </p>
+              <Link
+                className="blog-link"
+                to="/blog-posts"
+                data-aos="fade-left"
+                data-aos-duration="1500"
+              >
+                Read more
+              </Link>
             </div>
             <div className="yellow-blog-right">
               <div className="right1">

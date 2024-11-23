@@ -205,9 +205,6 @@ h3{
 .social-media-right img {
   width: 100%;
 }
-.social-media-right img {
-  width: 100%;
-}
 .social-media-left h3 {
   width: 60%;
 }
@@ -237,6 +234,7 @@ h3{
   text-decoration: none;
   color: black;
 }
+
 
 /* Youtube Section */
 .youtube {
