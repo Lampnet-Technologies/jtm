@@ -1,3 +1,14 @@
+li{
+    list-style: none;
+}
+body{
+    background-color: black;
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
 .footer{
     background-color: black;
     color: white;
@@ -85,11 +96,14 @@
     .email p{
         justify-content: center;
     }
+    .subscribe input{
+        padding: 13px ;
+    }
    .subscribe label{
     font-size: 18px;
    }
    .subscribe button{
     top: .6px;
-    padding: 5px 20px;
+    padding: 8px 20px !important;
 }
 }

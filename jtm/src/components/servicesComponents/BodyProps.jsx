@@ -18,11 +18,11 @@ const BodyProps = (props) => {
     // className="w-full bg-black"
     <section >
       <div className="">
-        <div className="space-y-5 lg:space-y-10 flex flex-col items-start lg:items-start lg:text-start" data-aos="fade-right" > 
-          <h1 className="font-inter font-semibold text-2xl text-[#fcfcfc]">
+        <div className="body-props"> 
+          <h1 className="">
             {props.header}
           </h1>
-          <p className="text-xl font-normal font-inter text-[#fcfcfc] lg:text-start text-left" data-aos="fade-right">
+          <p>
             {props.paragraph}
           </p>
           <button

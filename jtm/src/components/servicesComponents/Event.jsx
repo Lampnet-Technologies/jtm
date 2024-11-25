@@ -13,7 +13,9 @@ const Event = () => {
   const firstList = buttons6.filter(
     (item) => item.text === "Christian events" || item.text === "Conferences"
   );
-  const secondList = buttons6.filter((item) => item.text === "Audience engagement");
+  const secondList = buttons6.filter(
+    (item) => item.text === "Audience engagement"
+  );
 
   // Initialize AOS
   useEffect(() => {
@@ -26,7 +28,6 @@ const Event = () => {
   return (
     <section className="w-full bg-black text-[#fcfcfc]">
       <div className="sections">
-        
         {/* Left side (Image) */}
         <div
           // className="w-11/12 mx-auto lg:w-1/2"
@@ -37,7 +38,7 @@ const Event = () => {
 
         {/* Right texts */}
         <div
-        className="event-content"
+          className="event-content"
           // className="flex flex-col w-11/12 mx-auto lg:w-1/2 gap-4 lg:gap-10"
           data-aos="fade-left"
         >
@@ -50,38 +51,29 @@ const Event = () => {
           </div>
 
           {/* Main div containing the two separate lists */}
-          <div>
-            
-            {/* First list */}
-            <div className="flex items-center justify-start  lg:justify-normal gap-2 lg:gap-3">
+
+          <div className="list-wrapper">
+            <div className="list-container">
               {firstList.map((item) => (
                 <li
                   key={item.id}
-                  to={item.path}
-                  className={`${
-                    item.text === "Christian events"
-                      ? "w-[204px] h-[64px]"
-                      : item.text === "Conferences"
-                      ? "w-[242px] h-[64px]"
-                      : "w-25" // Default width for remaining items
-                  } flex items-center justify-center bg-[#ebdfc9] text-[#1b1a1a]  text-center rounded-xl py-2 text-inter font-normal`}
+                  className={`list-item ${
+                    item.text === "Christian events" ||
+                    item.text === "Conferences"
+                      ? "list-item--social-media"
+                      : "list-item--content-creation"
+                  }`}
                 >
                   {item.text}
                 </li>
               ))}
             </div>
 
-            {/* Second list */}
-            <div className="flex items-center justify-start lg:justify-normal gap-2 lg:gap-3">
+            <div className="list-container second">
               {secondList.map((item) => (
                 <li
                   key={item.id}
-                  to={item.path}
-                  className={`${
-                    item.text === "Audience engagement"
-                      ? "w-[293px] h-[64px]"
-                      : "w-25" // Default width for remaining items
-                  } flex items-center justify-center bg-[#ebdfc9] text-[#1b1a1a] dark:bg-[#fcfcfc] dark:text-black text-center rounded-xl py-2 text-inter font-normal`}
+                  className={`list-item ${item.text === "Audience engagement"}`}
                 >
                   {item.text}
                 </li>

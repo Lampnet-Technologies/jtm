@@ -114,7 +114,7 @@ export default function Featured() {
 
   return (
     <div>
-      <div className="featured">
+      <div className="featured request">
         <div className="banner">
           <img src={banner} alt="banner" />
         </div>

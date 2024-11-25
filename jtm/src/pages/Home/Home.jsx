@@ -32,6 +32,8 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 import "./Home.css";
 import Typed from "typed.js";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Home() {
   //Youtube modal
@@ -146,6 +148,36 @@ export default function Home() {
     };
   }, []);
 
+  //Email
+  const [email, setEmail] = useState("");
+  const [modal, setModal] = useState(false);
+
+  function closeOverlay() {
+    setModal((prev) => !prev);
+  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Email validation
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      toast.error("Please enter a valid email address!", {
+        pauseOnHover: false,
+      });
+      return;
+    }
+
+    // If validation passes
+    setEmail("");
+    toast.success("We're in your Email. Thank you for subscribing!", {
+      pauseOnHover: false,
+    });
+    setTimeout(() => {
+      setModal(false);
+    }, 500);
+  };
+  
+
   return (
     <div>
       <div className="home-container">
@@ -168,6 +200,22 @@ export default function Home() {
           </div>
           <div className="background-right">
             <img src={image} alt="background image" />
+            <div className="right-overlay">
+              <div className="right-overlay-content">
+                <h2 data-aos="fade-right" data-aos-duration="1000">
+                  We promote gospel content
+                </h2>
+                <p data-aos="fade-right" data-aos-duration="1500">
+                  We are here to promote your Christian contents through any
+                  social media of your choice
+                </p>
+                <button data-aos="fade-right" data-aos-duration="2000">
+                  <Link className="bg-btn" to="/featured">
+                    Get Featured
+                  </Link>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
         <div className="background-bottom">
@@ -237,6 +285,27 @@ export default function Home() {
           </div>
         </div>
         <section className="yellow-mail">
+          {modal && (
+            <div className="overlay-email-input">
+              {modal && <h3 onClick={closeOverlay}>X</h3>}
+              <div className="subscribe">
+                <form onSubmit={handleSubmit}>
+                  <div>
+                    <label>Subscribe to our Newsletter</label>
+                    <br />
+                    <input
+                      type="email"
+                      value={email}
+                      placeholder="your email"
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
+                    <button type="submit">Subscribe</button>
+                  </div>
+                </form>
+                <ToastContainer />
+              </div>
+            </div>
+          )}
           <div className="yellow-mail-content">
             <div
               className="yellow-mail-right"
@@ -255,7 +324,7 @@ export default function Home() {
                 representation to all aspects of their lives.{" "}
               </p>
               <button data-aos="fade-right" data-aos-duration="2000">
-                <Link className="bg-btn" to="/">
+                <Link onClick={closeOverlay} className="bg-btn">
                   Subscribe
                 </Link>
               </button>
@@ -372,15 +441,13 @@ export default function Home() {
               </Link>
             </button>
           </div>
-          
+
           <div
             className="social-media-right"
             data-aos="fade-left"
             data-aos-duration="1500"
           >
-            
             <img src={image5} alt="image5" />
-           
           </div>
         </section>
         <section className="youtube">

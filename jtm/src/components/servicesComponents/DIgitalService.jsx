@@ -28,12 +28,12 @@ const ContentCreation = () => {
 
   return (
     <section className="">
-      <div className="sections">
+      <div className="sections digital">
         {/* Left texts */}
         <div
-        className="digital-content"
-        // className="flex flex-col w-11/12 mx-auto lg:w-1/2 gap-4 lg:gap-10"
-        // data-aos="fade-right"
+          className="digital-content"
+          // className="flex flex-col w-11/12 mx-auto lg:w-1/2 gap-4 lg:gap-10"
+          // data-aos="fade-right"
         >
           <div>
             <BodyProps
@@ -44,37 +44,32 @@ const ContentCreation = () => {
           </div>
 
           {/* Main div containing the two separate lists */}
-          <div className="flex flex-col gap-2">
-            {/* First list */}
-            <div className="flex items-center justify-start lg:justify-normal gap-2 lg:gap-3">
+
+          <div className="list-wrapper">
+            <div className="list-container">
               {firstList.map((item) => (
                 <li
                   key={item.id}
-                  to={item.path}
-                  className={`${
+                  className={`list-item ${
                     item.text === "Video production" ||
                     item.text === "Audio production"
-                      ? "w-[201px] h-[64px]"
-                      : "w-25" // default width for remaining items
-                  } flex items-center justify-center bg-[#ebdfc9] text-[#1b1a1a] text-center rounded-xl py-2 text-inter font-normal`}
+                      ? "list-item--social-media"
+                      : "list-item--content-creation"
+                  }`}
                 >
                   {item.text}
                 </li>
               ))}
             </div>
 
-            {/* Second list */}
-            <div className="flex items-center justify-start lg:justify-normal gap-2 lg:gap-3">
+            <div className="list-container second">
               {secondList.map((item) => (
                 <li
                   key={item.id}
-                  to={item.path}
-                  className={`${
+                  className={`list-item ${
                     item.text === "Graphic design" ||
                     item.text === "Copywriting"
-                      ? "w-[201px] lg:w-[201px] h-[64px]"
-                      : "w-25" // default width for remaining items
-                  } flex items-center justify-center bg-[#ebdfc9] text-[#1b1a1a] dark:bg-[#fcfcfc] dark:text-black text-center rounded-xl py-2 text-inter font-normal`}
+                  }`}
                 >
                   {item.text}
                 </li>
@@ -84,7 +79,7 @@ const ContentCreation = () => {
         </div>
 
         {/* Right side (Image) */}
-        <div className="w-11/12 mx-auto lg:w-1/2" data-aos="fade-left">
+        <div data-aos="fade-left">
           <ImageProps img={image} />
         </div>
       </div>

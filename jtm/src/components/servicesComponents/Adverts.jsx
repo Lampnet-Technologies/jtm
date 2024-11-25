@@ -58,41 +58,16 @@ const Adverts = () => {
           </div>
 
           {/* Main div containing the two separate lists */}
-          <div className="flex flex-col gap-2">
-            {/* First list */}
-            <div className="flex items-left justify-left lg:justify-normal gap-2 lg:gap-3">
+          <div className="list-wrapper">
+            <div className="list-container">
               {firstList.map((item) => (
                 <li
                   key={item.id}
-                  to={item.path}
-                  className={`${
-                    item.text === "Radio & Tv"
-                      ? "w-32 h-[64px]"
-                      : item.text === "Podcasts"
-                      ? "w-[128px] h-[64px]"
-                      : item.text === "Blogs"
-                      ? "w-32 h-[64px]"
-                      : "w-25"
-                  } flex items-center justify-center bg-[#ebdfc9] text-[#1b1a1a] dark:bg-[#fcfcfc] dark:text-black text-center rounded-xl py-2 text-inter font-normal`}
-                >
-                  {item.text}
-                </li>
-              ))}
-            </div>
-
-            {/* Second list */}
-            <div className="flex items-center justify-center lg:justify-normal gap-2 lg:gap-3">
-              {secondList.map((item) => (
-                <li
-                  key={item.id}
-                  to={item.path}
-                  className={`${
-                    item.text === "Newsletters"
-                      ? "w-1/2 lg:w-40 h-[64px]"
-                      : item.text === "Sponsorships"
-                      ? "w-1/2 lg:w-44 h-[64px]"
-                      : "w-25"
-                  } flex items-center justify-center bg-[#ebdfc9] text-[#1b1a1a] dark:bg-[#fcfcfc] dark:text-black text-start rounded-xl py-2 text-inter font-normal`}
+                  className={`list-item ${
+                    item.text === "Social media management"
+                      ? "list-item--social-media"
+                      : "list-item--content-creation"
+                  }`}
                 >
                   {item.text}
                 </li>

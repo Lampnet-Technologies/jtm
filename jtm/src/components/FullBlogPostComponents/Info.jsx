@@ -27,18 +27,17 @@ const Info = () => {
 
   const image = "https://res.cloudinary.com/ddhxnuyyj/image/upload/v1728613807/image_fx__23_1_ii50ap.png"
   return (
-    <section className="w-full">
-      <div className="w-10/12 mx-auto flex items-start justify-start gap-4 text-[#fcfcfc] ">
+    <section >
+      <div className="full-blog-info">
         <div>
-          <img src={image} alt="" className="rounded-full w-20 bg-[#d9d9d9]" />
+          <img src={image} alt="" className="author-img" />
         </div>
-        <div>
-          <h3 className="font-inter font-semibold text-xl text-[#fcfcfc] dark:text-white">
+        <div className='blog-date'>
+          <h3 className="">
             Bianca Noel
           </h3>
           <div className="flex text-inter gap-3">
-            <p className="text-[#fcfcfc]">{date}</p>
-            <p className="text-[#fcfcfc]">{getMonthName()}</p>
+            <p className="text-[#fcfcfc]">{date} <span>{getMonthName()}</span></p>
           </div>
           <p className="text-[#fcfcfc]">{year}</p>
         </div>

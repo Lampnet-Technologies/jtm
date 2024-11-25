@@ -16,12 +16,15 @@ overflow: hidden;
   margin-bottom: 20px;
 }
 .advert-left p{
-    font-size: 14px;
+    font-size: 18px;
 }
 .advert-right img {
   width: 100%;
 }
 /* Form section */
+.request .brand-text{
+  font-size: 30px;
+}
 .message-form {
   margin: 40px 0;
 }
@@ -76,7 +79,7 @@ overflow: hidden;
 }
 
 /* FAQ Section */
-.faq-item{
+/* .faq-item{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
     padding: 8px;
@@ -100,7 +103,7 @@ overflow: hidden;
     border: 1px solid black;
     padding: 2px;
     border-radius: 100px;
-}
+} */
 @media screen and (min-width: 1120px) {
   .banner img {
     height: 90vh;

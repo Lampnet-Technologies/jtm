@@ -54,7 +54,7 @@ const BlogPost = () => {
 
   return (
     <section
-      className="grid lg:grid-cols-3 py-10 gap-8 items-center justify-center w-full lg:w-10/12 mx-auto bg-black text-white"
+      className="blog-post-section"
     >
       {posts.map((post) => {
         // Extract the first paragraph from the post body directly inside the map function
@@ -69,36 +69,37 @@ const BlogPost = () => {
         const formattedDate = new Date(post.publishedAt).toLocaleDateString();
 
         return (
-          <Link
+          <Link 
+          className="blog-content-link"
             to={`/blogs/${post.slug.current}`}
             key={post.slug.current}
             state={{ post }}
           >
             <article
-              className="blog-card space-y-3 border border-gray-600  min-h-auto w-10/12 lg:w-full mx-auto p-5 rounded-2xl shadow transition-transform duration-300 ease-out hover:scale-105 hover:shadow-lg"
+              className="blog-post-content"
             >
-              <div className="overflow-hidden rounded-2xl">
+              <div className="">
                 <img
                   src={post.mainImage.asset.url}
                   alt={post.title}
-                  className="w-96 rounded-2xl transition-transform duration-300 ease-out hover:scale-110"
+                  className=""
                 />
               </div> 
-              <div className="font-inter space-y-4 lg:w-full">
-                <h2 className="text-2xl ">{post.title}</h2>
+              <div className="">
+                <h2 className=" ">{post.title}</h2>
 
                 {/* Render only the first paragraph, if it exists */}
                 {firstParagraph && <PortableText value={[firstParagraph]} />}
               </div>
-              <div className="flex items-center justify-between">
+              <div className="author-text">
                 {/* Display the author name */}
-                <h3 className="font-inter font-normal text-base text-[#DB2A6B]">
+                <h3 className="">
                   {post.author?.name}
                 </h3>
                 {/* Display the publication date */}
-                <p className="text-sm text-gray-300">{formattedDate}</p>
+                <p className="">{formattedDate}</p>
                 {/* Display estimated reading time */}
-                <p className="font-normal text-sm font-inter text-gray-300">
+                <p className="">
                   {readingTime} min read
                 </p>
               </div>

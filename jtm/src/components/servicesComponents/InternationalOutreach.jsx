@@ -18,12 +18,11 @@ const InternationalOutreach = () => {
 
   return (
     <section className="w-full bg-black text-[#fcfcfc]  pb-20 lg:pb-0">
-      <div className="sections ">
+      <div className="sections international">
         
         {/* Left texts */}
         <div
          className="international-content"
-          data-aos="fade-right"
         >
           <div>
             <BodyProps
