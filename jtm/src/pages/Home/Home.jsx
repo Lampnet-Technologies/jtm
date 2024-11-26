@@ -287,8 +287,8 @@ export default function Home() {
         <section className="yellow-mail">
           {modal && (
             <div className="overlay-email-input">
-              {modal && <h3 onClick={closeOverlay}>X</h3>}
               <div className="subscribe">
+              {modal && <h3 onClick={closeOverlay}>X</h3>}
                 <form onSubmit={handleSubmit}>
                   <div>
                     <label>Subscribe to our Newsletter</label>

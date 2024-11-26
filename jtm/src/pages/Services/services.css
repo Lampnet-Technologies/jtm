@@ -66,7 +66,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ebdfc9;
+    background-color: #fcfcfc;
     color: #1b1a1a;
     text-align: center;
     flex-direction: column;
@@ -107,7 +107,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ebdfc9;
+  background-color: #fcfcfc;
   color: #1b1a1a;
   text-align: center;
   border-radius: 12px;

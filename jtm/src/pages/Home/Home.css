@@ -181,7 +181,7 @@ height: 90vh;
 }
 .overlay-email-input h3{
   position: absolute;
-  right: 30px;
+  right: 20px;
   cursor: pointer;
   background-color: black;
   padding: 5px;
@@ -194,6 +194,7 @@ height: 90vh;
   width: 80%;
   height: 300px;
   margin: 220px auto;
+  position: relative;
 }
 .overlay-email-input form{
   padding-top: 90px;
@@ -204,10 +205,11 @@ height: 90vh;
 }
 .overlay-email-input button{
   margin-top: 20px;
-  width: 98%;
+  width: 99%;
   background-color: #fabc52;
   color: white;
-  border-radius: 0%;
+  border-radius: 8px;
+  font-size: 17px;
 }
 
 .yellow-mail-content {
