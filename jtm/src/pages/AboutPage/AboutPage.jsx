@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "./AboutPage.css";
-import banner from "../../assets/images/about.png";
-import image1 from "../../assets/images/about1.png";
-import image2 from "../../assets/images/about2.png";
-import image3 from "../../assets/images/about3.png";
-import team1 from "../../assets/images/team1.png";
-import team2 from "../../assets/images/team2.png";
-import team3 from "../../assets/images/team3.png";
-import icon from "../../assets/images/Linkedin.png";
+import banner from "../../../public/assets/images/about.png";
+import image1 from "../../../public/assets/images/about1.png";
+import image2 from "../../../public/assets/images/about2.png";
+import image3 from "../../../public/assets/images/about3.png";
+import team1 from "../../../public/assets/images/team1.png";
+import team2 from "../../../public/assets/images/team2.png";
+import team3 from "../../../public/assets/images/team3.png";
+import icon from "../../../public/assets/images/Linkedin.png";
 import { Link } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
+// import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import Footer from "../../components/Footer/Footer";
@@ -201,8 +201,8 @@ export default function AboutPage() {
           <img src={banner} alt="banner" />
           <div className="banner-overlay">
             <div className="banner-header">
-              <h2 data-aos="zoom-in-down" data-aos-duration= '1000'>About Us</h2>
-              <p data-aos="zoom-in-down" data-aos-duration= '1500'>
+              <h2 data-aos="zoom-in" data-aos-duration= '1000'>About Us</h2>
+              <p data-aos="zoom-in" data-aos-duration= '1500'>
                 We exist to provide you with strategies and ways that will
                 elevate your brand without going to the extreme
               </p>

@@ -6,7 +6,6 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 
 const Adverts = () => {
-  
   const containerRef = useRef(null);
 
   const image =
@@ -20,11 +19,8 @@ const Adverts = () => {
   );
 
   const secondList = button.filter(
-    (item) =>
-      item.text === "Newsletters" || item.text === "Sponsorships"
+    (item) => item.text === "Newsletters" || item.text === "Sponsorships"
   );
-
-  
 
   useEffect(() => {
     AOS.init({
@@ -38,26 +34,21 @@ const Adverts = () => {
   };
 
   return (
-    <section
-      className="w-full text-[#fcfcfc] bg-black"
-      ref={containerRef}
-    >
-      <div
-        className="w-full lg:w-10/12 mx-auto flex flex-col lg:flex-row items-center justify-center gap-2 lg:gap-8 lg:p-10"
-      >
+    // className="w-full text-[#fcfcfc] bg-black"
+    <section ref={containerRef}>
+      {/* className="w-full lg:w-10/12 mx-auto flex flex-col lg:flex-row items-center justify-center gap-2 lg:gap-8 lg:p-10" */}
+      <div className="advert-section sections">
         {/* Left side (Image) */}
-        <div
-          className="w-11/12 mx-auto lg:w-1/2"
-          data-aos="fade-right"
-        >
+        {/* className="w-11/12 mx-auto lg:w-1/2" */}
+        {/* data-aos="fade-right" */}
+        <div className="advert-image">
           <ImageProps img={image} />
         </div>
 
         {/* Right texts */}
-        <div
-          className="flex flex-col w-11/12 mx-auto  lg:w-1/2 gap-4 lg:gap-10"
-          data-aos="fade-left"
-        >
+        {/* className="flex flex-col w-11/12 mx-auto  lg:w-1/2 gap-4 lg:gap-10"
+          data-aos="fade-left" */}
+        <div className="advert-content">
           <div>
             <BodyProps
               header="Advertising and Sponsorship"
@@ -67,41 +58,16 @@ const Adverts = () => {
           </div>
 
           {/* Main div containing the two separate lists */}
-          <div className="flex flex-col gap-2">
-            {/* First list */}
-            <div className="flex items-left justify-left lg:justify-normal gap-2 lg:gap-3">
+          <div className="list-wrapper">
+            <div className="list-container">
               {firstList.map((item) => (
                 <li
                   key={item.id}
-                  to={item.path}
-                  className={`${
-                    item.text === "Radio & Tv"
-                      ? "w-32 h-[64px]"
-                      : item.text === "Podcasts"
-                      ? "w-[128px] h-[64px]"
-                      : item.text === "Blogs"
-                      ? "w-32 h-[64px]"
-                      : "w-25"
-                  } flex items-center justify-center bg-[#ebdfc9] text-[#1b1a1a] dark:bg-[#fcfcfc] dark:text-black text-center rounded-xl py-2 text-inter font-normal`}
-                >
-                  {item.text}
-                </li>
-              ))}
-            </div>
-
-            {/* Second list */}
-            <div className="flex items-center justify-center lg:justify-normal gap-2 lg:gap-3">
-              {secondList.map((item) => (
-                <li
-                  key={item.id}
-                  to={item.path}
-                  className={`${
-                    item.text === "Newsletters"
-                      ? "w-1/2 lg:w-40 h-[64px]"
-                      : item.text === "Sponsorships"
-                      ? "w-1/2 lg:w-44 h-[64px]"
-                      : "w-25"
-                  } flex items-center justify-center bg-[#ebdfc9] text-[#1b1a1a] dark:bg-[#fcfcfc] dark:text-black text-start rounded-xl py-2 text-inter font-normal`}
+                  className={`list-item ${
+                    item.text === "Social media management"
+                      ? "list-item--social-media"
+                      : "list-item--content-creation"
+                  }`}
                 >
                   {item.text}
                 </li>

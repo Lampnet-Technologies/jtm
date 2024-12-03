@@ -14,6 +14,7 @@ const HeaderParagraph = () => {
   }, []);
 
   return (
+
     <section className="w-full">
       <div className="w-10/12 mx-auto">
         <p className="font-inter font-normal text-sm lg:text-lg text-[#fcfcfc] w-full lg:w-8/12">
@@ -25,5 +26,8 @@ const HeaderParagraph = () => {
     </section>
   );
 };
+
+   
+ 
 
 export default HeaderParagraph;

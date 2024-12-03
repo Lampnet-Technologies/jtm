@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import client from "../../client";
 
 const HeaderText = () => {
@@ -6,9 +6,7 @@ const HeaderText = () => {
 
   useEffect(() => {
     client
-      .fetch(
-        `*[_type == "post"][0].headerText`
-      )
+      .fetch(`*[_type == "post"][0].headerText`)
       .then((data) => setHeaderText(data))
       .catch(console.error);
   }, []);
@@ -17,9 +15,9 @@ const HeaderText = () => {
     <section className="w-full">
       <div className="w-10/12 mx-auto">
         <h2 className="font-monstserrat text-xl lg:text-3xl font-normal text-[#fcfcfc] w-full lg:w-8/12">
-          {headerText 
-            ? headerText[0]?.children?.map((child) => child.text).join(' ') 
-            : 'Loading...'}
+          {headerText
+            ? headerText[0]?.children?.map((child) => child.text).join(" ")
+            : "Loading..."}
         </h2>
       </div>
     </section>

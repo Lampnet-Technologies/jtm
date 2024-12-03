@@ -1,31 +1,30 @@
-body{
+body {
   background-color: black;
   color: white;
 }
-p{
+p {
   font-size: 18px;
 }
-h1,h2{
+h1,
+h2 {
   font-size: 30px !important;
 }
-h3{
+h3 {
   font-size: 28px !important;
 }
 .background-left {
   color: white;
   height: 80vh;
-  padding: 5px;
+  display: none;
   background: linear-gradient(#fabc52, purple);
 }
 .left-content {
   padding: 180px 40px;
 }
-.left-content h2{
+.left-content h2 {
   font-size: 32px;
 }
-.background-right {
-  display: none;
-}
+
 .left-content button {
   outline: none;
   background-color: #fabc52;
@@ -68,7 +67,7 @@ h3{
   gap: 15px;
 }
 
-.express p{
+.express p {
   color: #000;
 }
 
@@ -84,6 +83,53 @@ h3{
 .express img {
   margin-right: 8px;
 }
+.background-right {
+  display: block;
+}
+.background-right img{
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  background-size: cover;
+}
+.right-overlay{
+position: absolute;
+background-color: rgba(0, 0, 0, 0.6);
+width: 100%;
+top: 72px;
+height: 90vh;
+}
+.right-overlay-content {
+  padding: 270px 30px ;
+}
+.right-overlay-content h2 {
+  font-size: 32px;
+}
+
+.right-overlay-content button {
+  outline: none;
+  background-color: #fabc52;
+  padding: 10px 25px;
+  text-align: center;
+  border-radius: 40px;
+  border: none;
+  transition: 0.4s ease;
+  font-size: 20px;
+}
+.right-overlay-content button:hover {
+  background-color: transparent;
+  border: 2px solid #fabc52;
+  color: white;
+}
+.right-overlay-content button:hover .bg-btn{
+  color: #fabc52;
+}
+.right-overlay-content .bg-btn {
+  text-decoration: none;
+  color: black;
+  transition: .4s ease;
+}
+
 /* Know us */
 .know-us {
   overflow: hidden;
@@ -96,11 +142,11 @@ h3{
 .know-us-right {
   margin-top: 30px;
 }
-.know-us-right h3{
+.know-us-right h3 {
   font-size: 32px;
   margin-bottom: 20px;
 }
-.know-us-left p{
+.know-us-left p {
   font-size: 16px;
 }
 .know-us-right button {
@@ -121,10 +167,51 @@ h3{
   text-decoration: none;
   color: black;
 }
-.know-us-left img{
+.know-us-left img {
   margin-bottom: 80px !important;
 }
 /* Yellow mail */
+.overlay-email-input{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 100vh;
+  z-index: 9999;
+}
+.overlay-email-input h3{
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  background-color: black;
+  padding: 5px;
+  border-radius: 5px;
+  width: 30px;
+  text-align: center;
+}
+.overlay-email-input .subscribe{
+  background-color: black;
+  width: 80%;
+  height: 300px;
+  margin: 220px auto;
+  position: relative;
+}
+.overlay-email-input form{
+  padding-top: 90px;
+  margin: 50px;
+}
+.overlay-email-input input{
+  width: 90%;
+}
+.overlay-email-input button{
+  margin-top: 20px;
+  width: 99%;
+  background-color: #fabc52;
+  color: white;
+  border-radius: 8px;
+  font-size: 17px;
+}
+
 .yellow-mail-content {
   width: 80%;
   margin: 60px auto;
@@ -151,6 +238,7 @@ h3{
 }
 .yellow-mail {
   overflow: hidden;
+  position: relative;
 }
 .yello-mail-bottom {
   width: 70%;
@@ -205,9 +293,6 @@ h3{
 .social-media-right img {
   width: 100%;
 }
-.social-media-right img {
-  width: 100%;
-}
 .social-media-left h3 {
   width: 60%;
 }
@@ -258,9 +343,9 @@ h3{
 }
 .play {
   position: absolute;
-  top: 80px;
+  top: 60px;
   font-size: 40px;
-  left: 200px;
+  left: 150px;
 }
 .play-icon {
   color: white;
@@ -279,7 +364,7 @@ h3{
   transition: 0.3s ease;
   font-size: 20px;
 }
-.youtube button:hover{
+.youtube button:hover {
   background-color: #969191;
 }
 .youtube .link-btn2,
@@ -324,7 +409,7 @@ h3{
   transition: 0.3s ease;
 }
 .blog-link {
-  color: #006efd;
+  color: #4ca3ea;
 }
 .see-more:hover {
   text-decoration: underline;
@@ -359,7 +444,7 @@ h3{
   max-width: 100%;
   height: auto;
 }
-.wots p{
+.wots p {
   color: #000;
   border-radius: 5px;
   font-weight: 400;
@@ -367,6 +452,25 @@ h3{
 
 /* Additional styles for larger screens */
 @media (min-width: 600px) {
+  /* Background right */
+  .right-overlay{
+    height: 92.4vh;
+    }
+    .right-overlay-content {
+      padding: 350px 30px ;
+    }
+    .right-overlay-content h2{
+      font-size: 50px !important;
+    }
+    .right-overlay-content p{
+      font-size: 30px;
+      width: 70%;
+    }
+
+    /* Subscribe overlay*/
+    .overlay-email-input label{
+      font-size: 25px;
+    }
   .splide1 {
     flex-direction: row;
     justify-content: space-between;
@@ -398,8 +502,8 @@ h3{
   background-color: #fabc52 !important;
 }
 
-@media screen and (min-width: 768px) {
-  p{
+@media screen and (min-width: 1120px) {
+  p {
     font-size: 18px !important;
   }
 
@@ -409,16 +513,21 @@ h3{
   .homePage {
     height: 80vh;
   }
-   button{
+  button {
     font-size: 20px;
   }
   .background-right {
     width: 50%;
     display: block;
+  
+  }
+  .right-overlay{
+    display: none;
   }
   .background-left {
     width: 50%;
-    height: 79vh;
+    height: auto;
+    display: block;
   }
   .background-right img {
     width: 100%;
@@ -433,10 +542,9 @@ h3{
   .left-content h2 {
     font-size: 45px;
   }
-  .express{
+  .express {
     justify-content: center;
   }
- 
 
   /* Know us section */
   .know-us {
@@ -448,7 +556,7 @@ h3{
     width: 50%;
     margin-top: 100px;
   }
-  .know-us-right h3{
+  .know-us-right h3 {
     font-size: 30px;
   }
   .know-us-right button {
@@ -457,11 +565,17 @@ h3{
   .know-us-right p {
     width: 80%;
     font-size: 16px;
-    opacity: .8;
+    opacity: 0.8;
     margin-bottom: 20px;
   }
 
   /* Yellow mail */
+  .overlay-email-input .subscribe{
+    width: 40%;
+  }
+  .overlay-email-input input{
+    width: 90%;
+  }
   .yellow-mail-content {
     display: flex;
     flex-direction: row-reverse;
@@ -471,13 +585,13 @@ h3{
     width: 50%;
     margin-top: 100px;
   }
-  .yellow-mail-left h3{
+  .yellow-mail-left h3 {
     font-size: 30px;
   }
   .yellow-mail-left p {
     width: 80%;
     font-size: 16px;
-    opacity: .8;
+    opacity: 0.8;
   }
   .yello-mail-bottom {
     display: flex;
@@ -496,13 +610,13 @@ h3{
     width: 50%;
     margin-top: 40px;
   }
-  .radio-left h3{
+  .radio-left h3 {
     font-size: 30px;
   }
   .radio-left p {
     width: 80%;
     font-size: 16px;
-    opacity: .8;
+    opacity: 0.8;
   }
   .radio-right {
     width: 50%;
@@ -525,7 +639,7 @@ h3{
     width: 50%;
     margin-top: 90px;
   }
-  .social-media-left h3{
+  .social-media-left h3 {
     width: 80%;
     margin-bottom: 40px;
     font-size: 30px;
@@ -534,7 +648,7 @@ h3{
     padding: 8px 25px;
     text-align: center;
   }
-  .youtube-up h3{
+  .youtube-up h3 {
     font-size: 40px;
   }
   .youtube-up p {
@@ -543,7 +657,7 @@ h3{
     margin: 20px auto;
   }
 
-  .social-media-right img{
+  .social-media-right img {
     position: relative;
     top: 50px;
   }
@@ -559,13 +673,13 @@ h3{
     left: 580px;
   }
 
-/* Social media2 podcast2 */
-.podcast2 .social-media-left{
-  width: 50%;
-}
-.podcast2 .social-media-left p{
-  opacity: .8;
-}
+  /* Social media2 podcast2 */
+  .podcast2 .social-media-left {
+    width: 50%;
+  }
+  .podcast2 .social-media-left p {
+    opacity: 0.8;
+  }
   /* Yellow blog section */
   .yellow-blog-content {
     display: flex;
@@ -576,12 +690,12 @@ h3{
     padding: 8px 25px;
     text-align: center;
   }
-  .yellow-blog h3{
+  .yellow-blog h3 {
     font-size: 30px;
   }
   .yellow-blog p {
     font-size: 16px;
-    opacity: .8;
+    opacity: 0.8;
   }
   .blog-intro {
     width: 40%;
@@ -589,7 +703,7 @@ h3{
   .yellow-blog-left {
     margin-top: 20px;
   }
-  .yellow-blog-right h3{
+  .yellow-blog-right h3 {
     font-size: 25px;
   }
   .yellow-blog-right img {
@@ -622,7 +736,7 @@ h3{
     display: flex;
     gap: 10px;
   }
-  .wots img{
+  .wots img {
     width: 50%;
   }
   .splide1 {
@@ -637,25 +751,24 @@ h3{
   }
   .splide__arrow {
     position: absolute;
-    top: 410px; 
+    top: 410px;
     left: 40%;
-    transform: translateX(-50%); 
-    cursor: pointer; 
-    z-index: 10; 
-}
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 10;
+  }
 
-.splide__arrow--prev {
-    margin-right: 30px; 
-}
+  .splide__arrow--prev {
+    margin-right: 30px;
+  }
 
-.splide__arrow--next {
-    margin-left: 250px; 
-}
-.wots p {
-  background-color: #f0ce91;
-  padding: 40px 20px 0;
-  height: 200px;
-  margin: 0;
-}
-
+  .splide__arrow--next {
+    margin-left: 250px;
+  }
+  .wots p {
+    background-color: #f0ce91;
+    padding: 40px 20px 0;
+    height: 200px;
+    margin: 0;
+  }
 }

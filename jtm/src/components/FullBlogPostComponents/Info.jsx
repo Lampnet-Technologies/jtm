@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import client from '../../client'; // Adjust the import path for your Sanity client
+import React, { useState, useEffect } from "react";
+import client from "../../client"; // Adjust the import path for your Sanity client
 
 const Info = () => {
   const [infoData, setInfoData] = useState(null);
@@ -33,15 +33,15 @@ const Info = () => {
   const publishedDate = new Date(datePublished);
   const date = publishedDate.getDate();
   const year = publishedDate.getFullYear();
-  const month = publishedDate.toLocaleString('default', { month: 'long' });
+  const month = publishedDate.toLocaleString("default", { month: "long" });
 
   return (
     <section className="w-full">
       <div className="w-10/12 mx-auto flex items-start justify-start gap-4 text-[#fcfcfc]">
         <div>
           <img
-            src={author.image?.asset?.url || 'https://via.placeholder.com/150'}
-            alt={author.name || 'Author'}
+            src={author.image?.asset?.url || "https://via.placeholder.com/150"}
+            alt={author.name || "Author"}
             className="rounded-full w-20 bg-[#d9d9d9]"
           />
         </div>
@@ -52,8 +52,8 @@ const Info = () => {
           <div className="flex text-inter gap-3">
             <p className="text-[#fcfcfc]">{date}</p>
             <p className="text-[#fcfcfc]">{month}</p>
+            <p className="text-[#fcfcfc]">{year}</p>
           </div>
-          <p className="text-[#fcfcfc]">{year}</p>
         </div>
       </div>
     </section>

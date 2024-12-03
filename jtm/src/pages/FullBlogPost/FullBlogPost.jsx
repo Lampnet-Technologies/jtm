@@ -6,12 +6,13 @@ import SocialProps from "../../components/FullBlogPostComponents/SocialProps";
 import HeroImage from "../../components/FullBlogPostComponents/HeroImage";
 import BlogText from "../../components/FullBlogPostComponents/BlogText";
 import Footer from "../../components/Footer/Footer";
-import './index.css'
+import './FullBlogPost.css'
 
 const FullBlogPost = () => {
   return (
-    <div className="bg-black space-y-10 py-12">
-      <div className="space-y-8">
+   <>
+    <div className="full-blog">
+      <div className="full-blog-header">
         <HeaderText />
         <HeaderParagraph />
       </div>
@@ -27,8 +28,9 @@ const FullBlogPost = () => {
       <div>
         <BlogText/>
       </div>
-      <Footer/>
     </div>
+      <Footer/>
+   </>
   );
 };
 

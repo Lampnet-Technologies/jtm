@@ -7,11 +7,12 @@ import DigitalService from '../../components/servicesComponents/DIgitalService'
 import Educational from '../../components/servicesComponents/Educational'
 import Event from '../../components/servicesComponents/Event'
 import InternationalOutreach from '../../components/servicesComponents/InternationalOutreach'
-import './index.css'
+import './services.css'
 import Footer from '../../components/Footer/Footer'
 const Services = () => {
   return (
-    <div className='space-y-28 md:space-y-0  bg-black text-black  dark:bg-black dark:text-white'>
+    // className='space-y-28 md:space-y-0  bg-black text-black  dark:bg-black dark:text-white'
+    <div className='services'>
       <ServiceHero/>
       <Adverts/>
       <Consulting/>

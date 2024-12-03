@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 const HeroImage = ({ imageUrl, alt }) => {
   return (
-    <section className="w-full">
-      <div className="w-10/12 mx-auto">
-        <img src={imageUrl} alt={alt} className="w-full" />
+    <section className="">
+      <div className="blog-bg">
+        <img src={imageUrl} alt={alt} />
       </div>
     </section>
   );

@@ -8,6 +8,7 @@ import ScrollToTopButton from './components/ScroolToTop/ScrollToTopButton';
 const Home = lazy(() => import("./pages/Home/Home"));
 const AboutPage = lazy(() => import("./pages/AboutPage/AboutPage"));
 const Featured = lazy(() => import("./pages/Featured/Featured"));
+const Request = lazy(() => import("./pages/Request/Request"));
 const Contact = lazy(() => import("./pages/Contact/Contact"));
 const Error = lazy(() => import("./components/Error/Error"));
 const Services = lazy(() => import("./pages/Services/Services"));
@@ -26,6 +27,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/featured" element={<Featured />} />
+          <Route path="/request" element={<Request />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<Services/>} />
           <Route path="/blogs/:slug" element={<FullBlogPost />} />
