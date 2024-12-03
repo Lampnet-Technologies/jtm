@@ -10,25 +10,33 @@ const BlogPost = () => {
     client
       .fetch(
         `*[_type == "post"] {
-         title,
-         slug,
-         body,
-         mainImage {
-           asset -> {
-             _id,
-             url
-           }, 
-           alt        
-         },
-         author -> {
-           name
-         },
-         publishedAt
-       }`
+          title,
+          slug,
+          body,
+          mainImage {
+            asset -> {
+              _id,
+              url
+            },
+            alt
+          },
+          author -> {
+            name,
+            image
+          },
+          datePublished,
+          categories[]-> {
+            title
+          },
+          headerText,
+          headerParagraph,
+          bodyText
+        }`
       )
       .then((data) => setPosts(data))
       .catch(console.error);
   }, []);
+
 
   // Function to estimate reading time based on word count
   const calculateReadingTime = (body) => {

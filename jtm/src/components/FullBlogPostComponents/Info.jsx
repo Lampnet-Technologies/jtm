@@ -1,102 +1,63 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+import client from '../../client'; // Adjust the import path for your Sanity client
 
 const Info = () => {
-  const getDate = new Date();
-  const date = getDate.getDate();
-  const year = getDate.getFullYear();
-  
-  const getMonthName = () => {
-    const monthNames = [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
-    ];
+  const [infoData, setInfoData] = useState(null);
 
-    const monthIndex = getDate.getMonth(); // Corrected: index should be 0-11
-    return monthNames[monthIndex];
-  };
+  useEffect(() => {
+    client
+      .fetch(
+        `*[_type == "post"][0]{
+          author -> {
+            name,
+            image {
+              asset -> {
+                url
+              }
+            }
+          },
+          datePublished
+        }`
+      )
+      .then((data) => setInfoData(data))
+      .catch(console.error);
+  }, []);
 
-  const image = "https://res.cloudinary.com/ddhxnuyyj/image/upload/v1728613807/image_fx__23_1_ii50ap.png"
+  if (!infoData) {
+    return <p>Loading...</p>;
+  }
+
+  const { author, datePublished } = infoData;
+
+  // Extract date, month, and year from datePublished
+  const publishedDate = new Date(datePublished);
+  const date = publishedDate.getDate();
+  const year = publishedDate.getFullYear();
+  const month = publishedDate.toLocaleString('default', { month: 'long' });
+
   return (
     <section className="w-full">
-      <div className="w-10/12 mx-auto flex items-start justify-start gap-4 text-[#fcfcfc] ">
+      <div className="w-10/12 mx-auto flex items-start justify-start gap-4 text-[#fcfcfc]">
         <div>
-          <img src={image} alt="" className="rounded-full w-20 bg-[#d9d9d9]" />
+          <img
+            src={author.image?.asset?.url || 'https://via.placeholder.com/150'}
+            alt={author.name || 'Author'}
+            className="rounded-full w-20 bg-[#d9d9d9]"
+          />
         </div>
         <div>
           <h3 className="font-inter font-semibold text-xl text-[#fcfcfc] dark:text-white">
-            Bianca Noel
+            {author.name}
           </h3>
           <div className="flex text-inter gap-3">
             <p className="text-[#fcfcfc]">{date}</p>
-            <p className="text-[#fcfcfc]">{getMonthName()}</p>
+            <p className="text-[#fcfcfc]">{month}</p>
           </div>
           <p className="text-[#fcfcfc]">{year}</p>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Info
-
-// import React from 'react';
-
-// const Info = ({ author, publishedDate, authorImage }) => {
-//   // Convert published date to readable format
-//   const getFormattedDate = (dateString) => {
-//     const date = new Date(dateString);
-//     const day = date.getDate();
-//     const year = date.getFullYear();
-//     const monthNames = [
-//       "January",
-//       "February",
-//       "March",
-//       "April",
-//       "May",
-//       "June",
-//       "July",
-//       "August",
-//       "September",
-//       "October",
-//       "November",
-//       "December",
-//     ];
-//     const month = monthNames[date.getMonth()];
-//     return `${day} ${month} ${year}`;
-//   };
-
-//   return (
-//     <section className="w-full">
-//       <div className="w-10/12 mx-auto flex items-start justify-start gap-4 text-[#fcfcfc] dark:text-[#fcfcfc]">
-//         <div>
-//           <img 
-//             src={authorImage} 
-//             alt={`${author}'s avatar`} 
-//             className="rounded-full w-20 bg-[#d9d9d9]" 
-//           />
-//         </div>
-//         <div>
-//           <h3 className="font-inter font-semibold text-xl text-black dark:text-white">
-//             {author}
-//           </h3>
-//           <div className="flex text-inter gap-3">
-//             <p className="text-black dark:text-white">{getFormattedDate(publishedDate)}</p>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Info;
-
+export default Info;
