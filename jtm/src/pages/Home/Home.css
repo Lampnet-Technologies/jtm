@@ -444,7 +444,8 @@ height: 90vh;
   max-width: 100%;
   height: auto;
 }
-.wots p {
+.wots .wot-text {
+  background-color: #f0ce91 !important;
   color: #000;
   border-radius: 5px;
   font-weight: 400;
@@ -494,7 +495,7 @@ height: 90vh;
   height: 300px;
   margin-bottom: 20px;
 }
-.wots p {
+.wots .wot-text {
   background-color: #f0ce91;
   padding: 20px 20px 0;
   margin: 0;
@@ -767,7 +768,7 @@ height: 90vh;
   .splide__arrow--next {
     margin-left: 250px;
   }
-  .wots p {
+  .wots .wot-text {
     background-color: #f0ce91;
     padding: 40px 20px 0;
     margin: 0;
