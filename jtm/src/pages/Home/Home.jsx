@@ -176,7 +176,6 @@ export default function Home() {
       setModal(false);
     }, 500);
   };
-  
 
   return (
     <div>
@@ -220,7 +219,7 @@ export default function Home() {
         </div>
         <div className="background-bottom">
           <div className="express">
-            <p>Our Expressions</p>
+            <p className="expression-header">Our Expressions</p>
             <Link
               className="express-link"
               to="https://the-jesus-talks-radio.mixlr.com/"
@@ -288,7 +287,7 @@ export default function Home() {
           {modal && (
             <div className="overlay-email-input">
               <div className="subscribe">
-              {modal && <h3 onClick={closeOverlay}>X</h3>}
+                {modal && <h3 onClick={closeOverlay}>X</h3>}
                 <form onSubmit={handleSubmit}>
                   <div>
                     <label>Subscribe to our Newsletter</label>
@@ -731,17 +730,20 @@ export default function Home() {
                   <div className="wots-left">
                     <img src={image9} alt="person" />
                     <p>
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s, when an unknown printer took a
-                      galley of type and scrambled it to{" "}
+                      I loved that the team was proactive I didn’t have to think
+                      on their behalf. I simply shared my vision, and they ran
+                      with it from start to finish. I was particularly impressed
+                      by how much they accomplished with so little.
                     </p>
                   </div>
                   <div className="wots-right">
                     <img src={image10} alt="" />
                     <p>
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s, when an unknown printer took a
-                      galley of type and scrambled it to
+                      The Jesus Talks Media feels like family to me. I’ve
+                      admired their passion from day one, and it hasn’t
+                      diminished in the slightest—if anything, it’s grown even
+                      stronger! Working with them was such a seamless and
+                      inspiring experience. 
                     </p>
                   </div>
                 </div>
@@ -751,9 +753,12 @@ export default function Home() {
                   <div className="wots-left">
                     <img src={image9} alt="person" />
                     <p>
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s, when an unknown printer took a
-                      galley of type and scrambled it to{" "}
+                    I didn’t even have to lay out a
+                      vision because they took so much initiative and approached
+                      everything with brilliance—it left me in awe! I truly love
+                      what they’re doing and wholeheartedly believe in it. If
+                      you’re not already on board, now’s the time to join the
+                      movement. They’re onto something big!
                     </p>
                   </div>
                   <div className="wots-right">

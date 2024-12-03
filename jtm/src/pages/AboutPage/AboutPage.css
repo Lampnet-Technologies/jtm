@@ -189,13 +189,13 @@ padding: 10px 8px;
   }
   /* FAQ */
 .about .faq{
-    width: 70%;
+    width: 50%;
 }
 
 .faq .faq-question{
   padding: 5px;
 }
 .faq .faq-question{
-  font-size: 25px;
+  font-size: 20px;
 }
 }

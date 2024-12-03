@@ -12,8 +12,8 @@ const BlogText = () => {
   }, []);
 
   return (
-    <section className="w-full bg-black text-[#fcfcfc]">
-      <div className="w-10/12 mx-auto space-y-8">
+    <section className="">
+      <div className="">
         {bodyText?.map((block, index) => (
           <p
             key={index}

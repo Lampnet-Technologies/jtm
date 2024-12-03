@@ -18,16 +18,21 @@ body {
   gap: 10px;
   margin-top: 20px;
 }
+.author-details{
+  display: flex;
+  gap: 10px;
+}
 .author-img {
   width: 80px;
-  border-radius: 500px;
+  border-radius: 500px !important;
   background-size: cover;
 }
 .blog-date {
-  margin-top: -20px;
+  margin-top: -10px;
 }
-.blog-date p {
-  line-height: 10px;
+.blog-date p, h3 {
+  margin-bottom: -3px;
+  font-size: 16px !important;
 }
 .blog-social {
   margin-top: 20px;

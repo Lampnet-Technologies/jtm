@@ -130,7 +130,7 @@ export default function Footer() {
           </div>
           <div className="footer-socials">
             <div className="email">
-              <p><FaEnvelope/> thejesustalksmedia@gmail.com</p>
+              <Link className="email-link" to='mailTo:thejesustalksmedia@gmail.com'><FaEnvelope/> thejesustalksmedia@gmail.com</Link>
             </div>
             <div className="social-icons">
               <div className="icons">
