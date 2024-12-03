@@ -74,7 +74,7 @@ const BlogPost = () => {
         const readingTime = calculateReadingTime(post.body);
 
         // Format the date
-        const formattedDate = new Date(post.publishedAt).toLocaleDateString();
+        const formattedDate = new Date(post.datePublished).toLocaleDateString();
 
         return (
           <Link 
