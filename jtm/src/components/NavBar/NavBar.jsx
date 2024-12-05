@@ -60,11 +60,11 @@ export default function NavBar() {
                       Consulting and Training
                       </Link>
                     </li>
-                    <li onClick={() => { handleLinkClick(); handleClose(); }}>
+                    {/* <li onClick={() => { handleLinkClick(); handleClose(); }}>
                       <Link className="links" to="/services">
                       Content Creation Service
                       </Link>
-                    </li>
+                    </li> */}
                     <li onClick={() => { handleLinkClick(); handleClose(); }}>
                       <Link className="links" to="/services">
                       Digital Media Services
@@ -139,11 +139,11 @@ export default function NavBar() {
                       Consulting and Training
                       </Link>
                   </li>
-                  <li onClick={handleLinkClick}>
+                  {/* <li onClick={handleLinkClick}>
                   <Link className="links" to="/services">
                       Content Creation Service
                       </Link>
-                  </li>
+                  </li> */}
                   <li onClick={handleLinkClick}>
                   <Link className="links" to="/services">
                       International Outreach
