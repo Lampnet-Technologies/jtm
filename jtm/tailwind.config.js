@@ -1,4 +1,4 @@
-module.exports = {
+export default  {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}", // Adjust paths to include only files where Tailwind is needed
     "./src/pages/Services/*.jsx",
