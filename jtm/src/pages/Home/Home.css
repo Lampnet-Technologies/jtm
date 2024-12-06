@@ -86,21 +86,21 @@ h3 {
 .background-right {
   display: block;
 }
-.background-right img{
+.background-right img {
   width: 100%;
   height: 90vh;
   position: relative;
   background-size: cover;
 }
-.right-overlay{
-position: absolute;
-background-color: rgba(0, 0, 0, 0.6);
-width: 100%;
-top: 72px;
-height: 90vh;
+.right-overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  top: 72px;
+  height: 90vh;
 }
 .right-overlay-content {
-  padding: 270px 30px ;
+  padding: 270px 30px;
 }
 .right-overlay-content h2 {
   font-size: 32px;
@@ -121,13 +121,13 @@ height: 90vh;
   border: 2px solid #fabc52;
   color: white;
 }
-.right-overlay-content button:hover .bg-btn{
+.right-overlay-content button:hover .bg-btn {
   color: #fabc52;
 }
 .right-overlay-content .bg-btn {
   text-decoration: none;
   color: black;
-  transition: .4s ease;
+  transition: 0.4s ease;
 }
 
 /* Know us */
@@ -171,7 +171,7 @@ height: 90vh;
   margin-bottom: 80px !important;
 }
 /* Yellow mail */
-.overlay-email-input{
+.overlay-email-input {
   position: absolute;
   top: 0;
   width: 100%;
@@ -179,7 +179,7 @@ height: 90vh;
   height: 100vh;
   z-index: 9999;
 }
-.overlay-email-input h3{
+.overlay-email-input h3 {
   position: absolute;
   right: 20px;
   cursor: pointer;
@@ -189,21 +189,21 @@ height: 90vh;
   width: 30px;
   text-align: center;
 }
-.overlay-email-input .subscribe{
+.overlay-email-input .subscribe {
   background-color: black;
   width: 80%;
   height: 300px;
   margin: 220px auto;
   position: relative;
 }
-.overlay-email-input form{
+.overlay-email-input form {
   padding-top: 90px;
   margin: 50px;
 }
-.overlay-email-input input{
+.overlay-email-input input {
   width: 90%;
 }
-.overlay-email-input button{
+.overlay-email-input button {
   margin-top: 20px;
   width: 99%;
   background-color: #fabc52;
@@ -322,6 +322,48 @@ height: 90vh;
   text-decoration: none;
   color: black;
 }
+.social-media-right {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin-top: 40px;
+}
+.profile-pic {
+  width: 100%;
+}
+.social-media-right-icons {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.media-right-icon {
+  position: absolute;
+  width: 200px !important;
+}
+.facebook-icon {
+  top: -60px ;
+  left: -90px;
+  transform: translateX(0%);
+}
+.youtube-icon {
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.twitter-icon {
+  top: -60px;
+  right: -80px;
+}
+.tiktok-icon {
+  top: 100px;
+  left: -80px;
+}
+.instagram-icon {
+  top: 100px;
+  right: -80px;
+}
 
 /* Youtube Section */
 .youtube {
@@ -361,12 +403,12 @@ height: 90vh;
   padding: 8px 20px;
   text-align: center;
   border-radius: 40px;
-  transition: 0.3s ease;
+  transition: 0.4s ease;
   font-size: 20px;
 }
-.youtube button:hover {
-  background-color: #969191;
-}
+/* .youtube button:hover {
+  
+} */
 .youtube .link-btn2,
 .link-btn1 {
   text-decoration: none;
@@ -415,6 +457,30 @@ height: 90vh;
   text-decoration: underline;
   color: blue;
 }
+/* social-platform */
+.social-platform {
+  position: relative;
+}
+.social-platform .connect-bg {
+  width: 100%;
+  object-fit: cover;
+}
+.social-platform-icons {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  top: -140px;
+  justify-content: center;
+}
+.social-platform-icons img {
+  width: 20px;
+}
+.social-platform-icons .social-icon-link {
+  transition: 0.4s ease;
+}
+.social-platform-icons .social-icon-link:hover {
+  transform: translateY(-7px);
+}
 /* Word on the street */
 .wots {
   width: 80%;
@@ -432,6 +498,11 @@ height: 90vh;
   align-items: center;
 }
 
+.splide__pagination__page {
+  display: flex !important;
+  gap: 80px !important;
+  margin-top: -70px;
+}
 .wots-left,
 .wots-right {
   width: 100%;
@@ -452,28 +523,35 @@ height: 90vh;
   text-align: left;
   padding: 10px !important;
 }
+.wot-name {
+  border-radius: 8px;
+  border: 1px solid #db2a6b;
+  width: 30%;
+  padding: 8px;
+  text-align: center;
+}
 
 /* Additional styles for larger screens */
 @media (min-width: 600px) {
   /* Background right */
-  .right-overlay{
+  .right-overlay {
     height: 92.4vh;
-    }
-    .right-overlay-content {
-      padding: 350px 30px ;
-    }
-    .right-overlay-content h2{
-      font-size: 50px !important;
-    }
-    .right-overlay-content p{
-      font-size: 30px;
-      width: 70%;
-    }
+  }
+  .right-overlay-content {
+    padding: 350px 30px;
+  }
+  .right-overlay-content h2 {
+    font-size: 50px !important;
+  }
+  .right-overlay-content p {
+    font-size: 30px;
+    width: 70%;
+  }
 
-    /* Subscribe overlay*/
-    .overlay-email-input label{
-      font-size: 25px;
-    }
+  /* Subscribe overlay*/
+  .overlay-email-input label {
+    font-size: 25px;
+  }
   .splide1 {
     flex-direction: row;
     justify-content: space-between;
@@ -500,6 +578,7 @@ height: 90vh;
   padding: 20px 20px 0;
   margin: 0;
 }
+
 .splide__pagination__page.is-active {
   background-color: #fabc52 !important;
 }
@@ -521,9 +600,8 @@ height: 90vh;
   .background-right {
     width: 50%;
     display: block;
-  
   }
-  .right-overlay{
+  .right-overlay {
     display: none;
   }
   .background-left {
@@ -572,10 +650,10 @@ height: 90vh;
   }
 
   /* Yellow mail */
-  .overlay-email-input .subscribe{
+  .overlay-email-input .subscribe {
     width: 40%;
   }
-  .overlay-email-input input{
+  .overlay-email-input input {
     width: 90%;
   }
   .yellow-mail-content {
@@ -658,12 +736,18 @@ height: 90vh;
     font-size: 20px !important;
     margin: 20px auto;
   }
-
-  .social-media-right img {
-    position: relative;
-    top: 50px;
-  }
-
+  
+.social-media-right {
+  width: 50%;
+}
+.media-right-icon{
+  width: 300px !important;
+  height: 150px;
+  object-fit: cover;
+}
+.youtube-icon{
+  top: -270px !important;
+}
   /* Youtube */
   .youtube button {
     padding: 8px 25px;
@@ -723,6 +807,17 @@ height: 90vh;
   .right2-text,
   .right3-text {
     width: 80%;
+  }
+  /* Social Platform*/
+  .social-platform img {
+    height: 700px;
+  }
+  .social-platform-icons {
+    top: -400px;
+  }
+  .social-platform-icons img {
+    width: 50px;
+    height: 50px;
   }
   /* Word on the street */
   .wots-content {

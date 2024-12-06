@@ -6,8 +6,8 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import Footer from "../../components/Footer/Footer";
-import 'aos/dist/aos.css';
-import AOS from 'aos';
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 export default function Featured() {
   const [email, setEmail] = useState("");
@@ -85,32 +85,32 @@ export default function Featured() {
         "You can promote your event through our press release and social media promotion services. We’ll help you craft a compelling press release and distribute it across our platforms, ensuring your event reaches the right audience.",
     },
     {
-        question: " How do your social media promotion services work?",
-        answer:
-          "You can promote your event through our press release and social media promotion services. We’ll help you craft a compelling press release and distribute it across our platforms, ensuring your event reaches the right audience.",
-      },
-      {
-        question: " What is the “Faith-God-Life Podcast”?",
-        answer:
-          "You can promote your event through our press release and social media promotion services. We’ll help you craft a compelling press release and distribute it across our platforms, ensuring your event reaches the right audience.",
-      },
-      {
-        question: " How can I stay updated with The Jesus Talks Media?",
-        answer:
-          "You can promote your event through our press release and social media promotion services. We’ll help you craft a compelling press release and distribute it across our platforms, ensuring your event reaches the right audience.",
-      },
+      question: " How do your social media promotion services work?",
+      answer:
+        "You can promote your event through our press release and social media promotion services. We’ll help you craft a compelling press release and distribute it across our platforms, ensuring your event reaches the right audience.",
+    },
+    {
+      question: " What is the “Faith-God-Life Podcast”?",
+      answer:
+        "You can promote your event through our press release and social media promotion services. We’ll help you craft a compelling press release and distribute it across our platforms, ensuring your event reaches the right audience.",
+    },
+    {
+      question: " How can I stay updated with The Jesus Talks Media?",
+      answer:
+        "You can promote your event through our press release and social media promotion services. We’ll help you craft a compelling press release and distribute it across our platforms, ensuring your event reaches the right audience.",
+    },
   ];
 
   const toggleAnswer = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-    //AOS
-    useEffect(() => {
-      AOS.init({
-        duration: 1000, 
-      });
-    }, []);
+  //AOS
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
 
   return (
     <div>
@@ -122,22 +122,28 @@ export default function Featured() {
           <section>
             <h2 className="brand-text">Adverts and Promotions</h2>
             <div className="advert">
-              <div className="advert-left" >
+              <div className="advert-left">
                 <p data-aos="fade-right" data-aos-duration="1000">
                   Effective advertising and promotional strategies are crucial
                   for capturing your audience's attention and driving
                   engagement.
                 </p>
                 <p data-aos="fade-right" data-aos-duration="1500">
-                  Go Scholar designs and implements creative and strategic
-                  advertising campaigns that enhance your brand’s visibility
-                  across various platforms. From crafting compelling copy to
-                  selecting the right media channels, we ensure your message
-                  reaches and resonates with your target audience. Start your
-                  promotional campaign with us!
+                  We exists to give visibility and accessibility of christian
+                  content in mainstream media by connecting creatives with
+                  audiences through our platforms also known as our expressions
+                </p>
+                <p data-aos="fade-right" data-aos-duration="2000">
+                  Reach out to us to give your brand the visibility it truly
+                  deserves through our expressions such as -  The Jesus talks
+                  radio, our youtube, yellow blog, yellow mail and life podcast
                 </p>
               </div>
-              <div className="advert-right" data-aos="fade-left" data-aos-duration="1500">
+              <div
+                className="advert-right"
+                data-aos="fade-left"
+                data-aos-duration="1500"
+              >
                 <img src={advertImage} alt="advert image" />
               </div>
             </div>
@@ -221,7 +227,7 @@ export default function Featured() {
           </section>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

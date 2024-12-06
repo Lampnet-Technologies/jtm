@@ -16,7 +16,7 @@ const Services = () => {
       <ServiceHero/>
       <Adverts/>
       <Consulting/>
-      <DigitalService/>
+      {/* <DigitalService/> */}
       {/* <ContentCreation/> */}
       <Educational/>
       <Event/>
