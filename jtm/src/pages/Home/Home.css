@@ -323,46 +323,10 @@ h3 {
   color: black;
 }
 .social-media-right {
-  position: relative;
+  margin-top: 30px;
+}
+.social-media-right img {
   width: 100%;
-  display: inline-block;
-  text-align: center;
-  margin-top: 40px;
-}
-.profile-pic {
-  width: 100%;
-}
-.social-media-right-icons {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.media-right-icon {
-  position: absolute;
-  width: 200px !important;
-}
-.facebook-icon {
-  top: -60px ;
-  left: -90px;
-  transform: translateX(0%);
-}
-.youtube-icon {
-  top: -200px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.twitter-icon {
-  top: -60px;
-  right: -80px;
-}
-.tiktok-icon {
-  top: 100px;
-  left: -80px;
-}
-.instagram-icon {
-  top: 100px;
-  right: -80px;
 }
 
 /* Youtube Section */
@@ -481,6 +445,7 @@ h3 {
 .social-platform-icons .social-icon-link:hover {
   transform: translateY(-7px);
 }
+
 /* Word on the street */
 .wots {
   width: 80%;
@@ -501,7 +466,10 @@ h3 {
 .splide__pagination__page {
   display: flex !important;
   gap: 80px !important;
-  margin-top: -70px;
+  margin-top: 30px;
+}
+.splide__arrow {
+  display: none !important;
 }
 .wots-left,
 .wots-right {
@@ -736,18 +704,19 @@ h3 {
     font-size: 20px !important;
     margin: 20px auto;
   }
-  
-.social-media-right {
-  width: 50%;
-}
-.media-right-icon{
-  width: 300px !important;
-  height: 150px;
-  object-fit: cover;
-}
-.youtube-icon{
-  top: -270px !important;
-}
+
+  .social-media-right {
+    width: 50%;
+    margin-top: 0;
+  }
+  .media-right-icon {
+    width: 300px !important;
+    height: 150px;
+    object-fit: cover;
+  }
+  .youtube-icon {
+    top: -270px !important;
+  }
   /* Youtube */
   .youtube button {
     padding: 8px 25px;
@@ -845,15 +814,16 @@ h3 {
   }
   .splide__pagination__page {
     position: relative;
-    top: -20px;
+    top: -55px;
   }
   .splide__arrow {
     position: absolute;
     top: 410px;
-    left: 40%;
+    left: 38%;
     transform: translateX(-50%);
     cursor: pointer;
     z-index: 10;
+    display: flex !important;
   }
 
   .splide__arrow--prev {

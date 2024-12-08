@@ -5,13 +5,13 @@ import image2 from "../../../public/assets/images/know-us.png";
 import image3 from "../../../public/assets/images/email.gif";
 import image4 from "../../../public/assets/images/radio-picture.png";
 import image5 from "../../../public/assets/images/social-media-picture.png";
-import connect from "../../../public/assets/images/connect.png";
-import social from "../../../public/assets/images/social.png";
-import instagram from "../../../public/assets/images/instagram.png";
-import youtube from "../../../public/assets/images/youtube.png";
-import twitter from "../../../public/assets/images/twitter.png";
-import facebook from "../../../public/assets/images/facebook.png";
-import tiktok from "../../../public/assets/images/tiktok.png";
+import connect from "../../../public/assets/images/connect.gif";
+// import social from "../../../public/assets/images/social.png";
+// import instagram from "../../../public/assets/images/instagram.png";
+// import youtube from "../../../public/assets/images/youtube.png";
+// import twitter from "../../../public/assets/images/twitter.png";
+// import facebook from "../../../public/assets/images/facebook.png";
+// import tiktok from "../../../public/assets/images/tiktok.png";
 import facebookIcon from "../../../public/assets/images/facebook-icon.png";
 import tiktoIcon from "../../../public/assets/images/tiktok-icon.png";
 import instagramIcon from "../../../public/assets/images/instagram-icon.png";
@@ -452,26 +452,21 @@ export default function Home() {
               </Link>
             </button>
           </div>
-
-          {/* data-aos="fade-left"
-          data-aos-duration="1500" */}
-          <div className="social-media-right">
-            <img src={social} className="profile-pic" alt="image5" />
-            <div className="social-media-right-icons">
-              <img src={facebook} className="facebook-icon media-right-icon" alt="" />
-              <img src={youtube} className="youtube-icon media-right-icon" alt="" />
-              <img src={twitter} className="twitter-icon media-right-icon" alt="" />
-              <img src={tiktok} className="tiktok-icon media-right-icon" alt="" />
-              <img src={instagram} className="instagram-icon media-right-icon" alt="" />
-            </div>
+          <div
+            className="social-media-right"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
+            <img src={image5} className="profile-pic" alt="image5" />
           </div>
         </section>
+
         <section className="youtube">
           <div className="youtube-up">
             <h3 data-aos="fade-up" data-aos-duration="1000">
               Our Youtube
             </h3>
-            <p data-aos="fade-rught" data-aos-duration="1500">
+            <p data-aos="fade-right" data-aos-duration="1500">
               We are here to see all men rooted deeply in the love and knowledge
               of Christ Jesus by experiencing the message of Christ Jesus
               through our captivatving visual content
@@ -574,6 +569,7 @@ export default function Home() {
             </Modal>
           </div>
         </section>
+
         <section className="social-media podcast2">
           <div className="social-media-left">
             <h3 data-aos="fade-right" data-aos-duration="1000">
@@ -615,6 +611,7 @@ export default function Home() {
             <img src={image6} alt="image5" />
           </div>
         </section>
+
         <section className="yellow-blog">
           <h3 data-aos="fade-right" data-aos-duration="1000">
             <span ref={pl} />
@@ -784,6 +781,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
+
         <section className="wots">
           <h3>Word on the street</h3>
           <div className="wots-content">
