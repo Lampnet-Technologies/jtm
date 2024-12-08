@@ -91,11 +91,12 @@ export default function Footer() {
                     Consulting and Training
                   </Link>
                 </li>
-                <li>
+                
+                {/* <li>
                   <Link className="link" to="/services">
                     Content Creation Service
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link className="link" to="/services">
                     Digital Media Services
