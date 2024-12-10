@@ -54,7 +54,7 @@ const Adverts = () => {
               header="Advertising and Sponsorship"
               paragraph="Grow your brand's visibility and reach your target audience through our diverse advertising mediums such as our radio, TV, podcasts, blogs, newsletters and sponsorship of our shows, segments and events"
               button="Request Service"
-            />
+            /> 
           </div>
 
           {/* Main div containing the two separate lists */}

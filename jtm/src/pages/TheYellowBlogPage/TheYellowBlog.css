@@ -68,6 +68,10 @@ body {
 }
 .author-text h3 {
   color: #db2a6b;
+  font-size: 15px !important;
+}
+.author-text p{
+  font-size: 15px !important;
 }
 
 @media screen and (min-width: 1120px) {

@@ -91,11 +91,12 @@ export default function Footer() {
                     Consulting and Training
                   </Link>
                 </li>
-                <li>
+                
+                {/* <li>
                   <Link className="link" to="/services">
                     Content Creation Service
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link className="link" to="/services">
                     Digital Media Services
@@ -130,7 +131,7 @@ export default function Footer() {
           </div>
           <div className="footer-socials">
             <div className="email">
-              <p><FaEnvelope/> thejesustalksmedia@gmail.com</p>
+              <Link className="email-link" to='mailTo:thejesustalksmedia@gmail.com'><FaEnvelope/> thejesustalksmedia@gmail.com</Link>
             </div>
             <div className="social-icons">
               <div className="icons">

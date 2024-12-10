@@ -7,6 +7,12 @@
     align-items: center;
     z-index: 9999;
 }
+.logo-nav{
+    display: flex; 
+    align-items: center;
+    gap: 40px;
+    flex-direction: row-reverse;
+}
 .desktop{
     display: none;
 }
@@ -62,7 +68,7 @@ transition: .3s ease;
     .hamburger-menu {
         display: none;
     }
-    mobile{
+    .mobile{
         display: none;
     }
     .desktop{

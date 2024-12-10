@@ -2,14 +2,21 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import image from "../../../public/assets/images/bg-image.png";
 import image2 from "../../../public/assets/images/know-us.png";
-import image3 from "../../../public/assets/images/mail-picture.png";
+import image3 from "../../../public/assets/images/email.gif";
 import image4 from "../../../public/assets/images/radio-picture.png";
 import image5 from "../../../public/assets/images/social-media-picture.png";
+import connect from "../../../public/assets/images/connect.gif";
+// import social from "../../../public/assets/images/social.png";
 // import instagram from "../../../public/assets/images/instagram.png";
 // import youtube from "../../../public/assets/images/youtube.png";
 // import twitter from "../../../public/assets/images/twitter.png";
 // import facebook from "../../../public/assets/images/facebook.png";
 // import tiktok from "../../../public/assets/images/tiktok.png";
+import facebookIcon from "../../../public/assets/images/facebook-icon.png";
+import tiktoIcon from "../../../public/assets/images/tiktok-icon.png";
+import instagramIcon from "../../../public/assets/images/instagram-icon.png";
+import xIcon from "../../../public/assets/images/x.png";
+import youtubeIcon from "../../../public/assets/images/youtube-icon.png";
 import image6 from "../../../public/assets/images/podcast-picture.png";
 import image7 from "../../../public/assets/images/video.png";
 import image8 from "../../../public/assets/images/yellow-blog.png";
@@ -24,7 +31,7 @@ import radio from "../../../public/assets/images/radio.png";
 import podcast from "../../../public/assets/images/podcast.png";
 import tv from "../../../public/assets/images/tv.png";
 import vector from "../../../public/assets/images/Vector.png";
-import email from "../../../public/assets/images/email.png";
+// import email from "../../../public/assets/images/email.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import Modal from "react-modal";
@@ -176,7 +183,6 @@ export default function Home() {
       setModal(false);
     }, 500);
   };
-  
 
   return (
     <div>
@@ -220,7 +226,7 @@ export default function Home() {
         </div>
         <div className="background-bottom">
           <div className="express">
-            <p>Our Expressions</p>
+            <p className="expression-header">Our Expressions</p>
             <Link
               className="express-link"
               to="https://the-jesus-talks-radio.mixlr.com/"
@@ -270,12 +276,17 @@ export default function Home() {
             <h3>
               <span ref={el} />
             </h3>
-            <p data-aos="fade-left" data-aos-duration="1500">
+            <p data-aos="fade-left" data-aos-duration="1000">
               We are a Christian Media Company driven by a profound vision: to
               anchor individuals deeply in their faith through the
               transformative power of media; and our different expressions which
               include: Jesus talks radio, Jesus talks Tv, The yellow blog and
               The yellow email
+            </p>
+            <p data-aos="fade-left" data-aos-duration="2000">
+              Through our platform, we offer meaningful media and create a
+              community where believers and creatives can explore and express
+              their faith in diverse, impactful ways.
             </p>
             <button data-aos="fade-left" data-aos-duration="2500">
               <Link className="bg-btn" to="/about">
@@ -288,7 +299,7 @@ export default function Home() {
           {modal && (
             <div className="overlay-email-input">
               <div className="subscribe">
-              {modal && <h3 onClick={closeOverlay}>X</h3>}
+                {modal && <h3 onClick={closeOverlay}>X</h3>}
                 <form onSubmit={handleSubmit}>
                   <div>
                     <label>Subscribe to our Newsletter</label>
@@ -312,7 +323,7 @@ export default function Home() {
               data-aos="fade-left"
               data-aos-duration="1500"
             >
-              <img src={image3} alt="image" />
+              <img src={image3} alt="" />
             </div>
             <div className="yellow-mail-left">
               <h3 data-aos="fade-right" data-aos-duration="1000">
@@ -441,21 +452,21 @@ export default function Home() {
               </Link>
             </button>
           </div>
-
           <div
             className="social-media-right"
             data-aos="fade-left"
             data-aos-duration="1500"
           >
-            <img src={image5} alt="image5" />
+            <img src={image5} className="profile-pic" alt="image5" />
           </div>
         </section>
+
         <section className="youtube">
           <div className="youtube-up">
             <h3 data-aos="fade-up" data-aos-duration="1000">
               Our Youtube
             </h3>
-            <p data-aos="fade-rught" data-aos-duration="1500">
+            <p data-aos="fade-right" data-aos-duration="1500">
               We are here to see all men rooted deeply in the love and knowledge
               of Christ Jesus by experiencing the message of Christ Jesus
               through our captivatving visual content
@@ -558,6 +569,7 @@ export default function Home() {
             </Modal>
           </div>
         </section>
+
         <section className="social-media podcast2">
           <div className="social-media-left">
             <h3 data-aos="fade-right" data-aos-duration="1000">
@@ -599,6 +611,7 @@ export default function Home() {
             <img src={image6} alt="image5" />
           </div>
         </section>
+
         <section className="yellow-blog">
           <h3 data-aos="fade-right" data-aos-duration="1000">
             <span ref={pl} />
@@ -722,6 +735,53 @@ export default function Home() {
             See all
           </Link>
         </section>
+
+        <div className="social-platform">
+          <img src={connect} alt="" className="connect-bg" />
+          <div className="social-platform-icons">
+            <Link className="social-icon-link" to="#">
+              <img
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                src={facebookIcon}
+                alt="facebook"
+              />
+            </Link>
+            <Link className="social-icon-link" to="#">
+              <img
+                data-aos="fade-down"
+                data-aos-duration="2000"
+                src={tiktoIcon}
+                alt="tiktok"
+              />
+            </Link>
+            <Link className="social-icon-link" to="#">
+              <img
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                src={instagramIcon}
+                alt="instagram"
+              />
+            </Link>
+            <Link className="social-icon-link" to="#">
+              <img
+                data-aos="fade-down"
+                data-aos-duration="4000"
+                src={xIcon}
+                alt="x"
+              />
+            </Link>
+            <Link className="social-icon-link" to="#">
+              <img
+                data-aos="fade-up"
+                data-aos-duration="5000"
+                src={youtubeIcon}
+                alt="youtube"
+              />
+            </Link>
+          </div>
+        </div>
+
         <section className="wots">
           <h3>Word on the street</h3>
           <div className="wots-content">
@@ -730,19 +790,29 @@ export default function Home() {
                 <div className="splide1">
                   <div className="wots-left">
                     <img src={image9} alt="person" />
-                    <p>
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s, when an unknown printer took a
-                      galley of type and scrambled it to{" "}
-                    </p>
+                    <div className="wot-text">
+                      <p>
+                        I loved that the team was proactive I didn’t have to
+                        think on their behalf. I simply shared my vision, and
+                        they ran with it from start to finish. I was
+                        particularly impressed by how much they accomplished
+                        with so little.
+                      </p>
+                      <div className="wot-name">Tianney</div>
+                    </div>
                   </div>
                   <div className="wots-right">
                     <img src={image10} alt="" />
-                    <p>
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s, when an unknown printer took a
-                      galley of type and scrambled it to
-                    </p>
+                    <div className="wot-text">
+                      <p>
+                        The Jesus Talks Media feels like family to me. I’ve
+                        admired their passion from day one, and it hasn’t
+                        diminished in the slightest—if anything, it’s grown even
+                        stronger! Working with them was such a seamless and
+                        inspiring experience.
+                      </p>
+                      <div className="wot-name">Ademola</div>
+                    </div>
                   </div>
                 </div>
               </SplideSlide>
@@ -750,19 +820,31 @@ export default function Home() {
                 <div className="splide1">
                   <div className="wots-left">
                     <img src={image9} alt="person" />
-                    <p>
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s, when an unknown printer took a
-                      galley of type and scrambled it to{" "}
-                    </p>
+                    <div className="wot-text">
+                      <p>
+                        I didn’t even have to lay out a vision because they took
+                        so much initiative and approached everything with
+                        brilliance—it left me in awe! I truly love what they’re
+                        doing and wholeheartedly believe in it. If you’re not
+                        already on board, now’s the time to join the movement.
+                        They’re onto something big!
+                      </p>
+                      <div className="wot-name">Tianney</div>
+                    </div>
                   </div>
                   <div className="wots-right">
                     <img src={image10} alt="" />
-                    <p>
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s, when an unknown printer took a
-                      galley of type and scrambled it to
-                    </p>
+                    <div className="wot-text">
+                      <p>
+                        I didn’t even have to lay out a vision because they took
+                        so much initiative and approached everything with
+                        brilliance—it left me in awe! I truly love what they’re
+                        doing and wholeheartedly believe in it. If you’re not
+                        already on board, now’s the time to join the movement.
+                        They’re onto something big!
+                      </p>
+                      <div className="wot-name">Ademola</div>
+                    </div>
                   </div>
                 </div>
               </SplideSlide>
@@ -770,19 +852,25 @@ export default function Home() {
                 <div className="splide1">
                   <div className="wots-left">
                     <img src={image9} alt="person" />
-                    <p>
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s, when an unknown printer took a
-                      galley of type and scrambled it to{" "}
-                    </p>
+                    <div className="wot-text">
+                      <p>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s, when an unknown printer took a
+                        galley of type and scrambled it to{" "}
+                      </p>
+                      <div className="wot-name">Tianney</div>
+                    </div>
                   </div>
                   <div className="wots-right">
                     <img src={image10} alt="" />
-                    <p>
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s, when an unknown printer took a
-                      galley of type and scrambled it to
-                    </p>
+                    <div className="wot-text">
+                      <p>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s, when an unknown printer took a
+                        galley of type and scrambled it to
+                      </p>
+                      <div className="wot-name">Ademola</div>
+                    </div>
                   </div>
                 </div>
               </SplideSlide>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
-import logo from '../../../public/assets/images/jtm-logo.png';
+import logo from "../../../public/assets/images/jtm-logo.png";
 import { FaChevronDown } from "react-icons/fa";
 import Hamburger from "hamburger-react";
 
@@ -10,7 +10,7 @@ export default function NavBar() {
   const [toggle, setToggle] = useState(false);
 
   function handleClose() {
-    setToggle(prevClose => !prevClose);
+    setToggle((prevClose) => !prevClose);
   }
 
   function handleChange() {
@@ -29,18 +29,25 @@ export default function NavBar() {
     <div>
       <div className="nav">
         <div className="navbar">
+          <div className="logo-nav">
           <div className="logo">
-           <Link to='/'>
-           <img src={logo} alt="logo" />
-           </Link>
+            <Link to="/">
+              <img src={logo} alt="logo" />
+            </Link>
           </div>
           <div className="hamburger-menu">
             <Hamburger toggled={toggle} toggle={handleToggle} />
           </div>
+          </div>
           {toggle && (
             <div className="nav-link mobile">
               <ul className="nav--links">
-                <li onClick={() => { handleLinkClick(); handleClose(); }}>
+                <li
+                  onClick={() => {
+                    handleLinkClick();
+                    handleClose();
+                  }}
+                >
                   <Link className="links" to="/">
                     Home
                   </Link>
@@ -50,60 +57,110 @@ export default function NavBar() {
                 </li>
                 {show && (
                   <ul id="dropdown-services" className="dropdown">
-                    <li onClick={() => { handleLinkClick(); handleClose(); }}>
+                    <li
+                      onClick={() => {
+                        handleLinkClick();
+                        handleClose();
+                      }}
+                    >
                       <Link className="links" to="/services">
-                      Advertising and Sponsorship
+                        Advertising and Sponsorship
                       </Link>
                     </li>
-                    <li onClick={() => { handleLinkClick(); handleClose(); }}>
+                    <li
+                      onClick={() => {
+                        handleLinkClick();
+                        handleClose();
+                      }}
+                    >
                       <Link className="links" to="/services">
-                      Consulting and Training
+                        Consulting and Training
                       </Link>
                     </li>
-                    <li onClick={() => { handleLinkClick(); handleClose(); }}>
+                    {/* <li onClick={() => { handleLinkClick(); handleClose(); }}>
                       <Link className="links" to="/services">
                       Content Creation Service
                       </Link>
-                    </li>
-                    <li onClick={() => { handleLinkClick(); handleClose(); }}>
+                    </li> */}
+                    <li
+                      onClick={() => {
+                        handleLinkClick();
+                        handleClose();
+                      }}
+                    >
                       <Link className="links" to="/services">
-                      Digital Media Services
+                        Digital Media Services
                       </Link>
                     </li>
-                    <li onClick={() => { handleLinkClick(); handleClose(); }}>
+                    <li
+                      onClick={() => {
+                        handleLinkClick();
+                        handleClose();
+                      }}
+                    >
                       <Link className="links" to="/services">
-                      Educational Resources
+                        Educational Resources
                       </Link>
                     </li>
-                    <li onClick={() => { handleLinkClick(); handleClose(); }}>
+                    <li
+                      onClick={() => {
+                        handleLinkClick();
+                        handleClose();
+                      }}
+                    >
                       <Link className="links" to="/services">
-                      Event Management
+                        Event Management
                       </Link>
                     </li>
-                    <li onClick={() => { handleLinkClick(); handleClose(); }}>
+                    <li
+                      onClick={() => {
+                        handleLinkClick();
+                        handleClose();
+                      }}
+                    >
                       <Link className="links" to="/services">
-                      International Outreach
+                        International Outreach
                       </Link>
                     </li>
-                    <li onClick={() => { handleLinkClick(); handleClose(); }}>
+                    <li
+                      onClick={() => {
+                        handleLinkClick();
+                        handleClose();
+                      }}
+                    >
                       <Link className="links" to="/services">
-                      Merchandise and Product Development
+                        Merchandise and Product Development
                       </Link>
                     </li>
                   </ul>
                 )}
-                <li onClick={() => { handleLinkClick(); handleClose(); }}>
+                <li
+                  onClick={() => {
+                    handleLinkClick();
+                    handleClose();
+                  }}
+                >
                   <Link className="links" to="/about">
                     About Us
                   </Link>
                 </li>
-                <li onClick={() => { handleLinkClick(); handleClose(); }}>
+                <li
+                  onClick={() => {
+                    handleLinkClick();
+                    handleClose();
+                  }}
+                >
                   <Link className="links" to="/blog-posts">
                     Yellow Blog
                   </Link>
                 </li>
-                
-                <li onClick={() => { handleLinkClick(); handleClose(); }}>
+
+                <li
+                  onClick={() => {
+                    handleLinkClick();
+                    handleClose();
+                  }}
+                >
                   <Link className="links" to="/contact">
                     Contact Us
                   </Link>
@@ -125,41 +182,40 @@ export default function NavBar() {
               {show && (
                 <ul className="dropdown">
                   <li onClick={handleLinkClick}>
-                  <Link className="links" to="/services">
+                    <Link className="links" to="/services">
                       Advertising and Sponsorship
-                      </Link>
+                    </Link>
                   </li>
                   <li onClick={handleLinkClick}>
-                  <Link className="links" to="/services">
+                    <Link className="links" to="/services">
                       Educational Resources
-                      </Link>
+                    </Link>
                   </li>
                   <li onClick={handleLinkClick}>
-                  <Link className="links" to="/services">
+                    <Link className="links" to="/services">
                       Consulting and Training
-                      </Link>
+                    </Link>
                   </li>
-                  <li onClick={handleLinkClick}>
+                  {/* <li onClick={handleLinkClick}>
                   <Link className="links" to="/services">
                       Content Creation Service
                       </Link>
-                  </li>
+                  </li> */}
                   <li onClick={handleLinkClick}>
-                  <Link className="links" to="/services">
+                    <Link className="links" to="/services">
                       International Outreach
-                      </Link>
+                    </Link>
                   </li>
                   <li onClick={handleLinkClick}>
-                  <Link className="links" to="/services">
+                    <Link className="links" to="/services">
                       Event Management
-                      </Link>
+                    </Link>
                   </li>
                   <li onClick={handleLinkClick}>
-                  <Link className="links" to="/services">
+                    <Link className="links" to="/services">
                       Merchandise and Product Development
-                      </Link>
+                    </Link>
                   </li>
-                  
                 </ul>
               )}
               <li onClick={handleLinkClick}>
@@ -168,10 +224,10 @@ export default function NavBar() {
                 </Link>
               </li>
               <li onClick={handleLinkClick}>
-                  <Link className="links" to="/blog-posts">
-                    Yellow Blog
-                  </Link>
-                </li>
+                <Link className="links" to="/blog-posts">
+                  Yellow Blog
+                </Link>
+              </li>
               <li onClick={handleLinkClick}>
                 <Link className="links" to="/contact">
                   Contact Us
