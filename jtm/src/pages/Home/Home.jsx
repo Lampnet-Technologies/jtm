@@ -6,12 +6,6 @@ import image3 from "../../../public/assets/images/email.gif";
 import image4 from "../../../public/assets/images/radio-picture.png";
 import image5 from "../../../public/assets/images/social-media-picture.png";
 import connect from "../../../public/assets/images/connect.gif";
-// import social from "../../../public/assets/images/social.png";
-// import instagram from "../../../public/assets/images/instagram.png";
-// import youtube from "../../../public/assets/images/youtube.png";
-// import twitter from "../../../public/assets/images/twitter.png";
-// import facebook from "../../../public/assets/images/facebook.png";
-// import tiktok from "../../../public/assets/images/tiktok.png";
 import facebookIcon from "../../../public/assets/images/facebook-icon.png";
 import tiktoIcon from "../../../public/assets/images/tiktok-icon.png";
 import instagramIcon from "../../../public/assets/images/instagram-icon.png";
@@ -20,8 +14,8 @@ import youtubeIcon from "../../../public/assets/images/youtube-icon.png";
 import image6 from "../../../public/assets/images/podcast-picture.png";
 import image7 from "../../../public/assets/images/video.png";
 import image8 from "../../../public/assets/images/yellow-blog.png";
-import image9 from "../../../public/assets/images/person1.png";
-import image10 from "../../../public/assets/images/person2.png";
+import image9 from "../../../public/assets/images/person1.jpg";
+import image10 from "../../../public/assets/images/person2.jpg";
 import icon1 from "../../../public/assets/images/yellow-icon1.png";
 import icon2 from "../../../public/assets/images/yellow-icon2.png";
 import icon3 from "../../../public/assets/images/checkmark.png";
@@ -31,7 +25,6 @@ import radio from "../../../public/assets/images/radio.png";
 import podcast from "../../../public/assets/images/podcast.png";
 import tv from "../../../public/assets/images/tv.png";
 import vector from "../../../public/assets/images/Vector.png";
-// import email from "../../../public/assets/images/email.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import Modal from "react-modal";
@@ -96,7 +89,7 @@ export default function Home() {
 
   React.useEffect(() => {
     const typed = new Typed(cl.current, {
-      strings: ["The Jesus Talks Radio+"],
+      strings: ["The Jesus Talks Radio"],
       typeSpeed: 150,
       backSpeed: 100,
       loop: true,
@@ -191,11 +184,13 @@ export default function Home() {
           <div className="background-left">
             <div className="left-content">
               <h2 data-aos="fade-right" data-aos-duration="1000">
-                We promote gospel content
+                We transform how you connect with your audiences.
               </h2>
               <p data-aos="fade-right" data-aos-duration="1500">
-                We are here to promote your Christian contents through any
-                social media of your choice
+                Through our platforms, we provide promotion, marketing, and
+                spotlight opportunities for Christian artists, creatives, and
+                organizations, helping them share their stories and messages in
+                the most impactful and uplifting way.
               </p>
               <button data-aos="fade-right" data-aos-duration="2000">
                 <Link className="bg-btn" to="/featured">
@@ -209,11 +204,13 @@ export default function Home() {
             <div className="right-overlay">
               <div className="right-overlay-content">
                 <h2 data-aos="fade-right" data-aos-duration="1000">
-                  We promote gospel content
+                  We transform how you connect with your audiences.
                 </h2>
                 <p data-aos="fade-right" data-aos-duration="1500">
-                  We are here to promote your Christian contents through any
-                  social media of your choice
+                  Through our platforms, we provide promotion, marketing, and
+                  spotlight opportunities for Christian artists, creatives, and
+                  organizations, helping them share their stories and messages
+                  in the most impactful and uplifting way.
                 </p>
                 <button data-aos="fade-right" data-aos-duration="2000">
                   <Link className="bg-btn" to="/featured">
@@ -232,7 +229,7 @@ export default function Home() {
               to="https://the-jesus-talks-radio.mixlr.com/"
               target="_blank"
             >
-              <img src={radio} alt="" /> Jesus Talks Radio
+              <img src={radio} alt="" /> The Jesus Talks Radio
             </Link>
             <Link
               to="https://youtube.com/@thejesustalksmedia?si=rnmuozJ1pFo3Fszj"
@@ -246,7 +243,7 @@ export default function Home() {
               target="_blank"
               className="express-link"
             >
-              <img src={podcast} alt="" /> Life Podcast
+              <img src={podcast} alt="" /> Faith-God-Life Podcast
             </Link>
             <Link
               to='mailto:thejesustalksradio@gmail.com?subject=Your Subject&body=Your message body"'
@@ -352,8 +349,7 @@ export default function Home() {
               </div>
               <div className="yellow-mail-text">
                 <p>
-                  Get the most recent information about our shows, including
-                  when they air and how they are planned
+                Get exclusive updates about us--from behind-the-scenes insights into our projects to updates on what we’re currently working on and how we bring our ideas to life.
                 </p>
               </div>
             </div>
@@ -368,8 +364,7 @@ export default function Home() {
               </div>
               <div className="yellow-mail-text">
                 <p>
-                  Discover the juicy "behind the scenes" details from our
-                  conversations with the creatives you love
+                Explore inspiring conversations and playlists--featuring exclusive interviews with creatives, access to their stories, and curated playlists that reflect their journey.
                 </p>
               </div>
             </div>
@@ -384,8 +379,7 @@ export default function Home() {
               </div>
               <div className="yellow-mail-text">
                 <p>
-                  Discover the juicy "behind the scenes" details from our
-                  conversations with the creatives you love
+                Stay in the loop with Buzz--your go-to source for first-hand information about events, concerts, new music releases, book launches, Christian films, and all things happening in the Christian creative space.
                 </p>
               </div>
             </div>
@@ -582,7 +576,7 @@ export default function Home() {
             <div className="social-lists">
               <p data-aos="fade-right" data-aos-duration="1500">
                 <img src={icon3} alt="checkmark" />
-                Faith Struggles
+                Faith Journey not Faith struggles
               </p>
               <p data-aos="fade-right" data-aos-duration="2000">
                 <img src={icon3} alt="checkmark" />
@@ -771,7 +765,7 @@ export default function Home() {
                 alt="x"
               />
             </Link>
-            <Link className="social-icon-link" to="#">
+            <Link className="social-icon-link" to="https://www.youtube.com/@thejesustalksmedia" target="_blank">
               <img
                 data-aos="fade-up"
                 data-aos-duration="5000"
@@ -789,7 +783,7 @@ export default function Home() {
               <SplideSlide>
                 <div className="splide1">
                   <div className="wots-left">
-                    <img src={image9} alt="person" />
+                    <img src={image9} alt="Tianney" style={{objectFit:'cover'}} />
                     <div className="wot-text">
                       <p>
                         I loved that the team was proactive I didn’t have to
@@ -802,7 +796,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="wots-right">
-                    <img src={image10} alt="" />
+                    <img src={image10} alt="Ademola" style={{objectFit:'cover'}} />
                     <div className="wot-text">
                       <p>
                         The Jesus Talks Media feels like family to me. I’ve
@@ -816,7 +810,7 @@ export default function Home() {
                   </div>
                 </div>
               </SplideSlide>
-              <SplideSlide>
+              {/* <SplideSlide>
                 <div className="splide1">
                   <div className="wots-left">
                     <img src={image9} alt="person" />
@@ -847,33 +841,8 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-              </SplideSlide>
-              <SplideSlide>
-                <div className="splide1">
-                  <div className="wots-left">
-                    <img src={image9} alt="person" />
-                    <div className="wot-text">
-                      <p>
-                        Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s, when an unknown printer took a
-                        galley of type and scrambled it to{" "}
-                      </p>
-                      <div className="wot-name">Tianney</div>
-                    </div>
-                  </div>
-                  <div className="wots-right">
-                    <img src={image10} alt="" />
-                    <div className="wot-text">
-                      <p>
-                        Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s, when an unknown printer took a
-                        galley of type and scrambled it to
-                      </p>
-                      <div className="wot-name">Ademola</div>
-                    </div>
-                  </div>
-                </div>
-              </SplideSlide>
+              </SplideSlide> */}
+           
             </Splide>
           </div>
         </section>

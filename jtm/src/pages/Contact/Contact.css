@@ -88,6 +88,14 @@
 .contact-team-right img{
   width: 100%;
 }
+.contact-team-left h2{
+  font-size: 20px !important;
+  opacity: .9;
+}
+.contact-team-left p{
+  font-size: 14px !important;
+  color: rgb(189, 186, 186);
+}
 @media screen and (min-width: 1120px) {
   .contact-banner img {
     height: 90vh;

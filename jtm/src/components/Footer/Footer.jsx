@@ -92,11 +92,7 @@ export default function Footer() {
                   </Link>
                 </li>
                 
-                {/* <li>
-                  <Link className="link" to="/services">
-                    Content Creation Service
-                  </Link>
-                </li> */}
+                
                 <li>
                   <Link className="link" to="/services">
                     Digital Media Services
@@ -148,7 +144,7 @@ export default function Footer() {
          </div>
         </div>
         <div className="copyrights">
-          <p>© 2024 Jesus Talks Media. All Rights Reserved.</p>
+          <p>© 2024 The Jesus Talks Media. All Rights Reserved.</p>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import ImageProps from "./ImageProps";
 import BodyProps from "./BodyProps";
 import { buttons5 } from "./ButtonProps";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css";
 
 const Educational = () => {
   const image =
@@ -31,7 +31,7 @@ const Educational = () => {
           <div>
             <BodyProps
               header="Educational Resources"
-              paragraph="Nurture your faith and foster your spiritual growth with our comprehensive collection of Christian educational materials. We offer a range of resources designed to deepen understanding, encourage devotion, and support spiritual development for individuals, groups, and churches."
+              paragraph="Strengthen your faith and support your spiritual growth with our comprehensive collection of Christian educational materials. Our resources are thoughtfully designed to deepen understanding, inspire devotion, and nurture spiritual development for individuals, groups, and churches."
               button="Request Service"
             />
           </div>

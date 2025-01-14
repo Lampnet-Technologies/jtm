@@ -3,7 +3,7 @@ import ImageProps from "./ImageProps";
 import BodyProps from "./BodyProps";
 import { buttons2 } from "./ButtonProps";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css"; 
 
 const Consulting = () => {
   const image =
@@ -33,7 +33,7 @@ const Consulting = () => {
           <div>
             <BodyProps
               header="Consulting and Training"
-              paragraph="Empower your organization with cutting-edge media strategies and skills. Our expert consulting and training services are tailored for churches, ministries, and Christian organizations seeking to enhance their digital presence and impact in content creation, social media management, and audience engagement."
+              paragraph="Our consulting and training services are designed for creatives and Christian organizations, helping you to elevate your digital presence, master content creation, and effectively engage your audience."
               button="Request Service"
             />
           </div>

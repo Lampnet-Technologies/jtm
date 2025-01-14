@@ -203,8 +203,7 @@ export default function AboutPage() {
             <div className="banner-header">
               <h2 data-aos="zoom-in" data-aos-duration= '1000'>About Us</h2>
               <p data-aos="zoom-in" data-aos-duration= '1500'>
-                We exist to provide you with strategies and ways that will
-                elevate your brand without going to the extreme
+              We exist to bridge the gap between Christian content and broader audiences, fostering creativity and faith in every project we undertake.
               </p>
             </div>
           </div>

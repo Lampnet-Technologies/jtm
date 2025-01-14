@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import ImageProps from "./ImageProps";
 import BodyProps from "./BodyProps";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css";
 
 const InternationalOutreach = () => {
   const image =
@@ -11,8 +11,8 @@ const InternationalOutreach = () => {
   // Initialize AOS
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Duration of animations
-      once: false, // Set to false to allow repeated animations on scroll
+      duration: 1000, 
+      once: false, 
     });
   }, []);
 
@@ -27,7 +27,7 @@ const InternationalOutreach = () => {
           <div>
             <BodyProps
               header="International Outreach"
-              paragraph="Bring your message to life with our professional content creation services, such as video production, audio production, graphic design, and copywriting. We specialize in crafting compelling, faith-inspired media content for Christian organizations, artists, and events."
+              paragraph="Partner with us to create compelling, faith-inspired media content for your outreaches and events beyond Nigeria and Africa. Our services include video production, audio production, graphic design, and copywriting tailored to amplify your message and impact globally."
               button="Request Service"
             />
           </div>

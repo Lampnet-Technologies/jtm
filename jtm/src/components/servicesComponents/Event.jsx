@@ -3,7 +3,7 @@ import ImageProps from "./ImageProps";
 import BodyProps from "./BodyProps";
 import { buttons6 } from "./ButtonProps";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css"; 
 
 const Event = () => {
   const image =
@@ -20,8 +20,8 @@ const Event = () => {
   // Initialize AOS
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Duration of the animations
-      once: true, // Animate only once when the element first comes into view
+      duration: 1000,
+      once: true,
     });
   }, []);
 
@@ -30,7 +30,7 @@ const Event = () => {
       <div className="sections">
         {/* Left side (Image) */}
         <div
-          // className="w-11/12 mx-auto lg:w-1/2"
+   
           data-aos="fade-right"
         >
           <ImageProps img={image} />
@@ -39,13 +39,12 @@ const Event = () => {
         {/* Right texts */}
         <div
           className="event-content"
-          // className="flex flex-col w-11/12 mx-auto lg:w-1/2 gap-4 lg:gap-10"
           data-aos="fade-left"
         >
           <div>
             <BodyProps
               header="Event Coverage"
-              paragraph="Capture the spirit and impact of your Christian events with our professional coverage services. From intimate church gatherings to large-scale conferences, we bring your events to life for both attendees and those unable to be there in person."
+              paragraph="Create an enriching experience for in-person and online attendees with our professional coverage that captures the heart of your event—whether it’s an intimate gathering or a large-scale concert—ensuring participants leave with lasting and impactful memories."
               button="Request Service"
             />
           </div>
