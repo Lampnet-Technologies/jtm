@@ -65,7 +65,7 @@ body {
 }
 .list-btn-content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
 .service-btn {
@@ -113,7 +113,6 @@ body {
   margin: 30px auto;
 }
 .partner {
-  width: 340px;
   padding: 8px 20px;
   background-color: white;
   margin-bottom: 20px;
@@ -138,7 +137,6 @@ body {
 
 }
 .artists {
-  width: 340px;
   padding: 8px 20px;
   background-color: white;
   text-align: center;
@@ -161,7 +159,7 @@ body {
 .artist-image h4{
   font-size: 12px;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 1120px) {
   /* Hero section styling */
   .services .services-img {
     height: 90vh;
@@ -195,6 +193,9 @@ body {
   .list-btn {
     padding: 12px 5px;
   }
+  .list-btn-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
   /* Client */
   .clients-contents{
@@ -204,5 +205,9 @@ body {
   }
   .partner{
     margin: 0;
+    width: 340px;
+  }
+  .artists{
+    width: 340px;
   }
 }
