@@ -29,119 +29,135 @@ export default function Footer() {
       <div className="footer">
         <div className="footer-items">
           <div className="footer-logo">
-          <Link to='/'>
-           <img src={logo} alt="logo" />
-           </Link>
+            <Link to="/">
+              <img src={logo} alt="logo" />
+            </Link>
             <div className="subscribe">
               <form onSubmit={handleSubmit}>
-                <div>
-                  <label>Subscribe to our Newsletter</label><br />
+                  <label>Subscribe to our Newsletter</label>
+                <div className="input-field">
                   <input
                     type="email"
                     value={email}
-                    placeholder="your email"
+                    placeholder="Your email"
                     onChange={(e) => setEmail(e.target.value)}
                   />
-                <button type="submit">Send</button>
+                  <button type="submit">Send</button>
                 </div>
               </form>
               <ToastContainer />
             </div>
           </div>
-         <div className="footer-right">
-         <div className="footer-links">
-            <div className="first-link">
-              <ul>
-                <li>
-                  <Link className="link" to="/">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link className="link" to="/services">
-                    Services
-                  </Link>
-                </li>
-                <li>
-                  <Link className="link" to="/blog-posts">
-                    Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link className="link" to="/about">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link className="link" to="/contact">
-                    Contact Us
-                  </Link>
-                </li>
-              </ul>
+          <div className="footer-right">
+            <div className="footer-links">
+              <div className="first-link">
+                <ul>
+                  <li>
+                    <Link className="link" to="/">
+                      Home
+                    </Link>
+                    <hr />
+                  </li>
+                  <li>
+                    <Link className="link" to="/services">
+                      Services
+                    </Link>
+                    <hr />
+                  </li>
+                  <li>
+                    <Link className="link" to="/blog-posts">
+                      Blog
+                    </Link>
+                    <hr />
+                  </li>
+                  <li>
+                    <Link className="link" to="/about">
+                      About Us
+                    </Link>
+                    <hr />
+                  </li>
+                  <li>
+                    <Link className="link" to="/contact">
+                      Contact Us
+                    </Link>
+                    <hr />
+                  </li>
+                </ul>
+              </div>
+              <div className="second-link">
+                <ul>
+                  <li>
+                    <Link className="link" to="/services">
+                      Advertising and Sponsorship
+                    </Link>
+                    <hr />
+                  </li>
+                  <li>
+                    <Link className="link" to="/services">
+                      Consulting and Training
+                    </Link>
+                    <hr />
+                  </li>
+
+                  <li>
+                    <Link className="link" to="/services">
+                      Digital Media Services
+                    </Link>
+                    <hr />
+                  </li>
+                </ul>
+              </div>
+              <div className="third-link">
+                <ul>
+                  <li>
+                    <Link className="link" to="/services">
+                      Educational Resources
+                    </Link>
+                    <hr />
+                  </li>
+                  <li>
+                    <Link className="link" to="/services">
+                      Event Management
+                    </Link>
+                    <hr />
+                  </li>
+                  <li>
+                    <Link className="link" to="/services">
+                      International Outreach
+                    </Link>
+                    <hr />
+                  </li>
+                  <li>
+                    <Link className="link" to="/services">
+                      Merchandise and Product Development
+                    </Link>
+                    <hr />
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div className="second-link">
-              <ul>
-                <li>
-                  <Link className="link" to="/services">
-                    Advertising and Sponsorship
-                  </Link>
-                </li>
-                <li>
-                  <Link className="link" to="/services">
-                    Consulting and Training
-                  </Link>
-                </li>
-                
-                
-                <li>
-                  <Link className="link" to="/services">
-                    Digital Media Services
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="third-link">
-              <ul>
-                <li>
-                  <Link className="link" to="/services">
-                    Educational Resources
-                  </Link>
-                </li>
-                <li>
-                  <Link className="link" to="/services">
-                    Event Management
-                  </Link>
-                </li>
-                <li>
-                  <Link className="link" to="/services">
-                    International Outreach
-                  </Link>
-                </li>
-                <li>
-                  <Link className="link" to="/services">
-                    Merchandise and Product Development
-                  </Link>
-                </li>
-              </ul>
+            <div className="footer-socials">
+              <div className="email">
+                <Link
+                  className="email-link"
+                  to="mailTo:thejesustalksmedia@gmail.com"
+                >
+                  <FaEnvelope /> thejesustalksmedia@gmail.com
+                </Link>
+              </div>
+              <div className="social-icons">
+                <div className="icons">
+                  <FaYoutube />
+                </div>
+                <div className="icons">
+                  <FaTimes />
+                </div>
+                <div className="icons">
+                  <FaInstagram />
+                </div>
+              </div>
             </div>
           </div>
-          <div className="footer-socials">
-            <div className="email">
-              <Link className="email-link" to='mailTo:thejesustalksmedia@gmail.com'><FaEnvelope/> thejesustalksmedia@gmail.com</Link>
-            </div>
-            <div className="social-icons">
-              <div className="icons">
-                <FaYoutube />
-              </div>
-              <div className="icons">
-                <FaTimes/>
-              </div>
-              <div className="icons">
-                <FaInstagram />
-              </div>
-            </div>
-          </div>
-         </div>
         </div>
         <div className="copyrights">
           <p>© 2024 The Jesus Talks Media. All Rights Reserved.</p>

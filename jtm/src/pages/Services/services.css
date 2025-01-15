@@ -1,222 +1,207 @@
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
-body{
-    background-color: black;
+
+body {
+  background-color: black;
   color: white;
   padding: 0;
   margin: 0;
   font-family: "Inter", sans-serif;
 }
-/* services.css */
-.no-scroll {
-    overflow: hidden;
-  }
-  
-
-/*General button styling*/
-.request-btn{
-    background-color: #fabc52;
-    color: black;
-    border: none;
-    padding: 8px;
-    width: 50%;
-    border-radius: 8px;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-.request-form{
-    position: fixed;
-    background-color: white;
-    top: 0;
-    color: #1b1a1a;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-}
-.services-bg img{
-    width: 100%;
-    height: 90vh;
-    object-fit: cover;
-}
-.services{
-    overflow: hidden;
-}
-.services-bg{
-    position: relative;
-
-}
-.services-overlay{
-    position: absolute;
-    top: 0;
-    height: 90vh;
-    width: 100%;
-    background-color: rgb(0, 0, 0, 0.5);
-    left: 0;
-}
-.services-content{
-    color: white;
-    width: 80%;
-    margin: 300px auto;
-}
-.services-content h1{
-    font-size: 32px;
-}
-.sections{
-    color: white;
-    width: 80%;
-    margin:40px auto;
-}
-/* Buttons */
-.list-container{
-    display: flex;
-}
-.services-content p{
-    font-size: 20px;
-}
-.list-container .list-item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fcfcfc;
-    color: #1b1a1a;
-    text-align: center;
-    flex-direction: column;
-    border-radius: 12px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    width: 70%;
-    margin: 20px 0;
-}
-/* Advert */
-.advert-img{
-    width: 100%;
-}
-.advert-section img{
-    width: 100%;
-}
-
-.body-props h1{
-    font-size: 25px;
-}
-
-/* Educational */
-.education-section img{
-    width: 100%;
-}
-
-.second .list-item{
-    padding: 20px;
-}
-
-/* Consulting */
-.list-container {
-    justify-content: flex-start;
-    gap: 12px;
-  }
-
-.education-section .list-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fcfcfc;
-  color: #1b1a1a;
-  text-align: center;
-  border-radius: 12px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  margin: 20px 0;
-  padding: 20px 40px;
-}
-
-.list-item--social-media {
-  width: 284px;
-  height: 64px;
-}
-
-.list-item--content-creation {
-  width: 200px;
-  height: 64px;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.list-item--audience-engagement {
+.img {
   width: 100%;
-  max-width: 249px;
-  height: 64px;
+}
+/* services.css */
+.services{
+  overflow: hidden;
+}
+.services-container {
+  position: relative;
+}
+.services .services-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+/* Hero section styling */
 
+.hero-content {
+  position: absolute;
+  top: 45%;
+  left: 40px;
 }
-/* Digital Services */
-.digital{
-display: flex;
-flex-direction: column-reverse;
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+.hero-content h1 {
+  font-size: 40px;
+}
+.hero-content p {
+  width: 90%;
+  font-size: 19px;
+  margin-top: -6px;
 }
 
-/* international */
-.international{
-    display: flex;
-    flex-direction: column-reverse;
-    margin-bottom: 100px;
+/* Advertise */
+.all-content {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-@media screen and (min-width: 1120px){
-    .request-btn{
-        width: 30%;
-    }
-.services-content h1{
-   font-size: 40px !important;
+.all-content p {
+  font-size: 16px !important;
 }
-.services-content p{
-    width: 60%;
-    font-size:25px;
+.advert-content {
+  width: 80%;
+  margin: 20px auto;
 }
-/* Advert */
-.sections{
-    display: flex;
-    width: 80%;
-    margin: auto;
-    gap: 80px;
-    align-items: center;
-    margin-bottom: 30px;
+.list-btn-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
-.advert-content{
-    width: 50%;
+.service-btn {
+  background-color: #fabc52;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.list-btn {
+  background-color: gainsboro;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
 }
 /* Consulting */
-.content-wrapper{
-    display: flex;
-    flex-direction: row-reverse;
+.grid-2 .list-btn-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
-/* Digital */
-.digital-content{
-    width: 50%;
+
+/* Clients */
+.clients {
+  background-color: #fabc52;
+  color: black;
+  padding: 40px 0;
+  margin-bottom: 70px;
 }
-/* Event */
-.event-content{
-    width: 50%;
+.client-header{
+  text-align: center;
 }
-.event-content .list-item{
-    width: 30%;
+.client-header h1 {
+  font-size: 35px;
+  margin-bottom: 2px;
 }
-/* Eduction */
-.education-wrapper{
-    display: flex;
-    flex-direction: row-reverse;
+.clients-container{
+  width: 80%;
+  margin: 30px auto;
 }
-.text-container{
-    width: 50%;
+.partner {
+  width: 340px;
+  padding: 8px 20px;
+  background-color: white;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  text-align: center;
+  height: 340px;
+  border-radius: 10px;
+  padding-top: 20px;
 }
-/* International */
-.international{
-    display: flex;
+.partners-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.partner-image img{
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 100%;
+  margin-top: 30px;
+
+}
+.artists {
+  width: 340px;
+  padding: 8px 20px;
+  background-color: white;
+  text-align: center;
+  height: 340px;
+  border-radius: 10px;
+  padding-top: 20px;
+
+}
+.artists-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+.artist-image img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.artist-image h4{
+  font-size: 12px;
+}
+@media screen and (min-width: 760px) {
+  /* Hero section styling */
+  .services .services-img {
+    height: 90vh;
+  }
+  .hero-content {
+    left: 10%;
+  }
+  .hero-content h1 {
+    font-size: 45px;
+  }
+  .hero-content p {
+    width: 80%;
+    font-size: 20px;
+    margin-top: -6px;
+  }
+  .hero-overlay {
+    height: 90vh;
+  }
+  /* Advertise */
+  .all-content {
     flex-direction: row;
-}
-.international-content{
-    width: 50%;
-}
-/* Digital Services */
-.digital{
-    flex-direction: row-reverse;
-    }
-    
+    gap: 20px;
+    width: 80%;
+    margin: 50px auto;
+    justify-content: space-around;
+  }
+  .grid-2 {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+  }
+  .list-btn {
+    padding: 12px 5px;
+  }
+
+  /* Client */
+  .clients-contents{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+  }
+  .partner{
+    margin: 0;
+  }
 }

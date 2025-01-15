@@ -24,6 +24,7 @@ import { FaPlay } from "react-icons/fa";
 import radio from "../../../public/assets/images/radio.png";
 import podcast from "../../../public/assets/images/podcast.png";
 import tv from "../../../public/assets/images/tv.png";
+import emailIcon from "../../../public/assets/images/email.png";
 import vector from "../../../public/assets/images/Vector.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
@@ -250,7 +251,7 @@ export default function Home() {
               className="express-link"
               target="_blank"
             >
-              <img src={email} alt="" /> The Yellow Mail
+              <img src={emailIcon} alt="" /> The Yellow Mail
             </Link>
             <Link
               to="https://theyellowblog.medium.com/"
@@ -310,8 +311,8 @@ export default function Home() {
                     <button type="submit">Subscribe</button>
                   </div>
                 </form>
-                <ToastContainer />
               </div>
+               
             </div>
           )}
           <div className="yellow-mail-content">
@@ -846,6 +847,7 @@ export default function Home() {
             </Splide>
           </div>
         </section>
+        <ToastContainer />
         <Footer />
       </div>
     </div>

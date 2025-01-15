@@ -172,10 +172,10 @@ h3 {
 }
 /* Yellow mail */
 .overlay-email-input {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.4);
   height: 100vh;
   z-index: 9999;
 }
@@ -202,12 +202,14 @@ h3 {
 }
 .overlay-email-input input {
   width: 90%;
+  margin-top: 10px;
+  color: white;
 }
 .overlay-email-input button {
   margin-top: 20px;
   width: 99%;
   background-color: #fabc52;
-  color: white;
+  color: black;
   border-radius: 8px;
   font-size: 17px;
 }
@@ -255,6 +257,9 @@ h3 {
 }
 .yellow-mail-icon {
   margin-top: 18px;
+  background-color: aliceblue;
+  height: 25px;
+  padding: 5px;
 }
 
 /* Radio section */
@@ -620,14 +625,21 @@ h3 {
   /* Yellow mail */
   .overlay-email-input .subscribe {
     width: 40%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
   }
   .overlay-email-input input {
-    width: 90%;
+    width: 91.5%;
   }
   .yellow-mail-content {
     display: flex;
     flex-direction: row-reverse;
     margin: 80px auto;
+  }
+  .overlay-email-input form button{
+    width: 100%;
+   
   }
   .yellow-mail-left {
     width: 50%;

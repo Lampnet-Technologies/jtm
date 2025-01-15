@@ -7,11 +7,10 @@ export default function FormOverlay({ closeForm, isOpen }) {
   const [email, setEmail] = useState("");
   const [service, setService] = useState("");
   const [message, setMessage] = useState("");
-
+  // const [alert, setAlert]=useState('');
   const servicesOptions = [
     "Advertising and Sponsorship",
     "Consulting and Training",
-    "Content Creation Service",
     "Digital Media Services",
     "Educational Resources",
     "Event Management",
@@ -44,11 +43,8 @@ export default function FormOverlay({ closeForm, isOpen }) {
   };
 
   if (!isOpen) {
-    console.log("FormOverlay not rendered");
     return null;
   }
-  console.log("FormOverlay rendered");
-  
 
   return (
     <>

@@ -77,11 +77,7 @@ export default function NavBar() {
                         Consulting and Training
                       </Link>
                     </li>
-                    {/* <li onClick={() => { handleLinkClick(); handleClose(); }}>
-                      <Link className="links" to="/services">
-                      Content Creation Service
-                      </Link>
-                    </li> */}
+                   
                     <li
                       onClick={() => {
                         handleLinkClick();
@@ -185,36 +181,38 @@ export default function NavBar() {
                     <Link className="links" to="/services">
                       Advertising and Sponsorship
                     </Link>
+                    <hr />
                   </li>
                   <li onClick={handleLinkClick}>
                     <Link className="links" to="/services">
                       Educational Resources
                     </Link>
+                    <hr/>
                   </li>
                   <li onClick={handleLinkClick}>
                     <Link className="links" to="/services">
                       Consulting and Training
                     </Link>
+                    <hr/>
                   </li>
-                  {/* <li onClick={handleLinkClick}>
-                  <Link className="links" to="/services">
-                      Content Creation Service
-                      </Link>
-                  </li> */}
+                 
                   <li onClick={handleLinkClick}>
                     <Link className="links" to="/services">
                       International Outreach
                     </Link>
+                    <hr/>
                   </li>
                   <li onClick={handleLinkClick}>
                     <Link className="links" to="/services">
                       Event Management
                     </Link>
+                    <hr/>
                   </li>
                   <li onClick={handleLinkClick}>
                     <Link className="links" to="/services">
                       Merchandise and Product Development
                     </Link>
+                    <hr/>
                   </li>
                 </ul>
               )}
