@@ -69,6 +69,10 @@ th, td {
   width: 80%;
   margin: auto;
 }
+.card1-content .positions{
+  font-size: 16px !important;
+  margin-top: -10px;
+}
 .team-card .team-img {
   width: 100%;
 }

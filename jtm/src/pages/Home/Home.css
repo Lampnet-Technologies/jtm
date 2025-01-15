@@ -375,9 +375,7 @@ h3 {
   transition: 0.4s ease;
   font-size: 20px;
 }
-/* .youtube button:hover {
-  
-} */
+
 .youtube .link-btn2,
 .link-btn1 {
   text-decoration: none;
@@ -401,6 +399,14 @@ h3 {
   width: 80%;
   margin: 50px auto;
   overflow: hidden;
+}
+.yellow-blog-content p{
+  font-size: 16px !important;
+  margin-top: -10px;
+  opacity: .8 !important;
+}
+.yellow-blog-content h3{
+  font-size: 25px !important;
 }
 .yellow-blog-content img {
   width: 100%;

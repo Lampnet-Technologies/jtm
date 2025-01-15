@@ -13,8 +13,8 @@ import { Link } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import Footer from "../../components/Footer/Footer";
-import 'aos/dist/aos.css';
-import AOS from 'aos';
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 export default function AboutPage() {
   //Table
@@ -41,7 +41,7 @@ export default function AboutPage() {
                   padding: "10px",
                   border: "1px solid #ddd",
                   backgroundColor: "#FABC52",
-                  color: 'black'
+                  color: "black",
                 }}
               >
                 {show.title}
@@ -190,7 +190,7 @@ export default function AboutPage() {
   //AOS
   useEffect(() => {
     AOS.init({
-      duration: 1000, 
+      duration: 1000,
     });
   }, []);
 
@@ -201,55 +201,87 @@ export default function AboutPage() {
           <img src={banner} alt="banner" />
           <div className="banner-overlay">
             <div className="banner-header">
-              <h2 data-aos="zoom-in" data-aos-duration= '1000'>About Us</h2>
-              <p data-aos="zoom-in" data-aos-duration= '1500'>
-              We exist to bridge the gap between Christian content and broader audiences, fostering creativity and faith in every project we undertake.
+              <h2 data-aos="zoom-in" data-aos-duration="1000">
+                About Us
+              </h2>
+              <p data-aos="zoom-in" data-aos-duration="1500">
+                We exist to bridge the gap between Christian content and broader
+                audiences, fostering creativity and faith in every project we
+                undertake.
               </p>
             </div>
           </div>
         </div>
         <div className="about-sections">
           <div className="about-section1">
-            <div className="section-left" >
-              <h3 data-aos="fade-right" data-aos-duration="1000">About Us</h3>
+            <div className="section-left">
+              <h3 data-aos="fade-right" data-aos-duration="1000">
+                About Us
+              </h3>
               <p data-aos="fade-right" data-aos-duration="1500">
                 We are a Christian Media Company driven by a profound vision: to
                 anchor individuals deeply in their faith through the
                 transformative power of media. At the core of our mission lies
                 our unwavering commitment to people.
               </p>
-              <p data-aos="fade-right" data-aos-duration="2000"> We aspire to make a
-                meaningful impact on lives by delivering edifying Christian
-                content. Join us on this faith-filled journey as we use the
-                power of media to deepen connections with Christ and positively
-                impact lives.</p>
+              <p data-aos="fade-right" data-aos-duration="2000">
+                {" "}
+                We aspire to make a meaningful impact on lives by delivering
+                edifying Christian content. Join us on this faith-filled journey
+                as we use the power of media to deepen connections with Christ
+                and positively impact lives.
+              </p>
             </div>
-            <div className="section-right" data-aos="fade-left" data-aos-duration="1500">
+            <div
+              className="section-right"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
               <img src={image1} alt="" />
             </div>
           </div>
 
           <div className="about-section1">
-            <div className="section-left" data-aos="fade-right" data-aos-duration="1000">
-              <h3 data-aos="fade-right" data-aos-duration="1000">Our Mission</h3>
+            <div
+              className="section-left"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <h3 data-aos="fade-right" data-aos-duration="1000">
+                Our Mission
+              </h3>
               <p data-aos="fade-right" data-aos-duration="1500">
                 To impact people’s lives by delivering edifying Christian
                 content - through media. 
               </p>
             </div>
-            <div className="section-right" data-aos="fade-left" data-aos-duration="1500">
+            <div
+              className="section-right"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
               <img src={image2} alt="" />
             </div>
           </div>
           <div className="about-section1">
-            <div className="section-left" data-aos="fade-right" data-aos-duration="1000">
-              <h3 data-aos="fade-right" data-aos-duration="1000">Our Vision</h3>
+            <div
+              className="section-left"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <h3 data-aos="fade-right" data-aos-duration="1000">
+                Our Vision
+              </h3>
               <p data-aos="fade-right" data-aos-duration="1500">
                 To see all men come to know Christ Jesus by using media to share
                 the Gospel
               </p>
             </div>
-            <div className="section-right" data-aos="fade-left" data-aos-duration="1500">
+            <div
+              className="section-right"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
               <img src={image3} alt="" />
             </div>
           </div>
@@ -268,8 +300,8 @@ export default function AboutPage() {
               <img className="team-img" src={team1} alt="" />
               <div className="card1-content">
                 <div className="card1-text">
-                  <p>Daniel Mary</p>
-                  <p>Admin Manager</p>
+                  <p>OMOLADE ADEKANLE</p>
+                  <p className="positions">HR Manager</p>
                 </div>
                 <div className="card1-icon">
                   <Link to="">
@@ -284,8 +316,8 @@ export default function AboutPage() {
               <img className="team-img" src={team2} alt="" />
               <div className="card1-content">
                 <div className="card1-text">
-                  <p>Daniel John</p>
-                  <p>Admin Manager</p>
+                  <p>Haddy Onyemaka </p>
+                  <p className="positions">Creative Director</p>
                 </div>
                 <div className="card1-icon">
                   <Link to="">
@@ -300,7 +332,7 @@ export default function AboutPage() {
               <div className="card1-content">
                 <div className="card1-text">
                   <p>Daniel Mary</p>
-                  <p>Admin Manager</p>
+                  <p className="positions">Admin Manager</p>
                 </div>
                 <div className="card1-icon">
                   <Link to="">

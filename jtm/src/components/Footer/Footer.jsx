@@ -32,6 +32,7 @@ export default function Footer() {
             <Link to="/">
               <img src={logo} alt="logo" />
             </Link>
+            <br />
             <div className="subscribe">
               <form onSubmit={handleSubmit}>
                   <label>Subscribe to our Newsletter</label>
