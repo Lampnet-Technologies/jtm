@@ -200,7 +200,7 @@ const handleCloseForm = () => {
           />
           <div className="advert-content">
             <h3 data-aos="fade-right" data-aos-duration="1000">
-              Educational Resouces
+              Educational Resources
             </h3>
             <p data-aos="fade-right" data-aos-duration="2000">
               Nurture your faith and foster your spiritual growth with our
@@ -224,7 +224,7 @@ const handleCloseForm = () => {
                 data-aos-duration="3000"
               >
                 <button className="list-btn">Spiritual events</button>
-                <button className="list-btn">Christain reources</button>
+                <button className="list-btn">Christain resources</button>
               </div>
             </div>
           </div>
