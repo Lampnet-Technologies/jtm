@@ -45,6 +45,9 @@ h3 {
   text-decoration: none;
   color: black;
 }
+button{
+  font-size: 16px !important;
+}
 .background-left h2 {
   font-weight: 500;
   margin-top: 30px;
@@ -406,13 +409,13 @@ h3 {
   opacity: .8 !important;
 }
 .yellow-blog-content h3{
-  font-size: 25px !important;
+  font-size: 20px !important;
 }
 .yellow-blog-content img {
   width: 100%;
 }
-.yellow-blog-right p {
-  font-size: 14px;
+.yellow-blog p {
+  font-size: 15px;
 }
 .yellow-blog-right img {
   margin-top: 20px;

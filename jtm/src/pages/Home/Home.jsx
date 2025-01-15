@@ -312,7 +312,6 @@ export default function Home() {
                   </div>
                 </form>
               </div>
-               
             </div>
           )}
           <div className="yellow-mail-content">
@@ -350,7 +349,9 @@ export default function Home() {
               </div>
               <div className="yellow-mail-text">
                 <p>
-                Get exclusive updates about us--from behind-the-scenes insights into our projects to updates on what we’re currently working on and how we bring our ideas to life.
+                  Get exclusive updates about us--from behind-the-scenes
+                  insights into our projects to updates on what we’re currently
+                  working on and how we bring our ideas to life.
                 </p>
               </div>
             </div>
@@ -365,7 +366,9 @@ export default function Home() {
               </div>
               <div className="yellow-mail-text">
                 <p>
-                Explore inspiring conversations and playlists--featuring exclusive interviews with creatives, access to their stories, and curated playlists that reflect their journey.
+                  Explore inspiring conversations and playlists--featuring
+                  exclusive interviews with creatives, access to their stories,
+                  and curated playlists that reflect their journey.
                 </p>
               </div>
             </div>
@@ -380,7 +383,10 @@ export default function Home() {
               </div>
               <div className="yellow-mail-text">
                 <p>
-                Stay in the loop with Buzz--your go-to source for first-hand information about events, concerts, new music releases, book launches, Christian films, and all things happening in the Christian creative space.
+                  Stay in the loop with Buzz--your go-to source for first-hand
+                  information about events, concerts, new music releases, book
+                  launches, Christian films, and all things happening in the
+                  Christian creative space.
                 </p>
               </div>
             </div>
@@ -577,7 +583,7 @@ export default function Home() {
             <div className="social-lists">
               <p data-aos="fade-right" data-aos-duration="1500">
                 <img src={icon3} alt="checkmark" />
-                Faith Journey not Faith struggles
+                Faith-God-life podcast{" "}
               </p>
               <p data-aos="fade-right" data-aos-duration="2000">
                 <img src={icon3} alt="checkmark" />
@@ -766,7 +772,11 @@ export default function Home() {
                 alt="x"
               />
             </Link>
-            <Link className="social-icon-link" to="https://www.youtube.com/@thejesustalksmedia" target="_blank">
+            <Link
+              className="social-icon-link"
+              to="https://www.youtube.com/@thejesustalksmedia"
+              target="_blank"
+            >
               <img
                 data-aos="fade-up"
                 data-aos-duration="5000"
@@ -784,7 +794,11 @@ export default function Home() {
               <SplideSlide>
                 <div className="splide1">
                   <div className="wots-left">
-                    <img src={image9} alt="Tianney" style={{objectFit:'cover'}} />
+                    <img
+                      src={image9}
+                      alt="Tianney"
+                      style={{ objectFit: "cover" }}
+                    />
                     <div className="wot-text">
                       <p>
                         I loved that the team was proactive I didn’t have to
@@ -797,7 +811,11 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="wots-right">
-                    <img src={image10} alt="Ademola" style={{objectFit:'cover'}} />
+                    <img
+                      src={image10}
+                      alt="Ademola"
+                      style={{ objectFit: "cover" }}
+                    />
                     <div className="wot-text">
                       <p>
                         The Jesus Talks Media feels like family to me. I’ve
@@ -843,7 +861,6 @@ export default function Home() {
                   </div>
                 </div>
               </SplideSlide> */}
-           
             </Splide>
           </div>
         </section>
