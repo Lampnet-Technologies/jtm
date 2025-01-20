@@ -201,7 +201,7 @@ export default function Home() {
             </div>
           </div>
           <div className="background-right">
-            <img src={image} alt="background image" />
+            <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1737252487/bg-image_tk7mdu.png' alt="background image" />
             <div className="right-overlay">
               <div className="right-overlay-content">
                 <h2 data-aos="fade-right" data-aos-duration="1000">
@@ -320,7 +320,7 @@ export default function Home() {
               data-aos="fade-left"
               data-aos-duration="1500"
             >
-              <img src={image3} alt="" />
+              <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1737252487/email_bxuvth.gif' alt="" />
             </div>
             <div className="yellow-mail-left">
               <h3 data-aos="fade-right" data-aos-duration="1000">
@@ -398,7 +398,7 @@ export default function Home() {
             data-aos="fade-left"
             data-aos-duration="2500"
           >
-            <img src={image4} alt="image" />
+            <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1737252504/radio-picture_q8vsef.png' alt="image" />
           </div>
           <div className="radio-left">
             <h3 data-aos="fade-right" data-aos-duration="1000">
@@ -503,7 +503,7 @@ export default function Home() {
           </div>
           <div className="youtube-down">
             <img
-              src={image7}
+              src='https://res.cloudinary.com/dn4hkronr/image/upload/v1737252511/video_vbtkio.png'
               alt="image"
               style={{ width: "100%", height: "auto" }}
             />

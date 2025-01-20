@@ -1,11 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./AboutPage.css";
-import banner from "../../../public/assets/images/about.png";
-import image1 from "../../../public/assets/images/about1.png";
-import image2 from "../../../public/assets/images/about2.png";
-import image3 from "../../../public/assets/images/about3.png";
-import team1 from "../../../public/assets/images/team1.png";
-import team2 from "../../../public/assets/images/team2.png";
 import team3 from "../../../public/assets/images/team3.png";
 import icon from "../../../public/assets/images/Linkedin.png";
 import { Link } from "react-router-dom";
@@ -198,7 +192,7 @@ export default function AboutPage() {
     <div>
       <div className="about">
         <div className="about-banner">
-          <img src={banner} alt="banner" />
+          <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1737252515/about_zgyh6d.png' alt="banner" />
           <div className="banner-overlay">
             <div className="banner-header">
               <h2 data-aos="zoom-in" data-aos-duration="1000">
@@ -237,7 +231,7 @@ export default function AboutPage() {
               data-aos="fade-left"
               data-aos-duration="1500"
             >
-              <img src={image1} alt="" />
+              <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1737252513/about1_vicoma.png' alt="" />
             </div>
           </div>
 
@@ -260,7 +254,7 @@ export default function AboutPage() {
               data-aos="fade-left"
               data-aos-duration="1500"
             >
-              <img src={image2} alt="" />
+              <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1737252514/about2_ks8pq1.png' alt="" />
             </div>
           </div>
           <div className="about-section1">
@@ -282,7 +276,7 @@ export default function AboutPage() {
               data-aos="fade-left"
               data-aos-duration="1500"
             >
-              <img src={image3} alt="" />
+              <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1737252517/about3_xml1xx.png' alt="" />
             </div>
           </div>
         </div>
@@ -297,7 +291,7 @@ export default function AboutPage() {
           </h3>
           <div className="team-card">
             <div className="card1" data-aos="zoom-in" data-aos-duration="1000">
-              <img className="team-img" src={team1} alt="" />
+              <img className="team-img" src='https://res.cloudinary.com/dn4hkronr/image/upload/v1737252512/team2_a08ay0.heic' alt="" />
               <div className="card1-content">
                 <div className="card1-text">
                   <p>OMOLADE ADEKANLE</p>
@@ -313,7 +307,7 @@ export default function AboutPage() {
             </div>
 
             <div className="card1" data-aos="zoom-in" data-aos-duration="1500">
-              <img className="team-img" src={team2} alt="" />
+              <img className="team-img" src='https://res.cloudinary.com/dn4hkronr/image/upload/v1737332062/IMG_2772_bnpvux.heic' alt="" />
               <div className="card1-content">
                 <div className="card1-text">
                   <p>Haddy Onyemaka </p>
