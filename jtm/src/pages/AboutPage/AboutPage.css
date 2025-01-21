@@ -180,7 +180,8 @@ padding: 10px 8px;
   .team-card {
     display: flex;
     margin-top: 20px;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 40px;
   }
   .card1 .team-img{
     width: 100%;
