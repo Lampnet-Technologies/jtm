@@ -278,7 +278,7 @@ export default function Home() {
               We are a Christian Media Company driven by a profound vision: to
               anchor individuals deeply in their faith through the
               transformative power of media; and our different expressions which
-              include: Jesus talks radio, Jesus talks Tv, The yellow blog and
+              include: The Jesus talks radio, The Jesus talks Tv, The yellow blog and
               The yellow email
             </p>
             <p data-aos="fade-left" data-aos-duration="2000">
