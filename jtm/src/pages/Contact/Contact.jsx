@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./Contact.css";
-import banner from "../../../public/assets/images/contact-banner.png";
 import contact from "../../../public/assets/images/contact.png";
 import Footer from "../../components/Footer/Footer";
 import { ToastContainer, toast } from "react-toastify";
@@ -59,7 +58,7 @@ export default function Contact() {
     <div>
       <div className="contact">
         <div className="contact-banner">
-          <img src={banner} alt="" />
+          <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1737432261/contact_yht40f.png' alt="" />
         </div>
         <div className="contact-content">
           <div className="contact-detail">

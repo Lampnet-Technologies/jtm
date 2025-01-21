@@ -75,10 +75,14 @@ th, td {
 }
 .team-card .team-img {
   width: 100%;
+  background-size: cover;
 }
 .card1 {
   margin-bottom: 20px;
+  width: 300px;
+  background-size: cover;
 }
+
 .card1-content {
   display: flex;
   align-items: center;

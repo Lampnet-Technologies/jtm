@@ -84,6 +84,7 @@
   width: 100%;
   height: 450px;
   object-fit: cover;
+  display: none;
 }
 .contact-team-right img{
   width: 100%;
@@ -146,6 +147,7 @@
   .contact-team-right img {
     height: 500px;
     object-fit: cover;
+    display: block;
   }
   .form input,
   textarea,
