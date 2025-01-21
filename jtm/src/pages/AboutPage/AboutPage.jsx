@@ -321,22 +321,6 @@ export default function AboutPage() {
                 </div>
               </div>
             </div>
-
-            <div className="card1" data-aos="zoom-in" data-aos-duration="2000">
-              <img className="team-img" src={team3} alt="" />
-              <div className="card1-content">
-                <div className="card1-text">
-                  <p>Daniel Mary</p>
-                  <p className="positions">Admin Manager</p>
-                </div>
-                <div className="card1-icon">
-                  <Link to="">
-                    {" "}
-                    <img src={icon} alt="" />
-                  </Link>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <div className="faq">
@@ -365,6 +349,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
+        
       </div>
       <Footer />
     </div>
