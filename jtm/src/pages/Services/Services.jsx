@@ -8,6 +8,7 @@ import merchandise from "../../../public/assets/images/merchandise.svg";
 import digital from "../../../public/assets/images/digital.svg";
 import logo from '../../../public/assets/images/jtm-logo.png'
 import img from '../../../public/assets/images/team3.png'
+import image from '../../../public/assets/images/mobile-services.png'
 const Services = () => {
 
   useEffect(() => {
@@ -35,8 +36,8 @@ const handleCloseForm = () => {
   setIsFormOpen(false);
 };
 
-  const image =
-    "https://res.cloudinary.com/ddhxnuyyj/image/upload/v1728616768/Frame_147_wttcv9.png";
+  // const image =
+  //   "https://res.cloudinary.com/ddhxnuyyj/image/upload/v1728616768/Frame_147_wttcv9.png";
   const AdvertImage =
     "https://res.cloudinary.com/ddhxnuyyj/image/upload/v1728598022/olgfq6epfbn5j82pdyie.png";
   const consultingImage =

@@ -17,16 +17,16 @@ h3 {
   height: 80vh;
   display: none;
   background: linear-gradient(
-  45deg,
-  #744f7f, 
-  #aa6989, 
-  #56377d, 
-  #ab5d8b,
-  #6b5e73, 
-  #ae5e72, 
-  #573c92, 
-  #f04391 
-);
+    45deg,
+    #744f7f,
+    #aa6989,
+    #56377d,
+    #ab5d8b,
+    #6b5e73,
+    #ae5e72,
+    #573c92,
+    #f04391
+  );
 }
 .left-content {
   padding: 180px 40px;
@@ -55,7 +55,7 @@ h3 {
   text-decoration: none;
   color: black;
 }
-button{
+button {
   font-size: 16px !important;
 }
 .background-left h2 {
@@ -149,8 +149,9 @@ button{
   width: 80%;
   margin: 30px auto;
 }
-.know-us-left img {
-  width: 100%;
+.know-us-left {
+  display: flex;
+  align-items: center;
 }
 .know-us-right {
   margin-top: 30px;
@@ -184,6 +185,15 @@ button{
   margin-bottom: 80px !important;
 }
 /* Yellow mail */
+.yellow-mail-angel {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-bottom: 170px solid rgb(230, 247, 166);
+}
 .overlay-email-input {
   position: fixed;
   top: 0;
@@ -229,7 +239,7 @@ button{
 
 .yellow-mail-content {
   width: 80%;
-  margin: 60px auto;
+  margin: 220px auto;
 }
 .yellow-mail-left button {
   outline: none;
@@ -270,7 +280,10 @@ button{
 }
 .yellow-mail-icon {
   margin-top: 18px;
-  background-color: aliceblue;
+  background-color: #e6c837;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
   height: 25px;
   padding: 5px;
 }
@@ -411,12 +424,12 @@ button{
   margin: 50px auto;
   overflow: hidden;
 }
-.yellow-blog-content p{
+.yellow-blog-content p {
   font-size: 16px !important;
   margin-top: -10px;
-  opacity: .8 !important;
+  opacity: 0.8 !important;
 }
-.yellow-blog-content h3{
+.yellow-blog-content h3 {
   font-size: 20px !important;
 }
 .yellow-blog-content img {
@@ -638,8 +651,16 @@ button{
     opacity: 0.8;
     margin-bottom: 20px;
   }
+  .know-us-left {
+    gap: 40px;
+    width: 50%;
+  }
+  .know-us-icons {
+    display: block !important;
+  }
 
   /* Yellow mail */
+ 
   .overlay-email-input .subscribe {
     width: 40%;
     height: 50%;
@@ -652,11 +673,9 @@ button{
   .yellow-mail-content {
     display: flex;
     flex-direction: row-reverse;
-    margin: 80px auto;
   }
-  .overlay-email-input form button{
+  .overlay-email-input form button {
     width: 100%;
-   
   }
   .yellow-mail-left {
     width: 50%;

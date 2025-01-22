@@ -16,9 +16,10 @@ import image7 from "../../../public/assets/images/video.png";
 import image8 from "../../../public/assets/images/yellow-blog.png";
 import image9 from "../../../public/assets/images/person1.jpg";
 import image10 from "../../../public/assets/images/person2.jpg";
-import icon1 from "../../../public/assets/images/yellow-icon1.png";
-import icon2 from "../../../public/assets/images/yellow-icon2.png";
+import icon1 from "../../../public/assets/images/compass.png";
+import icon2 from "../../../public/assets/images/bulb.png";
 import icon3 from "../../../public/assets/images/checkmark.png";
+import icon4 from "../../../public/assets/images/infinity.png";
 import Footer from "../../components/Footer/Footer";
 import { FaPlay } from "react-icons/fa";
 import radio from "../../../public/assets/images/radio.png";
@@ -201,7 +202,10 @@ export default function Home() {
             </div>
           </div>
           <div className="background-right">
-            <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1737252487/bg-image_tk7mdu.png' alt="background image" />
+            <img
+              src="https://res.cloudinary.com/dn4hkronr/image/upload/v1737252487/bg-image_tk7mdu.png"
+              alt="background image"
+            />
             <div className="right-overlay">
               <div className="right-overlay-content">
                 <h2 data-aos="fade-right" data-aos-duration="1000">
@@ -263,12 +267,47 @@ export default function Home() {
           </div>
         </div>
         <div className="know-us">
-          <div
-            className="know-us-left"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-          >
-            <img src={image2} alt="image" />
+          <div className="know-us-left">
+            <div className="know-us-icons">
+              <img
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                src="https://res.cloudinary.com/dn4hkronr/image/upload/v1737577352/Television_ecvggi.svg"
+                alt="image"
+              />
+              <div>
+                {" "}
+                <img
+                  data-aos="fade-right"
+                  data-aos-duration="1500"
+                  src="https://res.cloudinary.com/dn4hkronr/image/upload/v1737577353/Microphone_t8pdla.png"
+                  alt="image"
+                />
+              </div>
+              <img
+                data-aos="fade-right"
+                data-aos-duration="2000"
+                src="https://res.cloudinary.com/dn4hkronr/image/upload/v1737577352/Blog_lf1ji7.png"
+                alt="image"
+              />
+            </div>
+            <div>
+              <div>
+                {" "}
+                <img
+                  data-aos="fade-left"
+                  data-aos-duration="1500"
+                  src="https://res.cloudinary.com/dn4hkronr/image/upload/v1737577352/Radio_baovtq.svg"
+                  alt="image"
+                />
+              </div>
+              <img
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                src="https://res.cloudinary.com/dn4hkronr/image/upload/v1737577352/Email_gvg8sa.svg"
+                alt="image"
+              />
+            </div>
           </div>
           <div className="know-us-right">
             <h3>
@@ -278,8 +317,8 @@ export default function Home() {
               We are a Christian Media Company driven by a profound vision: to
               anchor individuals deeply in their faith through the
               transformative power of media; and our different expressions which
-              include: The Jesus talks radio, The Jesus talks Tv, The yellow blog and
-              The yellow email
+              include: The Jesus talks radio, The Jesus talks Tv, The yellow
+              blog and The yellow email
             </p>
             <p data-aos="fade-left" data-aos-duration="2000">
               Through our platform, we offer meaningful media and create a
@@ -314,13 +353,17 @@ export default function Home() {
               </div>
             </div>
           )}
+          <div className='yellow-mail-angel'></div>
           <div className="yellow-mail-content">
             <div
               className="yellow-mail-right"
               data-aos="fade-left"
               data-aos-duration="1500"
             >
-              <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1737252487/email_bxuvth.gif' alt="" />
+              <img
+                src="https://res.cloudinary.com/dn4hkronr/image/upload/v1737252487/email_bxuvth.gif"
+                alt=""
+              />
             </div>
             <div className="yellow-mail-left">
               <h3 data-aos="fade-right" data-aos-duration="1000">
@@ -379,7 +422,7 @@ export default function Home() {
               data-aos-duration="3000"
             >
               <div className="yellow-mail-icon">
-                <img src={icon1} alt="icon" />
+                <img src={icon4} alt="icon" />
               </div>
               <div className="yellow-mail-text">
                 <p>
@@ -398,7 +441,10 @@ export default function Home() {
             data-aos="fade-left"
             data-aos-duration="2500"
           >
-            <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1737252504/radio-picture_q8vsef.png' alt="image" />
+            <img
+              src="https://res.cloudinary.com/dn4hkronr/image/upload/v1737252504/radio-picture_q8vsef.png"
+              alt="image"
+            />
           </div>
           <div className="radio-left">
             <h3 data-aos="fade-right" data-aos-duration="1000">
@@ -503,7 +549,7 @@ export default function Home() {
           </div>
           <div className="youtube-down">
             <img
-              src='https://res.cloudinary.com/dn4hkronr/image/upload/v1737252511/video_vbtkio.png'
+              src="https://res.cloudinary.com/dn4hkronr/image/upload/v1737252511/video_vbtkio.png"
               alt="image"
               style={{ width: "100%", height: "auto" }}
             />
