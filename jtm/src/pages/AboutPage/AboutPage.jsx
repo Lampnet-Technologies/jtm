@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import Footer from "../../components/Footer/Footer";
-import hrImg from '../../../public/assets/images/hr.svg'
-import haddy from '../../../public/assets/images/haddy.svg'
+import hrImg from "../../../public/assets/images/hr.svg";
+import haddy from "../../../public/assets/images/haddy.svg";
 import "aos/dist/aos.css";
 import AOS from "aos";
 
@@ -193,7 +193,10 @@ export default function AboutPage() {
     <div>
       <div className="about">
         <div className="about-banner">
-          <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1737252515/about_zgyh6d.png' alt="banner" />
+          <img
+            src="https://res.cloudinary.com/dn4hkronr/image/upload/v1737252515/about_zgyh6d.png"
+            alt="banner"
+          />
           <div className="banner-overlay">
             <div className="banner-header">
               <h2 data-aos="zoom-in" data-aos-duration="1000">
@@ -232,7 +235,10 @@ export default function AboutPage() {
               data-aos="fade-left"
               data-aos-duration="1500"
             >
-              <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1737252513/about1_vicoma.png' alt="" />
+              <img
+                src="https://res.cloudinary.com/dn4hkronr/image/upload/v1737252513/about1_vicoma.png"
+                alt=""
+              />
             </div>
           </div>
 
@@ -255,7 +261,10 @@ export default function AboutPage() {
               data-aos="fade-left"
               data-aos-duration="1500"
             >
-              <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1737252514/about2_ks8pq1.png' alt="" />
+              <img
+                src="https://res.cloudinary.com/dn4hkronr/image/upload/v1737252514/about2_ks8pq1.png"
+                alt=""
+              />
             </div>
           </div>
           <div className="about-section1">
@@ -277,7 +286,10 @@ export default function AboutPage() {
               data-aos="fade-left"
               data-aos-duration="1500"
             >
-              <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1737252517/about3_xml1xx.png' alt="" />
+              <img
+                src="https://res.cloudinary.com/dn4hkronr/image/upload/v1737252517/about3_xml1xx.png"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -291,12 +303,16 @@ export default function AboutPage() {
             gospel contents
           </h3>
           <div className="team-card">
-            <div className="card1" data-aos="zoom-in" data-aos-duration="1000">
-              <img className="team-img" src={hrImg} alt="" />
+            <div className="card1" data-aos="fade-down" data-aos-duration="2000">
+              <div className="team-img-container">
+                <img className="team-img" src={hrImg} alt="" />
+              </div>
               <div className="card1-content">
                 <div className="card1-text">
                   <p>OMOLADE ADEKANLE</p>
-                  <p className="positions">creativedirector@thejesustalksmedia.com</p>
+                  <p className="positions">
+                    creativedirector@thejesustalksmedia.com
+                  </p>
                 </div>
                 <div className="card1-icon">
                   <Link to="">
@@ -307,8 +323,10 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="card1" data-aos="zoom-in" data-aos-duration="1500">
-            <img className="team-img" src={haddy} alt="" />
+            <div className="card1" data-aos="fade-up" data-aos-duration="3000">
+              <div className="team-img-container">
+                <img className="team-img" src={haddy} alt="" />
+              </div>
               <div className="card1-content">
                 <div className="card1-text">
                   <p>Haddy Onyemaka </p>
@@ -349,7 +367,6 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-        
       </div>
       <Footer />
     </div>

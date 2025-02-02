@@ -268,46 +268,12 @@ export default function Home() {
         </div>
         <div className="know-us">
           <div className="know-us-left">
-            <div className="know-us-icons">
-              <img
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                src="https://res.cloudinary.com/dn4hkronr/image/upload/v1737577352/Television_ecvggi.svg"
-                alt="image"
-              />
-              <div>
-                {" "}
-                <img
-                  data-aos="fade-right"
-                  data-aos-duration="1500"
-                  src="https://res.cloudinary.com/dn4hkronr/image/upload/v1737577353/Microphone_t8pdla.png"
-                  alt="image"
-                />
-              </div>
-              <img
-                data-aos="fade-right"
-                data-aos-duration="2000"
-                src="https://res.cloudinary.com/dn4hkronr/image/upload/v1737577352/Blog_lf1ji7.png"
-                alt="image"
-              />
-            </div>
-            <div>
-              <div>
-                {" "}
-                <img
-                  data-aos="fade-left"
-                  data-aos-duration="1500"
-                  src="https://res.cloudinary.com/dn4hkronr/image/upload/v1737577352/Radio_baovtq.svg"
-                  alt="image"
-                />
-              </div>
-              <img
-                data-aos="fade-left"
-                data-aos-duration="2000"
-                src="https://res.cloudinary.com/dn4hkronr/image/upload/v1737577352/Email_gvg8sa.svg"
-                alt="image"
-              />
-            </div>
+            <img
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              src="https://res.cloudinary.com/dn4hkronr/image/upload/v1738503276/get-to-know_o4qa74.png"
+              alt="image"
+            />
           </div>
           <div className="know-us-right">
             <h3>
@@ -353,7 +319,7 @@ export default function Home() {
               </div>
             </div>
           )}
-          <div className='yellow-mail-angel'></div>
+          <div className="yellow-mail-angel"></div>
           <div className="yellow-mail-content">
             <div
               className="yellow-mail-right"

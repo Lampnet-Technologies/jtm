@@ -182,10 +182,11 @@ button {
   color: black;
 }
 .know-us-left img {
-  margin-bottom: 80px !important;
+  margin-bottom: 20px !important;
+  width: 100%;
 }
 /* Yellow mail */
-.yellow-mail-angel {
+/* .yellow-mail-angel {
   position: absolute;
   right: 0;
   top: 0;
@@ -193,7 +194,7 @@ button {
   height: 0;
   border-left: 150px solid transparent;
   border-bottom: 170px solid rgb(230, 247, 166);
-}
+} */
 .overlay-email-input {
   position: fixed;
   top: 0;
@@ -239,7 +240,7 @@ button {
 
 .yellow-mail-content {
   width: 80%;
-  margin: 220px auto;
+  margin: 30px auto;
 }
 .yellow-mail-left button {
   outline: none;

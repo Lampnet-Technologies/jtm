@@ -7,7 +7,6 @@ import AOS from "aos";
 import merchandise from "../../../public/assets/images/merchandise.svg";
 import digital from "../../../public/assets/images/digital.svg";
 import logo from '../../../public/assets/images/jtm-logo.png'
-import img from '../../../public/assets/images/team3.png'
 import image from '../../../public/assets/images/mobile-services.png'
 const Services = () => {
 
@@ -36,8 +35,6 @@ const handleCloseForm = () => {
   setIsFormOpen(false);
 };
 
-  // const image =
-  //   "https://res.cloudinary.com/ddhxnuyyj/image/upload/v1728616768/Frame_147_wttcv9.png";
   const AdvertImage =
     "https://res.cloudinary.com/ddhxnuyyj/image/upload/v1728598022/olgfq6epfbn5j82pdyie.png";
   const consultingImage =
@@ -345,11 +342,11 @@ const handleCloseForm = () => {
                 <h1>Partners</h1>
                 <div className="partners-content">
                   <div className="partner-image">
-                    <img src={img} alt="" />
+                    <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1738499883/BELIEVERS_BOND_ixoyi3.jpg' alt="" />
                     <h4>Believers Bond</h4>
                   </div>
                   <div className="partner-image">
-                    <img src={img} alt="" />
+                    <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1738499883/THE_BATON_wriovv.jpg' alt="" />
                     <h4>The Baton</h4>
                   </div>
                 </div>
@@ -359,27 +356,27 @@ const handleCloseForm = () => {
                 <h1>Artists</h1>
                 <div className="artists-content">
                   <div className="artist-image">
-                    <img src={img} alt="" />
+                    <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1738500711/Ademola_wcwaa8.jpg' alt="" />
                     <h4>Ademola Makinde</h4>
                   </div>
                   <div className="artist-image">
-                    <img src={img} alt="" />
+                    <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1738499862/Aigbeh_D_gong_vu8jm4.jpg' alt="" />
                     <h4>Aigbeh D'gang</h4>
                   </div>
                   <div className="artist-image">
-                    <img src={img} alt="" />
+                    <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1738499870/Anjeloh_cvrifi.jpg' alt="" />
                     <h4>Angeloh</h4>
                   </div>
                   <div className="artist-image">
-                    <img src={img} alt="" />
+                    <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1738499865/Tianney_1_obfayo.jpg' alt="" />
                     <h4>Tianney</h4>
                   </div>
                   <div className="artist-image">
-                    <img src={img} alt="" />
+                    <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1738499865/Defayo_gxdrk9.jpg' alt="" />
                     <h4>Defayo</h4>
                   </div>
                   <div className="artist-image">
-                    <img src={img} alt="" />
+                    <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1738499863/B-Priaz_hfpciy.jpg' alt="" />
                     <h4>B-Praiz</h4>
                   </div>
                 </div>

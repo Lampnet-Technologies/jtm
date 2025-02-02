@@ -23,6 +23,7 @@ body {
   width: 100%;
   height: 100vh;
   object-fit: cover;
+  object-position: calc(80%);
 }
 /* Hero section styling */
 
@@ -55,8 +56,12 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.all-content h3{
+  font-size: 25px;
+}
 .all-content p {
   font-size: 16px !important;
+  color: gray;
 }
 .advert-content {
   width: 80%;
@@ -130,10 +135,10 @@ body {
 .partner-image img{
   width: 70px;
   height: 70px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 100%;
   margin-top: 30px;
-
+  border: 1px solid gray;
 }
 .artists {
   padding: 8px 20px;
@@ -163,6 +168,9 @@ body {
   .services .services-img {
     height: 90vh;
   }
+  .img {
+    width: fit-content;
+  }
   .hero-content {
     left: 10%;
   }
@@ -170,9 +178,10 @@ body {
     font-size: 45px;
   }
   .hero-content p {
-    width: 80%;
-    font-size: 20px;
+    width: 70%;
+    font-size: 20px !important;
     margin-top: -6px;
+    color: rgb(187, 183, 183);
   }
   .hero-overlay {
     height: 90vh;
@@ -185,6 +194,7 @@ body {
     margin: 50px auto;
     justify-content: space-around;
   }
+
   .grid-2 {
     display: flex !important;
     flex-direction: row-reverse !important;
