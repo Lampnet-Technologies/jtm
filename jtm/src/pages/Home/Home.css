@@ -29,7 +29,7 @@ h3 {
   );
 }
 .left-content {
-  padding: 180px 40px;
+padding: 180px 40px;
 }
 .left-content h2 {
   font-size: 32px;
@@ -113,7 +113,7 @@ button {
   height: 90vh;
 }
 .right-overlay-content {
-  padding: 270px 30px;
+  padding: 180px 30px;
 }
 .right-overlay-content h2 {
   font-size: 32px;
@@ -661,7 +661,7 @@ button {
   }
 
   /* Yellow mail */
- 
+
   .overlay-email-input .subscribe {
     width: 40%;
     height: 50%;
