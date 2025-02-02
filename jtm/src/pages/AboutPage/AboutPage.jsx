@@ -303,16 +303,18 @@ export default function AboutPage() {
             gospel contents
           </h3>
           <div className="team-card">
-            <div className="card1" data-aos="fade-down" data-aos-duration="2000">
+            <div
+              className="card1"
+              data-aos="fade-down"
+              data-aos-duration="2000"
+            >
               <div className="team-img-container">
                 <img className="team-img" src={hrImg} alt="" />
               </div>
               <div className="card1-content">
                 <div className="card1-text">
                   <p>OMOLADE ADEKANLE</p>
-                  <p className="positions">
-                    creativedirector@thejesustalksmedia.com
-                  </p>
+                  <p className="positions">hr@thejtm.com.ng</p>
                 </div>
                 <div className="card1-icon">
                   <Link to="">
@@ -330,7 +332,9 @@ export default function AboutPage() {
               <div className="card1-content">
                 <div className="card1-text">
                   <p>Haddy Onyemaka </p>
-                  <p className="positions">hr@thejtm.com.ng</p>
+                  <p className="positions">
+                    creativedirector@thejesustalksmedia.com
+                  </p>
                 </div>
                 <div className="card1-icon">
                   <Link to="">
