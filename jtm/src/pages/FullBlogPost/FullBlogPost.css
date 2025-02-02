@@ -8,6 +8,10 @@ body {
   margin: 0;
   font-family: "Inter", sans-serif;
 }
+.hero-bg img{
+  width: 100%;
+  margin-top: 10px;
+}
 
 .full-blog {
   width: 90%;
@@ -60,5 +64,10 @@ body {
   }
   .full-blog-header {
     width: 80%;
+  }
+  .hero-bg img{
+    width: 100%;
+    margin-top:20px;
+    
   }
 }
