@@ -234,35 +234,35 @@ export default function Home() {
               to="https://the-jesus-talks-radio.mixlr.com/"
               target="_blank"
             >
-              <img src={radio} alt="" /> The Jesus Talks Radio
+              <img src={radio} alt="" /> 
             </Link>
             <Link
               to="https://youtube.com/@thejesustalksmedia?si=rnmuozJ1pFo3Fszj"
               target="_blank"
               className="express-link"
             >
-              <img src={tv} alt="" /> Our Youtube
+              <img src={tv} alt="" /> 
             </Link>
             <Link
               to="https://open.spotify.com/show/7k1np91Bo6cmAjxdDTJwtg?si=9iBm3wdCRn21jy3RsCRGog"
               target="_blank"
               className="express-link"
             >
-              <img src={podcast} alt="" /> Faith-God-Life Podcast
+              <img src={podcast} alt="" /> 
             </Link>
             <Link
               to='mailto:thejesustalksradio@gmail.com?subject=Your Subject&body=Your message body"'
               className="express-link"
               target="_blank"
             >
-              <img src={emailIcon} alt="" /> The Yellow Mail
+              <img src={emailIcon} alt="" /> 
             </Link>
             <Link
               to="https://theyellowblog.medium.com/"
               target="_blank"
               className="express-link"
             >
-              <img src={vector} alt="" /> The Yellow Blog
+              <img src={vector} alt="" /> 
             </Link>
           </div>
         </div>
