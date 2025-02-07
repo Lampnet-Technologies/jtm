@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./Contact.css";
-import contact from "../../../public/assets/images/contact.png";
+import contactBg from "/assets/images/contact-bg.png";
 import Footer from "../../components/Footer/Footer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "aos/dist/aos.css";
 import AOS from "aos";
+import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 export default function Contact() {
   //AOS
@@ -58,7 +59,10 @@ export default function Contact() {
     <div>
       <div className="contact">
         <div className="contact-banner">
-          <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1737432261/contact_yht40f.png' alt="" />
+          <img
+            src="https://res.cloudinary.com/dn4hkronr/image/upload/v1737432261/contact_yht40f.png"
+            alt=""
+          />
         </div>
         <div className="contact-content">
           <div className="contact-detail">
@@ -115,58 +119,18 @@ export default function Contact() {
             </div>
           </div>
           <div className="contact-team">
-            <div className="contact-team-left">
-              <h3 data-aos="fade-right" data-aos-duration="1000">
-                You can also reach out to our dedicated team{" "}
-              </h3>
-              <div
-                className="tv-admin"
-                data-aos="fade-right"
-                data-aos-duration="1500"
-              >
-                <h2>The Jesustalk Tv admin</h2>
-                <a
-                  href="mailTo:thejesustalkstv@gmail.com"
-                  style={{ color: "gray" }}
-                >
-                  Email: thejesustalkstv@gmail.com
-                </a>
-
-                <p>Phone number: 07086432110</p>
+            <img src={contactBg} alt="" />
+            <div className="contactBg-content">
+              <h2>You can also reach out to our dedicated team</h2>
+              <p>The Jesus Talks Media</p>
+              <div className="contact-content-info">
+                <FaEnvelope />
+                <p>info@thejtm.com.ng</p>
               </div>
-              <div
-                className="radio-admin"
-                data-aos="fade-right"
-                data-aos-duration="2000"
-              >
-                <h2>The Jesus talk radio admin</h2>
-                <a
-                  href="mailTo:thejesustalksradio@gmail.com"
-                  style={{ color: "gray" }}
-                >
-                  Email: thejesustalksradio@gmail.com
-                </a>
-                <p>Phone number : 07086432110</p>
+              <div className="contact-content-info">
+                <FaPhoneAlt />
+                <p>07086432110</p>
               </div>
-              <div
-                className="yellow-blog-admin"
-                data-aos="fade-right"
-                data-aos-duration="2500"
-              >
-                <h2>The Yellow blog admin</h2>
-                <a href="mailtheyellowblog@gmail.com" style={{ color: "gray" }}>
-                  Email: mailtheyellowblog@gmail.com
-                </a>
-
-                <p>Phone number : 07086432110</p>
-              </div>
-            </div>
-            <div
-              className="contact-team-right"
-              data-aos="fade-left"
-              data-aos-duration="1500"
-            >
-              <img src={contact} alt="" />
             </div>
           </div>
         </div>

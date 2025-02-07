@@ -841,18 +841,18 @@ export default function Home() {
                   </div>
                 </div>
               </SplideSlide>
-              {/* <SplideSlide>
+
+              <SplideSlide>
                 <div className="splide1">
                   <div className="wots-left">
                     <img src={image9} alt="person" />
                     <div className="wot-text">
                       <p>
-                        I didn’t even have to lay out a vision because they took
-                        so much initiative and approached everything with
-                        brilliance—it left me in awe! I truly love what they’re
-                        doing and wholeheartedly believe in it. If you’re not
-                        already on board, now’s the time to join the movement.
-                        They’re onto something big!
+                        I loved that the team was proactive I didn’t have to
+                        think on their behalf. I simply shared my vision, and
+                        they ran with it from start to finish. I was
+                        particularly impressed by how much they accomplished
+                        with so little.
                       </p>
                       <div className="wot-name">Tianney</div>
                     </div>
@@ -861,18 +861,73 @@ export default function Home() {
                     <img src={image10} alt="" />
                     <div className="wot-text">
                       <p>
-                        I didn’t even have to lay out a vision because they took
-                        so much initiative and approached everything with
-                        brilliance—it left me in awe! I truly love what they’re
-                        doing and wholeheartedly believe in it. If you’re not
-                        already on board, now’s the time to join the movement.
-                        They’re onto something big!
+                        The Jesus Talks Media feels like family to me. I’ve
+                        admired their passion from day one, and it hasn’t
+                        diminished in the slightest if anything, it’s grown even
+                        stronger! Working with them was such a seamless and
+                        inspiring experience. I didn’t even have to lay out a
+                        vision because they took so much initiative and
+                        approached everything with brilliance it left me in awe!
+                        I truly love what they’re doing and wholeheartedly
+                        believe in it. If you’re not already on board, now’s the
+                        time to join the movement. They’re onto something big!
                       </p>
                       <div className="wot-name">Ademola</div>
                     </div>
                   </div>
                 </div>
-              </SplideSlide> */}
+              </SplideSlide>
+
+              <SplideSlide>
+                <div className="splide1">
+                  <div className="wots-left">
+                    <img
+                      src="https://res.cloudinary.com/dn4hkronr/image/upload/v1738499883/BELIEVERS_BOND_ixoyi3.jpg"
+                      alt="person"
+                    />
+                    <div className="wot-text">
+                      <p>
+                        The Jesus Talks Media provided exceptional support for
+                        Believers Bond 2024, demonstrating their expertise in
+                        social media and content creation.They developed a
+                        strategic content plan that effectively engaged our
+                        audience generating excitement for the event with
+                        captivating posts. Additionally, their media coverage
+                        beautifully captured the spirit of Believers Bond 2024,
+                        showcasing the enthusiasm and joy of attendees In
+                        summary, Jesus Talks Media’s partnership with Believers
+                        Bond 2024 was a tremendous success, and we eagerly
+                        anticipate collaborating with them again in the future.
+                      </p>
+                      <div className="wot-name">Believers Bond</div>
+                    </div>
+                  </div>
+                  <div className="wots-right">
+                    <img
+                      src="https://res.cloudinary.com/dn4hkronr/image/upload/v1738499883/THE_BATON_wriovv.jpg"
+                      alt=""
+                    />
+                    <div className="wot-text">
+                      <p>
+                        Working with The Jesus Talks Media was an outstanding
+                        and vibrant experience that far exceeded our
+                        expectations. The Jesus Talks Media team showcased
+                        exceptional skills in managing the media aspects of our
+                        event. They not only documented the entire conference
+                        through igh quality video but also created engaging
+                        media content and provided comprehensive coverage. Their
+                        meticulous attention to detail and creativity ensured
+                        that we not only surpassed them. Overall, collaborating
+                        with The Jesus Talks Media was a remarkable experience.
+                        I highly recommend them to anyone seeking a reliable and
+                        innovative media team that consistently delivers
+                        outstanding results.
+                      </p>
+                      <div className="wot-name">The Baton</div>
+                    </div>
+                  </div>
+                </div>
+              </SplideSlide>
             </Splide>
           </div>
         </section>
