@@ -1,18 +1,18 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Contact.css";
-import banner from "../../../public/assets/images/contact-banner.png";
-import contact from "../../../public/assets/images/contact.png";
+import contactBg from "/assets/images/contact-bg.png";
 import Footer from "../../components/Footer/Footer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import 'aos/dist/aos.css';
-import AOS from 'aos';
+import "aos/dist/aos.css";
+import AOS from "aos";
+import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 export default function Contact() {
-   //AOS
-   useEffect(() => {
+  //AOS
+  useEffect(() => {
     AOS.init({
-      duration: 1000, 
+      duration: 1000,
     });
   }, []);
 
@@ -20,7 +20,15 @@ export default function Contact() {
   const [service, setService] = useState("");
   const [message, setMessage] = useState("");
 
-  const servicesOptions = ["Podcast", "Bible quiz", "Church news"];
+  const servicesOptions = [
+    "Advertising and Sponsorship",
+    "Consulting and Training",
+    "Digital Media Services",
+    "Educational Resources",
+    "Event Management",
+    "International Outreach",
+    "Merchandise and Product Development",
+  ];
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -51,12 +59,17 @@ export default function Contact() {
     <div>
       <div className="contact">
         <div className="contact-banner">
-          <img src={banner} alt="" />
+          <img
+            src="https://res.cloudinary.com/dn4hkronr/image/upload/v1737432261/contact_yht40f.png"
+            alt=""
+          />
         </div>
         <div className="contact-content">
           <div className="contact-detail">
             <div className="contact-left">
-              <h3 data-aos="fade-right" data-aos-duration="1000">Lets chat</h3>
+              <h3 data-aos="fade-right" data-aos-duration="1000">
+                Lets chat
+              </h3>
               <p data-aos="fade-right" data-aos-duration="1500">
                 Whether you have a question, want to get featured, or simply
                 want to connect.
@@ -106,32 +119,18 @@ export default function Contact() {
             </div>
           </div>
           <div className="contact-team">
-            <div className="contact-team-left">
-              <h3 data-aos="fade-right" data-aos-duration="1000">You can also reach out to our dedicated team </h3>
-              <div className="tv-admin" data-aos="fade-right" data-aos-duration="1500">
-                <h2 >
-                  Jesustalk Tv admin
-                </h2>
-                <p>Email: thejesustalkstv@gmail.com </p>
-                <p>Phone number: 07086432110</p>
+            <img src={contactBg} alt="" />
+            <div className="contactBg-content">
+              <h2>You can also reach out to our dedicated team</h2>
+              <p>The Jesus Talks Media</p>
+              <div className="contact-content-info">
+                <FaEnvelope />
+                <p>info@thejtm.com.ng</p>
               </div>
-              <div className="radio-admin" data-aos="fade-right" data-aos-duration="2000">
-                <h2>
-                Jesus talk radio admin
-                </h2>
-                <p>Email: https://mailchi.mp/a40e02724e7b/theyellowmail</p>
-                <p>Phone number : 07086432110</p>
+              <div className="contact-content-info">
+                <FaPhoneAlt />
+                <p>07086432110</p>
               </div>
-              <div className="yellow-blog-admin" data-aos="fade-right" data-aos-duration="2500">
-                <h2>
-                Yellow blog admin
-                </h2>
-                <p>Email: mailtheyellowblog@gmail.com </p>
-                <p>Phone number : 07086432110</p>
-              </div>
-            </div>
-            <div className="contact-team-right" data-aos="fade-left" data-aos-duration="1500">
-              <img src={contact} alt="" />
             </div>
           </div>
         </div>

@@ -6,12 +6,6 @@ import image3 from "../../../public/assets/images/email.gif";
 import image4 from "../../../public/assets/images/radio-picture.png";
 import image5 from "../../../public/assets/images/social-media-picture.png";
 import connect from "../../../public/assets/images/connect.gif";
-// import social from "../../../public/assets/images/social.png";
-// import instagram from "../../../public/assets/images/instagram.png";
-// import youtube from "../../../public/assets/images/youtube.png";
-// import twitter from "../../../public/assets/images/twitter.png";
-// import facebook from "../../../public/assets/images/facebook.png";
-// import tiktok from "../../../public/assets/images/tiktok.png";
 import facebookIcon from "../../../public/assets/images/facebook-icon.png";
 import tiktoIcon from "../../../public/assets/images/tiktok-icon.png";
 import instagramIcon from "../../../public/assets/images/instagram-icon.png";
@@ -20,18 +14,19 @@ import youtubeIcon from "../../../public/assets/images/youtube-icon.png";
 import image6 from "../../../public/assets/images/podcast-picture.png";
 import image7 from "../../../public/assets/images/video.png";
 import image8 from "../../../public/assets/images/yellow-blog.png";
-import image9 from "../../../public/assets/images/person1.png";
-import image10 from "../../../public/assets/images/person2.png";
-import icon1 from "../../../public/assets/images/yellow-icon1.png";
-import icon2 from "../../../public/assets/images/yellow-icon2.png";
+import image9 from "../../../public/assets/images/person1.jpg";
+import image10 from "../../../public/assets/images/person2.jpg";
+import icon1 from "../../../public/assets/images/compass.png";
+import icon2 from "../../../public/assets/images/bulb.png";
 import icon3 from "../../../public/assets/images/checkmark.png";
+import icon4 from "../../../public/assets/images/infinity.png";
 import Footer from "../../components/Footer/Footer";
 import { FaPlay } from "react-icons/fa";
 import radio from "../../../public/assets/images/radio.png";
 import podcast from "../../../public/assets/images/podcast.png";
 import tv from "../../../public/assets/images/tv.png";
+import emailIcon from "../../../public/assets/images/email.png";
 import vector from "../../../public/assets/images/Vector.png";
-// import email from "../../../public/assets/images/email.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import Modal from "react-modal";
@@ -96,7 +91,7 @@ export default function Home() {
 
   React.useEffect(() => {
     const typed = new Typed(cl.current, {
-      strings: ["The Jesus Talks Radio+"],
+      strings: ["The Jesus Talks Radio"],
       typeSpeed: 150,
       backSpeed: 100,
       loop: true,
@@ -191,11 +186,13 @@ export default function Home() {
           <div className="background-left">
             <div className="left-content">
               <h2 data-aos="fade-right" data-aos-duration="1000">
-                We promote gospel content
+                We transform how you connect with your audiences.
               </h2>
               <p data-aos="fade-right" data-aos-duration="1500">
-                We are here to promote your Christian contents through any
-                social media of your choice
+                Through our platforms, we provide promotion, marketing, and
+                spotlight opportunities for Christian artists, creatives, and
+                organizations, helping them share their stories and messages in
+                the most impactful and uplifting way.
               </p>
               <button data-aos="fade-right" data-aos-duration="2000">
                 <Link className="bg-btn" to="/featured">
@@ -205,15 +202,20 @@ export default function Home() {
             </div>
           </div>
           <div className="background-right">
-            <img src={image} alt="background image" />
+            <img
+              src="https://res.cloudinary.com/dn4hkronr/image/upload/v1737252487/bg-image_tk7mdu.png"
+              alt="background image"
+            />
             <div className="right-overlay">
               <div className="right-overlay-content">
                 <h2 data-aos="fade-right" data-aos-duration="1000">
-                  We promote gospel content
+                  We transform how you connect with your audiences.
                 </h2>
                 <p data-aos="fade-right" data-aos-duration="1500">
-                  We are here to promote your Christian contents through any
-                  social media of your choice
+                  Through our platforms, we provide promotion, marketing, and
+                  spotlight opportunities for Christian artists, creatives, and
+                  organizations, helping them share their stories and messages
+                  in the most impactful and uplifting way.
                 </p>
                 <button data-aos="fade-right" data-aos-duration="2000">
                   <Link className="bg-btn" to="/featured">
@@ -232,45 +234,46 @@ export default function Home() {
               to="https://the-jesus-talks-radio.mixlr.com/"
               target="_blank"
             >
-              <img src={radio} alt="" /> Jesus Talks Radio
+              <img src={radio} alt="" /> 
             </Link>
             <Link
               to="https://youtube.com/@thejesustalksmedia?si=rnmuozJ1pFo3Fszj"
               target="_blank"
               className="express-link"
             >
-              <img src={tv} alt="" /> Our Youtube
+              <img src={tv} alt="" /> 
             </Link>
             <Link
               to="https://open.spotify.com/show/7k1np91Bo6cmAjxdDTJwtg?si=9iBm3wdCRn21jy3RsCRGog"
               target="_blank"
               className="express-link"
             >
-              <img src={podcast} alt="" /> Life Podcast
+              <img src={podcast} alt="" /> 
             </Link>
             <Link
               to='mailto:thejesustalksradio@gmail.com?subject=Your Subject&body=Your message body"'
               className="express-link"
               target="_blank"
             >
-              <img src={email} alt="" /> The Yellow Mail
+              <img src={emailIcon} alt="" /> 
             </Link>
             <Link
               to="https://theyellowblog.medium.com/"
               target="_blank"
               className="express-link"
             >
-              <img src={vector} alt="" /> The Yellow Blog
+              <img src={vector} alt="" /> 
             </Link>
           </div>
         </div>
         <div className="know-us">
-          <div
-            className="know-us-left"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-          >
-            <img src={image2} alt="image" />
+          <div className="know-us-left">
+            <img
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              src="https://res.cloudinary.com/dn4hkronr/image/upload/v1738503276/get-to-know_o4qa74.png"
+              alt="image"
+            />
           </div>
           <div className="know-us-right">
             <h3>
@@ -280,8 +283,8 @@ export default function Home() {
               We are a Christian Media Company driven by a profound vision: to
               anchor individuals deeply in their faith through the
               transformative power of media; and our different expressions which
-              include: Jesus talks radio, Jesus talks Tv, The yellow blog and
-              The yellow email
+              include: The Jesus talks radio, The Jesus talks Tv, The yellow
+              blog and The yellow email
             </p>
             <p data-aos="fade-left" data-aos-duration="2000">
               Through our platform, we offer meaningful media and create a
@@ -313,17 +316,20 @@ export default function Home() {
                     <button type="submit">Subscribe</button>
                   </div>
                 </form>
-                <ToastContainer />
               </div>
             </div>
           )}
+          <div className="yellow-mail-angel"></div>
           <div className="yellow-mail-content">
             <div
               className="yellow-mail-right"
               data-aos="fade-left"
               data-aos-duration="1500"
             >
-              <img src={image3} alt="" />
+              <img
+                src="https://res.cloudinary.com/dn4hkronr/image/upload/v1737252487/email_bxuvth.gif"
+                alt=""
+              />
             </div>
             <div className="yellow-mail-left">
               <h3 data-aos="fade-right" data-aos-duration="1000">
@@ -352,8 +358,9 @@ export default function Home() {
               </div>
               <div className="yellow-mail-text">
                 <p>
-                  Get the most recent information about our shows, including
-                  when they air and how they are planned
+                  Get exclusive updates about us--from behind-the-scenes
+                  insights into our projects to updates on what we’re currently
+                  working on and how we bring our ideas to life.
                 </p>
               </div>
             </div>
@@ -368,8 +375,9 @@ export default function Home() {
               </div>
               <div className="yellow-mail-text">
                 <p>
-                  Discover the juicy "behind the scenes" details from our
-                  conversations with the creatives you love
+                  Explore inspiring conversations and playlists--featuring
+                  exclusive interviews with creatives, access to their stories,
+                  and curated playlists that reflect their journey.
                 </p>
               </div>
             </div>
@@ -380,12 +388,14 @@ export default function Home() {
               data-aos-duration="3000"
             >
               <div className="yellow-mail-icon">
-                <img src={icon1} alt="icon" />
+                <img src={icon4} alt="icon" />
               </div>
               <div className="yellow-mail-text">
                 <p>
-                  Discover the juicy "behind the scenes" details from our
-                  conversations with the creatives you love
+                  Stay in the loop with Buzz--your go-to source for first-hand
+                  information about events, concerts, new music releases, book
+                  launches, Christian films, and all things happening in the
+                  Christian creative space.
                 </p>
               </div>
             </div>
@@ -397,7 +407,10 @@ export default function Home() {
             data-aos="fade-left"
             data-aos-duration="2500"
           >
-            <img src={image4} alt="image" />
+            <img
+              src="https://res.cloudinary.com/dn4hkronr/image/upload/v1737252504/radio-picture_q8vsef.png"
+              alt="image"
+            />
           </div>
           <div className="radio-left">
             <h3 data-aos="fade-right" data-aos-duration="1000">
@@ -502,7 +515,7 @@ export default function Home() {
           </div>
           <div className="youtube-down">
             <img
-              src={image7}
+              src="https://res.cloudinary.com/dn4hkronr/image/upload/v1737252511/video_vbtkio.png"
               alt="image"
               style={{ width: "100%", height: "auto" }}
             />
@@ -582,7 +595,7 @@ export default function Home() {
             <div className="social-lists">
               <p data-aos="fade-right" data-aos-duration="1500">
                 <img src={icon3} alt="checkmark" />
-                Faith Struggles
+                Faith-God-life podcast{" "}
               </p>
               <p data-aos="fade-right" data-aos-duration="2000">
                 <img src={icon3} alt="checkmark" />
@@ -771,7 +784,11 @@ export default function Home() {
                 alt="x"
               />
             </Link>
-            <Link className="social-icon-link" to="#">
+            <Link
+              className="social-icon-link"
+              to="https://www.youtube.com/@thejesustalksmedia"
+              target="_blank"
+            >
               <img
                 data-aos="fade-up"
                 data-aos-duration="5000"
@@ -786,6 +803,45 @@ export default function Home() {
           <h3>Word on the street</h3>
           <div className="wots-content">
             <Splide>
+              <SplideSlide>
+                <div className="splide1">
+                  <div className="wots-left">
+                    <img
+                      src={image9}
+                      alt="Tianney"
+                      style={{ objectFit: "cover" }}
+                    />
+                    <div className="wot-text">
+                      <p>
+                        I loved that the team was proactive I didn’t have to
+                        think on their behalf. I simply shared my vision, and
+                        they ran with it from start to finish. I was
+                        particularly impressed by how much they accomplished
+                        with so little.
+                      </p>
+                      <div className="wot-name">Tianney</div>
+                    </div>
+                  </div>
+                  <div className="wots-right">
+                    <img
+                      src={image10}
+                      alt="Ademola"
+                      style={{ objectFit: "cover" }}
+                    />
+                    <div className="wot-text">
+                      <p>
+                        The Jesus Talks Media feels like family to me. I’ve
+                        admired their passion from day one, and it hasn’t
+                        diminished in the slightest—if anything, it’s grown even
+                        stronger! Working with them was such a seamless and
+                        inspiring experience.
+                      </p>
+                      <div className="wot-name">Ademola</div>
+                    </div>
+                  </div>
+                </div>
+              </SplideSlide>
+
               <SplideSlide>
                 <div className="splide1">
                   <div className="wots-left">
@@ -807,69 +863,67 @@ export default function Home() {
                       <p>
                         The Jesus Talks Media feels like family to me. I’ve
                         admired their passion from day one, and it hasn’t
-                        diminished in the slightest—if anything, it’s grown even
+                        diminished in the slightest if anything, it’s grown even
                         stronger! Working with them was such a seamless and
-                        inspiring experience.
+                        inspiring experience. I didn’t even have to lay out a
+                        vision because they took so much initiative and
+                        approached everything with brilliance it left me in awe!
+                        I truly love what they’re doing and wholeheartedly
+                        believe in it. If you’re not already on board, now’s the
+                        time to join the movement. They’re onto something big!
                       </p>
                       <div className="wot-name">Ademola</div>
                     </div>
                   </div>
                 </div>
               </SplideSlide>
+
               <SplideSlide>
                 <div className="splide1">
                   <div className="wots-left">
-                    <img src={image9} alt="person" />
+                    <img
+                      src="https://res.cloudinary.com/dn4hkronr/image/upload/v1738499883/BELIEVERS_BOND_ixoyi3.jpg"
+                      alt="person"
+                    />
                     <div className="wot-text">
                       <p>
-                        I didn’t even have to lay out a vision because they took
-                        so much initiative and approached everything with
-                        brilliance—it left me in awe! I truly love what they’re
-                        doing and wholeheartedly believe in it. If you’re not
-                        already on board, now’s the time to join the movement.
-                        They’re onto something big!
+                        The Jesus Talks Media provided exceptional support for
+                        Believers Bond 2024, demonstrating their expertise in
+                        social media and content creation.They developed a
+                        strategic content plan that effectively engaged our
+                        audience generating excitement for the event with
+                        captivating posts. Additionally, their media coverage
+                        beautifully captured the spirit of Believers Bond 2024,
+                        showcasing the enthusiasm and joy of attendees In
+                        summary, Jesus Talks Media’s partnership with Believers
+                        Bond 2024 was a tremendous success, and we eagerly
+                        anticipate collaborating with them again in the future.
                       </p>
-                      <div className="wot-name">Tianney</div>
+                      <div className="wot-name">Believers Bond</div>
                     </div>
                   </div>
                   <div className="wots-right">
-                    <img src={image10} alt="" />
+                    <img
+                      src="https://res.cloudinary.com/dn4hkronr/image/upload/v1738499883/THE_BATON_wriovv.jpg"
+                      alt=""
+                    />
                     <div className="wot-text">
                       <p>
-                        I didn’t even have to lay out a vision because they took
-                        so much initiative and approached everything with
-                        brilliance—it left me in awe! I truly love what they’re
-                        doing and wholeheartedly believe in it. If you’re not
-                        already on board, now’s the time to join the movement.
-                        They’re onto something big!
+                        Working with The Jesus Talks Media was an outstanding
+                        and vibrant experience that far exceeded our
+                        expectations. The Jesus Talks Media team showcased
+                        exceptional skills in managing the media aspects of our
+                        event. They not only documented the entire conference
+                        through igh quality video but also created engaging
+                        media content and provided comprehensive coverage. Their
+                        meticulous attention to detail and creativity ensured
+                        that we not only surpassed them. Overall, collaborating
+                        with The Jesus Talks Media was a remarkable experience.
+                        I highly recommend them to anyone seeking a reliable and
+                        innovative media team that consistently delivers
+                        outstanding results.
                       </p>
-                      <div className="wot-name">Ademola</div>
-                    </div>
-                  </div>
-                </div>
-              </SplideSlide>
-              <SplideSlide>
-                <div className="splide1">
-                  <div className="wots-left">
-                    <img src={image9} alt="person" />
-                    <div className="wot-text">
-                      <p>
-                        Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s, when an unknown printer took a
-                        galley of type and scrambled it to{" "}
-                      </p>
-                      <div className="wot-name">Tianney</div>
-                    </div>
-                  </div>
-                  <div className="wots-right">
-                    <img src={image10} alt="" />
-                    <div className="wot-text">
-                      <p>
-                        Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s, when an unknown printer took a
-                        galley of type and scrambled it to
-                      </p>
-                      <div className="wot-name">Ademola</div>
+                      <div className="wot-name">The Baton</div>
                     </div>
                   </div>
                 </div>
@@ -877,6 +931,7 @@ export default function Home() {
             </Splide>
           </div>
         </section>
+        <ToastContainer />
         <Footer />
       </div>
     </div>

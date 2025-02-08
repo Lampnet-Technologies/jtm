@@ -18,10 +18,10 @@
   width: 80%;
   margin: 220px auto;
 }
-.banner-header h2{
+.banner-header h2 {
   font-size: 30px;
 }
-.banner-header p{
+.banner-header p {
   font-size: 18px;
 }
 .about-sections {
@@ -32,15 +32,15 @@
 .about-section1 {
   margin-bottom: 140px;
 }
-.about-section1 h3{
+.about-section1 h3 {
   font-size: 30px;
 }
 .section-right img {
   width: 100%;
 }
 /* Programs */
-.programs h2{
-    text-align: center;
+.programs h2 {
+  text-align: center;
 }
 .programs-table {
   overflow-x: auto;
@@ -48,12 +48,13 @@
 }
 
 table {
-  width: 100%; 
+  width: 100%;
   table-layout: auto;
 }
-th, td {
+th,
+td {
   min-width: 100px;
-  padding: 10px; 
+  padding: 10px;
   text-align: left;
 }
 /* Teams */
@@ -64,64 +65,73 @@ th, td {
   text-align: center;
   font-weight: 500;
   font-size: 25px;
+  width: 90%;
+  margin: 30px auto;
 }
 .team-card {
   width: 80%;
   margin: auto;
 }
+.card1-content .positions {
+  font-size: 14px !important;
+  margin-top: -10px;
+}
 .team-card .team-img {
   width: 100%;
+  object-fit: contain;
 }
 .card1 {
   margin-bottom: 20px;
 }
+
 .card1-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
   color: black;
   padding: 8px;
   border-radius: 0 0 8px 8px;
 }
 /* FAQ */
-.about .faq{
-    width: 80%;
-    margin: 80px auto;
+.about .faq {
+  width: 80%;
+  margin: 80px auto;
 }
-.faq p{
+.faq p {
   font-weight: 400;
   color: rgb(48, 48, 48);
 }
-.faq .brand-text{
+.faq .brand-text {
   color: white;
   text-align: center;
 }
-.faq-item{
+.faq-item {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
   padding: 10px;
-  background-color: #FCFCFC;
+  background-color: #fcfcfc;
+  border-radius: 9px;
   color: black;
 }
-.featured .faq-container span{
-padding: 10px 8px;
+.featured .faq-container span {
+  padding: 10px 8px;
 }
-.faq-question{
+.faq-question {
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
-.chevron-icon{
+.chevron-icon {
   border: 1px solid black;
   padding: 2px;
   border-radius: 100px;
 }
 
 @media screen and (min-width: 1120px) {
-  p{
+  p {
     font-size: 21px !important;
   }
   .about-banner img {
@@ -134,11 +144,11 @@ padding: 10px 8px;
     width: 30%;
     margin: 250px auto;
   }
-  .banner-header p{
+  .banner-header p {
     font-size: 15px;
-    opacity: .8;
+    opacity: 0.8;
   }
-  .banner-header h2{
+  .banner-header h2 {
     font-size: 40px;
   }
   .about-section1 {
@@ -156,30 +166,33 @@ padding: 10px 8px;
   .section-left p {
     width: 80%;
     font-size: 15px;
-    opacity: .8;
+    opacity: 0.8;
   }
 
   /* Programs */
-  .programs-table{
+  .programs-table {
     width: 60%;
     margin: auto;
   }
-  .programs h2{
+  .programs h2 {
     font-size: 30px;
   }
- 
+
   /* Teams */
   .team-card {
     display: flex;
     margin-top: 20px;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 40px;
   }
-  .card1 .team-img{
+  .card1 .team-img {
     width: 100%;
-    height: 300px;
+  }
+  .card1 {
+    width: 400px;
   }
   .card1 img {
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0;
   }
   .team h3 {
     width: 30%;
@@ -188,14 +201,14 @@ padding: 10px 8px;
     margin: auto;
   }
   /* FAQ */
-.about .faq{
-    width: 70%;
-}
+  .about .faq {
+    width: 60%;
+  }
 
-.faq .faq-question{
-  padding: 5px;
-}
-.faq .faq-question{
-  font-size: 20px;
-}
+  .faq .faq-question {
+    padding: 5px;
+  }
+  .faq .faq-question {
+    font-size: 20px;
+  }
 }

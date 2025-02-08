@@ -17,7 +17,6 @@ export default function Featured() {
   const servicesOptions = [
     "Advertising and Sponsorship",
     "Consulting and Training",
-    "Content Creation Service",
     "Digital Media Services",
     "Educational Resources",
     "Event Management",
