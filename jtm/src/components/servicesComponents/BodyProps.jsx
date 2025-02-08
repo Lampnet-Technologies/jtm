@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import "react-toastify/dist/ReactToastify.css";
 
-const BodyProps = (props) => {
+const BodyProps = ({ header, paragraph, button, onButtonClick }) => {
   // const [clicked, setClicked] = useState(false);
   return (
     // className="w-full bg-black"
     <section>
       <div className="">
         <div className="body-props">
-          <h1 className="">{props.header}</h1>
-          <p>{props.paragraph}</p>
-          <button className="request-btn">
-            {props.button}
+          <h1 className="">{header}</h1>
+          <p>{paragraph}</p>
+          <button className="request-btn"  onClick={onButtonClick}>
+            {button}
           </button>
         </div>
       </div>
