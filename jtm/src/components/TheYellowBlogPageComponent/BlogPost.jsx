@@ -37,7 +37,6 @@ const BlogPost = () => {
       .catch(console.error);
   }, []);
 
-
   // Function to estimate reading time based on word count
   const calculateReadingTime = (body) => {
     const wordsPerMinute = 200; // Average reading speed
@@ -61,9 +60,7 @@ const BlogPost = () => {
   };
 
   return (
-    <section
-      className="blog-post-section"
-    >
+    <section className="blog-post-section">
       {posts.map((post) => {
         // Extract the first paragraph from the post body directly inside the map function
         const firstParagraph = post.body
@@ -77,39 +74,29 @@ const BlogPost = () => {
         const formattedDate = new Date(post.datePublished).toLocaleDateString();
 
         return (
-          <Link 
-          className="blog-content-link"
+          <Link
+            className="blog-content-link"
             to={`/blogs/${post.slug.current}`}
             key={post.slug.current}
             state={{ post }}
           >
-            <article
-              className="blog-post-content"
-            >
-              <div className="">
-                <img
-                  src={post.mainImage.asset.url}
-                  alt={post.title}
-                  className=""
-                />
-              </div> 
-              <div className="">
-                <h2 className=" ">{post.title}</h2>
+            <article className="blog-post-content">
+              <div>
+                <img src={post.mainImage.asset.url} alt={post.title} />
+              </div>
+              <div>
+                <h2>{post.title}</h2>
 
                 {/* Render only the first paragraph, if it exists */}
                 {firstParagraph && <PortableText value={[firstParagraph]} />}
               </div>
               <div className="author-text">
                 {/* Display the author name */}
-                <h3 className="">
-                  {post.author?.name}
-                </h3>
+                <h3>{post.author?.name}</h3>
                 {/* Display the publication date */}
-                <p className="">{formattedDate}</p>
+                <p>{formattedDate}</p>
                 {/* Display estimated reading time */}
-                <p className="">
-                  {readingTime} min read
-                </p>
+                <p>{readingTime} min read</p>
               </div>
             </article>
           </Link>

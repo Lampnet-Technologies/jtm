@@ -138,7 +138,10 @@
     margin: 50px auto;
   }
   .contactBg-content {
-    left: 32%;
+    left: 17%;
+  }
+  .contactBg-content h2{
+    font-size: 35px;
   }
   .form input,
   textarea,

@@ -36,8 +36,13 @@ import "./Home.css";
 import Typed from "typed.js";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import client from "../../client";
+import { PortableText } from "@portabletext/react";
 
 export default function Home() {
+  //Blogs 
+  const [posts, setPosts] = useState([]);
+
   //Youtube modal
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
@@ -48,6 +53,29 @@ export default function Home() {
   const closeModal = () => {
     setModalIsOpen(false);
   };
+
+//Blogs
+
+  useEffect(() => {
+    client
+      .fetch(
+        `*[_type == "post"] | order(datePublished desc)[0..3] {
+          title,
+          slug,
+          body,
+          mainImage {
+            asset -> {
+              _id,
+              url
+            },
+            alt
+          },
+          datePublished
+        }`
+      )
+      .then((data) => setPosts(data))
+      .catch(console.error);
+  }, []);
 
   //AOS
   useEffect(() => {
@@ -641,23 +669,18 @@ export default function Home() {
           <div className="yellow-blog-content">
             <div className="yellow-blog-left">
               <img
-                src={image8}
-                alt="image"
+                src={posts[0].mainImage.asset.url}
+                alt={posts[0].title}
                 data-aos="fade-right"
                 data-aos-duration="2000"
               />
               <h3 data-aos="fade-right" data-aos-duration="2000">
-                Thriving in a new work place
+                {posts[0].title}
               </h3>
-              <p data-aos="fade-right" data-aos-duration="2500">
-                The Jesus Talks Radio is a Christian radio station that
-                broadcasts with the goal of bringing men to a deeper
-                understanding of Christ Jesus and envisioning all mankind as
-                being firmly anchored in Him.
-              </p>
+              <PortableText value={[posts[0].body[0]]} />
               <Link
                 className="blog-link"
-                to="/blog-posts"
+                to={`/blogs/${posts[0].slug.current}`}
                 data-aos="fade-left"
                 data-aos-duration="1500"
               >
@@ -665,83 +688,30 @@ export default function Home() {
               </Link>
             </div>
             <div className="yellow-blog-right">
-              <div className="right1">
-                <img
-                  src={image8}
-                  alt="image"
-                  data-aos="fade-right"
-                  data-aos-duration="1000"
-                />
-                <div className="right1-text">
-                  <h3>The Effect of Christian Music on New Converts</h3>
-                  <p data-aos="fade-left" data-aos-duration="1500">
-                    The Jesus Talks Radio is a Christian radio station that
-                    broadcasts with the goal of bringing men to a deeper
-                    understanding of Christ Jesus and envisioning all mankind as
-                    being firmly
-                  </p>
-                  <Link
-                    className="blog-link"
-                    to="/blog-posts"
-                    data-aos="fade-left"
-                    data-aos-duration="1500"
-                  >
-                    Read more
-                  </Link>
+              {posts.slice(1).map((post, index) => (
+                <div key={post.slug.current} className={`right${index + 1}`}>
+                  <img
+                    src={post.mainImage.asset.url}
+                    alt={post.title}
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                  />
+                  <div className={`right${index + 1}-text`}>
+                    <h3 data-aos="fade-left" data-aos-duration="1500">
+                      {post.title}
+                    </h3>
+                    <PortableText value={[post.body[0]]} />
+                    <Link
+                      className="blog-link"
+                      to={`/blogs/${post.slug.current}`}
+                      data-aos="fade-left"
+                      data-aos-duration="1500"
+                    >
+                      Read more
+                    </Link>
+                  </div>
                 </div>
-              </div>
-              <div className="right2">
-                <img src={image8} alt="image" data-aos="fade-right" />
-                <div className="right2-text">
-                  <h3 data-aos="fade-left" data-aos-duration="1500">
-                    Exploring the Evolution of Contemporary and Alternative
-                    Gospel Music
-                  </h3>
-                  <p data-aos="fade-left" data-aos-duration="1500">
-                    The Jesus Talks Radio is a Christian radio station that
-                    broadcasts with the goal of bringing men to a deeper
-                    understanding of Christ Jesus and envisioning all mankind as
-                    being firmly
-                  </p>
-                  <Link
-                    data-aos="fade-left"
-                    data-aos-duration="1500"
-                    className="blog-link"
-                    to="/blog-posts"
-                  >
-                    Read more
-                  </Link>
-                </div>
-              </div>
-              <div className="right3">
-                <img
-                  src={image8}
-                  alt="image"
-                  data-aos="fade-right"
-                  data-aos-duration="1000"
-                />
-                <div className="right3-text">
-                  <h3 data-aos="fade-left" data-aos-duration="1500">
-                    Aigbeh Dgong’s Upcoming Single ‘Sandalili’{" "}
-                  </h3>
-                  <p data-aos="fade-left" data-aos-duration="1500">
-                    {" "}
-                    A Joyful Fusion of Childhood Memories and Divine Love The
-                    Jesus Talks Radio is a Christian radio station that
-                    broadcasts with the goal of bringing men to a deeper
-                    understanding of Christ Jesus and envisioning all mankind as
-                    being firmly
-                  </p>
-                  <Link
-                    data-aos="fade-left"
-                    data-aos-duration="1500"
-                    className="blog-link"
-                    to="/blog-posts"
-                  >
-                    Read more
-                  </Link>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
           <Link to="/blog-posts" className="blog-link see-more">
