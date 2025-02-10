@@ -40,7 +40,7 @@ import client from "../../client";
 import { PortableText } from "@portabletext/react";
 
 export default function Home() {
-  //Blogs 
+  //Blogs
   const [posts, setPosts] = useState([]);
 
   //Youtube modal
@@ -54,28 +54,28 @@ export default function Home() {
     setModalIsOpen(false);
   };
 
-//Blogs
+  //Blogs
 
-  useEffect(() => {
-    client
-      .fetch(
-        `*[_type == "post"] | order(datePublished desc)[0..3] {
-          title,
-          slug,
-          body,
-          mainImage {
-            asset -> {
-              _id,
-              url
-            },
-            alt
-          },
-          datePublished
-        }`
-      )
-      .then((data) => setPosts(data))
-      .catch(console.error);
-  }, []);
+  // useEffect(() => {
+  //   client
+  //     .fetch(
+  //       `*[_type == "post"] | order(datePublished desc)[0..3] {
+  //         title,
+  //         slug,
+  //         body,
+  //         mainImage {
+  //           asset -> {
+  //             _id,
+  //             url
+  //           },
+  //           alt
+  //         },
+  //         datePublished
+  //       }`
+  //     )
+  //     .then((data) => setPosts(data))
+  //     .catch(console.error);
+  // }, []);
 
   //AOS
   useEffect(() => {
@@ -162,21 +162,21 @@ export default function Home() {
     };
   }, []);
 
-  const pl = React.useRef(null);
+  // const pl = React.useRef(null);
 
-  React.useEffect(() => {
-    const typed = new Typed(pl.current, {
-      strings: ["The Yellow Blog"],
-      typeSpeed: 150,
-      backSpeed: 100,
-      loop: true,
-    });
+  // React.useEffect(() => {
+  //   const typed = new Typed(pl.current, {
+  //     strings: ["The Yellow Blog"],
+  //     typeSpeed: 150,
+  //     backSpeed: 100,
+  //     loop: true,
+  //   });
 
-    return () => {
-      // Destroy Typed instance during cleanup to stop animation
-      typed.destroy();
-    };
-  }, []);
+  //   return () => {
+  //     // Destroy Typed instance during cleanup to stop animation
+  //     typed.destroy();
+  //   };
+  // }, []);
 
   //Email
   const [email, setEmail] = useState("");
@@ -262,35 +262,35 @@ export default function Home() {
               to="https://the-jesus-talks-radio.mixlr.com/"
               target="_blank"
             >
-              <img src={radio} alt="" /> 
+              <img src={radio} alt="" />
             </Link>
             <Link
               to="https://youtube.com/@thejesustalksmedia?si=rnmuozJ1pFo3Fszj"
               target="_blank"
               className="express-link"
             >
-              <img src={tv} alt="" /> 
+              <img src={tv} alt="" />
             </Link>
             <Link
               to="https://open.spotify.com/show/7k1np91Bo6cmAjxdDTJwtg?si=9iBm3wdCRn21jy3RsCRGog"
               target="_blank"
               className="express-link"
             >
-              <img src={podcast} alt="" /> 
+              <img src={podcast} alt="" />
             </Link>
             <Link
               to='mailto:thejesustalksradio@gmail.com?subject=Your Subject&body=Your message body"'
               className="express-link"
               target="_blank"
             >
-              <img src={emailIcon} alt="" /> 
+              <img src={emailIcon} alt="" />
             </Link>
             <Link
               to="https://theyellowblog.medium.com/"
               target="_blank"
               className="express-link"
             >
-              <img src={vector} alt="" /> 
+              <img src={vector} alt="" />
             </Link>
           </div>
         </div>
@@ -653,7 +653,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="yellow-blog">
+        {/* <section className="yellow-blog">
           <h3 data-aos="fade-right" data-aos-duration="1000">
             <span ref={pl} />
           </h3>
@@ -669,7 +669,7 @@ export default function Home() {
           <div className="yellow-blog-content">
             <div className="yellow-blog-left">
               <img
-                src={posts[0].mainImage.asset.url}
+                src={posts[0]?.mainImage?.asset?.url}
                 alt={posts[0].title}
                 data-aos="fade-right"
                 data-aos-duration="2000"
@@ -688,36 +688,34 @@ export default function Home() {
               </Link>
             </div>
             <div className="yellow-blog-right">
-              {posts.slice(1).map((post, index) => (
-                <div key={post.slug.current} className={`right${index + 1}`}>
+              {posts.length > 0 && (
+                <div className="yellow-blog-left">
                   <img
-                    src={post.mainImage.asset.url}
-                    alt={post.title}
+                    src={posts[0]?.mainImage?.asset?.url}
+                    alt={posts[0]?.title || "Blog"}
                     data-aos="fade-right"
-                    data-aos-duration="1000"
+                    data-aos-duration="2000"
                   />
-                  <div className={`right${index + 1}-text`}>
-                    <h3 data-aos="fade-left" data-aos-duration="1500">
-                      {post.title}
-                    </h3>
-                    <PortableText value={[post.body[0]]} />
-                    <Link
-                      className="blog-link"
-                      to={`/blogs/${post.slug.current}`}
-                      data-aos="fade-left"
-                      data-aos-duration="1500"
-                    >
-                      Read more
-                    </Link>
-                  </div>
+                  <h3 data-aos="fade-right" data-aos-duration="2000">
+                    {posts[0]?.title}
+                  </h3>
+                  <PortableText value={posts[0]?.body?.[0] || []} />
+                  <Link
+                    className="blog-link"
+                    to={`/blogs/${posts[0]?.slug?.current}`}
+                    data-aos="fade-left"
+                    data-aos-duration="1500"
+                  >
+                    Read more
+                  </Link>
                 </div>
-              ))}
+              )}
             </div>
           </div>
           <Link to="/blog-posts" className="blog-link see-more">
             See all
           </Link>
-        </section>
+        </section> */}
 
         <div className="social-platform">
           <img src={connect} alt="" className="connect-bg" />
