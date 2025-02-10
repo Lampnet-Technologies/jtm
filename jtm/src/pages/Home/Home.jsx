@@ -654,62 +654,73 @@ export default function Home() {
         </section>
 
         <section className="yellow-blog">
-      <h3 data-aos="fade-right" data-aos-duration="1000">
-        <span ref={pl}/>
-      </h3>
-      <p className="blog-intro" data-aos="fade-right" data-aos-duration="1500">
-        Subscribe to our blog where we provide Christians with edifying written Christian content that brings representation to all aspects of their lives.
-      </p>
-      <div className="yellow-blog-content">
-        <div className="yellow-blog-left">
-          <img
-            src={posts[0]?.mainImage?.asset?.url}
-            alt={posts[0]?.title}
-            data-aos="fade-right"
-            data-aos-duration="2000"
-          />
-          <h3 data-aos="fade-right" data-aos-duration="2000">
-            {posts[0]?.title}
+          <h3 data-aos="fade-right" data-aos-duration="1000">
+            <span ref={pl} />
           </h3>
-          <PortableText value={[posts[0]?.body?.[0]]} />
-          <Link
-            className="blog-link"
-            to={`/blogs/${posts[0]?.slug?.current}`}
-            data-aos="fade-left"
+          <p
+            className="blog-intro"
+            data-aos="fade-right"
             data-aos-duration="1500"
           >
-            Read more
-          </Link>
-        </div>
-        <div className="yellow-blog-right">
-          {posts.slice(1, 4).map((post) => (
-            <div className="yellow-blog-left" key={post.slug.current}>
+            Subscribe to our blog where we provide Christians with edifying
+            written Christian content that brings representation to all aspects
+            of their lives.
+          </p>
+          <div className="yellow-blog-content">
+            <div className="yellow-blog-left">
               <img
-                src={post.mainImage?.asset?.url}
-                alt={post.title}
+                src={posts[0]?.mainImage?.asset?.url}
+                alt={posts[0]?.title}
                 data-aos="fade-right"
                 data-aos-duration="2000"
               />
               <h3 data-aos="fade-right" data-aos-duration="2000">
-                {post.title}
+                {posts[0]?.title}
               </h3>
-              <PortableText value={post.body?.[0] || []} />
+              <PortableText value={[posts[0]?.body?.[0]]} />
               <Link
                 className="blog-link"
-                to={`/blogs/${post.slug.current}`}
+                to={`/blogs/${posts[0]?.slug?.current}`}
                 data-aos="fade-left"
                 data-aos-duration="1500"
               >
                 Read more
               </Link>
             </div>
-          ))}
-        </div>
-      </div>
-      <Link to="/blog-posts" className="blog-link see-more">
-        See all
-      </Link>
-    </section>
+            <div className="yellow-blog-right">
+              {posts.slice(1, 4).map((post) => (
+                <div
+                  className="yellow-blog-left right-flex"
+                  key={post.slug.current}
+                >
+                  <img
+                    src={post.mainImage?.asset?.url}
+                    alt={post.title}
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
+                  />
+                  <div>
+                    <h3 data-aos="fade-right" data-aos-duration="2000">
+                      {post.title}
+                    </h3>
+                    <PortableText value={post.body?.[0] || []} />
+                    <Link
+                      className="blog-link"
+                      to={`/blogs/${post.slug.current}`}
+                      data-aos="fade-left"
+                      data-aos-duration="1500"
+                    >
+                      Read more
+                    </Link>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <Link to="/blog-posts" className="blog-link see-more">
+            See all
+          </Link>
+        </section>
 
         <div className="social-platform">
           <img src={connect} alt="" className="connect-bg" />
