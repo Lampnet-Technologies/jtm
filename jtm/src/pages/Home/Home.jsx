@@ -56,26 +56,26 @@ export default function Home() {
 
   //Blogs
 
-  // useEffect(() => {
-  //   client
-  //     .fetch(
-  //       `*[_type == "post"] | order(datePublished desc)[0..3] {
-  //         title,
-  //         slug,
-  //         body,
-  //         mainImage {
-  //           asset -> {
-  //             _id,
-  //             url
-  //           },
-  //           alt
-  //         },
-  //         datePublished
-  //       }`
-  //     )
-  //     .then((data) => setPosts(data))
-  //     .catch(console.error);
-  // }, []);
+  useEffect(() => {
+    client
+      .fetch(
+        `*[_type == "post"] | order(datePublished desc)[0..3] {
+          title,
+          slug,
+          body,
+          mainImage {
+            asset -> {
+              _id,
+              url
+            },
+            alt
+          },
+          datePublished
+        }`
+      )
+      .then((data) => setPosts(data))
+      .catch(console.error);
+  }, []);
 
   //AOS
   useEffect(() => {
@@ -162,21 +162,21 @@ export default function Home() {
     };
   }, []);
 
-  // const pl = React.useRef(null);
+  const pl = React.useRef(null);
 
-  // React.useEffect(() => {
-  //   const typed = new Typed(pl.current, {
-  //     strings: ["The Yellow Blog"],
-  //     typeSpeed: 150,
-  //     backSpeed: 100,
-  //     loop: true,
-  //   });
+  React.useEffect(() => {
+    const typed = new Typed(pl.current, {
+      strings: ["The Yellow Blog"],
+      typeSpeed: 150,
+      backSpeed: 100,
+      loop: true,
+    });
 
-  //   return () => {
-  //     // Destroy Typed instance during cleanup to stop animation
-  //     typed.destroy();
-  //   };
-  // }, []);
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
 
   //Email
   const [email, setEmail] = useState("");
@@ -653,69 +653,63 @@ export default function Home() {
           </div>
         </section>
 
-        {/* <section className="yellow-blog">
-          <h3 data-aos="fade-right" data-aos-duration="1000">
-            <span ref={pl} />
-          </h3>
-          <p
-            className="blog-intro"
+        <section className="yellow-blog">
+      <h3 data-aos="fade-right" data-aos-duration="1000">
+        <span ref={pl}/>
+      </h3>
+      <p className="blog-intro" data-aos="fade-right" data-aos-duration="1500">
+        Subscribe to our blog where we provide Christians with edifying written Christian content that brings representation to all aspects of their lives.
+      </p>
+      <div className="yellow-blog-content">
+        <div className="yellow-blog-left">
+          <img
+            src={posts[0]?.mainImage?.asset?.url}
+            alt={posts[0]?.title}
             data-aos="fade-right"
+            data-aos-duration="2000"
+          />
+          <h3 data-aos="fade-right" data-aos-duration="2000">
+            {posts[0]?.title}
+          </h3>
+          <PortableText value={[posts[0]?.body?.[0]]} />
+          <Link
+            className="blog-link"
+            to={`/blogs/${posts[0]?.slug?.current}`}
+            data-aos="fade-left"
             data-aos-duration="1500"
           >
-            Subscribe to our blog where we provide Christians with edifying
-            written Christian content that brings representation to all aspects
-            of their lives.
-          </p>
-          <div className="yellow-blog-content">
-            <div className="yellow-blog-left">
+            Read more
+          </Link>
+        </div>
+        <div className="yellow-blog-right">
+          {posts.slice(1, 4).map((post) => (
+            <div className="yellow-blog-left" key={post.slug.current}>
               <img
-                src={posts[0]?.mainImage?.asset?.url}
-                alt={posts[0].title}
+                src={post.mainImage?.asset?.url}
+                alt={post.title}
                 data-aos="fade-right"
                 data-aos-duration="2000"
               />
               <h3 data-aos="fade-right" data-aos-duration="2000">
-                {posts[0].title}
+                {post.title}
               </h3>
-              <PortableText value={[posts[0].body[0]]} />
+              <PortableText value={post.body?.[0] || []} />
               <Link
                 className="blog-link"
-                to={`/blogs/${posts[0].slug.current}`}
+                to={`/blogs/${post.slug.current}`}
                 data-aos="fade-left"
                 data-aos-duration="1500"
               >
                 Read more
               </Link>
             </div>
-            <div className="yellow-blog-right">
-              {posts.length > 0 && (
-                <div className="yellow-blog-left">
-                  <img
-                    src={posts[0]?.mainImage?.asset?.url}
-                    alt={posts[0]?.title || "Blog"}
-                    data-aos="fade-right"
-                    data-aos-duration="2000"
-                  />
-                  <h3 data-aos="fade-right" data-aos-duration="2000">
-                    {posts[0]?.title}
-                  </h3>
-                  <PortableText value={posts[0]?.body?.[0] || []} />
-                  <Link
-                    className="blog-link"
-                    to={`/blogs/${posts[0]?.slug?.current}`}
-                    data-aos="fade-left"
-                    data-aos-duration="1500"
-                  >
-                    Read more
-                  </Link>
-                </div>
-              )}
-            </div>
-          </div>
-          <Link to="/blog-posts" className="blog-link see-more">
-            See all
-          </Link>
-        </section> */}
+          ))}
+        </div>
+      </div>
+      <Link to="/blog-posts" className="blog-link see-more">
+        See all
+      </Link>
+    </section>
 
         <div className="social-platform">
           <img src={connect} alt="" className="connect-bg" />
