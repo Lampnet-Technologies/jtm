@@ -5,6 +5,7 @@ import { PortableText } from "@portabletext/react";
 
 const BlogPost = () => {
   const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     client
@@ -33,8 +34,15 @@ const BlogPost = () => {
           bodyText
         }`
       )
-      .then((data) => setPosts(data))
-      .catch(console.error);
+      .then((data) => {
+        setPosts(data);
+      })
+      .catch((error) => {
+        console.error("Error fetching posts from Sanity:", error);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   }, []);
 
   // Function to estimate reading time based on word count
@@ -59,10 +67,18 @@ const BlogPost = () => {
     return readingTime;
   };
 
+  if (loading) {
+    return <p>Loading blog posts...</p>;
+  }
+
+  if (!posts.length) {
+    return <p>No blog posts found.</p>;
+  }
+
   return (
     <section className="blog-post-section">
       {posts.map((post) => {
-        // Extract the first paragraph from the post body directly inside the map function
+        // Extract the first paragraph from the post body
         const firstParagraph = post.body
           ? post.body.find((block) => block._type === "block")
           : null;
@@ -70,8 +86,18 @@ const BlogPost = () => {
         // Calculate reading time
         const readingTime = calculateReadingTime(post.body);
 
-        // Format the date
-        const formattedDate = new Date(post.datePublished).toLocaleDateString();
+        // Ensure the datePublished is valid and formatted
+        let formattedDate = "N/A";
+        if (post.datePublished) {
+          const publishedDate = new Date(post.datePublished);
+          formattedDate = publishedDate.toLocaleDateString("default", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          });
+        }
+
+        console.log(`Post: ${post.title}, Date Published: ${formattedDate}`);
 
         return (
           <Link
