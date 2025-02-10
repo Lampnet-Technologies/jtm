@@ -108,22 +108,21 @@ const BlogPost = () => {
           >
             <article className="blog-post-content">
               <div>
-                <img
-                  src={post.mainImage?.asset?.url || "https://via.placeholder.com/150"}
-                  alt={post.title}
-                  className=""
-                />
+                <img src={post.mainImage.asset.url} alt={post.title} />
               </div>
               <div>
-                <h2 className="">{post.title}</h2>
+                <h2>{post.title}</h2>
 
                 {/* Render only the first paragraph, if it exists */}
                 {firstParagraph && <PortableText value={[firstParagraph]} />}
               </div>
               <div className="author-text">
-                <h3 className="">{post.author?.name || "Unknown Author"}</h3>
-                <p className="">{formattedDate}</p>
-                <p className="">{readingTime} min read</p>
+                {/* Display the author name */}
+                <h3>{post.author?.name}</h3>
+                {/* Display the publication date */}
+                <p>{formattedDate}</p>
+                {/* Display estimated reading time */}
+                <p>{readingTime} min read</p>
               </div>
             </article>
           </Link>

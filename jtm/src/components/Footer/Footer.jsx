@@ -141,9 +141,9 @@ export default function Footer() {
               <div className="email">
                 <Link
                   className="email-link"
-                  to="mailTo:thejesustalksmedia@gmail.com"
+                  to="mailTo:info@thejtm.com.ng"
                 >
-                  <FaEnvelope /> thejesustalksmedia@gmail.com
+                  <FaEnvelope /> info@thejtm.com.ng
                 </Link>
               </div>
               <div className="social-icons">
@@ -161,7 +161,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="copyrights">
-          <p>© 2024 The Jesus Talks Media. All Rights Reserved.</p>
+          <p>© 2025 The Jesus Talks Media. All Rights Reserved.</p>
         </div>
       </div>
     </div>

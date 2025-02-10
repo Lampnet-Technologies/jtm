@@ -36,8 +36,13 @@ import "./Home.css";
 import Typed from "typed.js";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import client from "../../client";
+import { PortableText } from "@portabletext/react";
 
 export default function Home() {
+  //Blogs
+  const [posts, setPosts] = useState([]);
+
   //Youtube modal
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
@@ -48,6 +53,29 @@ export default function Home() {
   const closeModal = () => {
     setModalIsOpen(false);
   };
+
+  //Blogs
+
+  // useEffect(() => {
+  //   client
+  //     .fetch(
+  //       `*[_type == "post"] | order(datePublished desc)[0..3] {
+  //         title,
+  //         slug,
+  //         body,
+  //         mainImage {
+  //           asset -> {
+  //             _id,
+  //             url
+  //           },
+  //           alt
+  //         },
+  //         datePublished
+  //       }`
+  //     )
+  //     .then((data) => setPosts(data))
+  //     .catch(console.error);
+  // }, []);
 
   //AOS
   useEffect(() => {
@@ -134,21 +162,21 @@ export default function Home() {
     };
   }, []);
 
-  const pl = React.useRef(null);
+  // const pl = React.useRef(null);
 
-  React.useEffect(() => {
-    const typed = new Typed(pl.current, {
-      strings: ["The Yellow Blog"],
-      typeSpeed: 150,
-      backSpeed: 100,
-      loop: true,
-    });
+  // React.useEffect(() => {
+  //   const typed = new Typed(pl.current, {
+  //     strings: ["The Yellow Blog"],
+  //     typeSpeed: 150,
+  //     backSpeed: 100,
+  //     loop: true,
+  //   });
 
-    return () => {
-      // Destroy Typed instance during cleanup to stop animation
-      typed.destroy();
-    };
-  }, []);
+  //   return () => {
+  //     // Destroy Typed instance during cleanup to stop animation
+  //     typed.destroy();
+  //   };
+  // }, []);
 
   //Email
   const [email, setEmail] = useState("");
@@ -234,35 +262,35 @@ export default function Home() {
               to="https://the-jesus-talks-radio.mixlr.com/"
               target="_blank"
             >
-              <img src={radio} alt="" /> 
+              <img src={radio} alt="" />
             </Link>
             <Link
               to="https://youtube.com/@thejesustalksmedia?si=rnmuozJ1pFo3Fszj"
               target="_blank"
               className="express-link"
             >
-              <img src={tv} alt="" /> 
+              <img src={tv} alt="" />
             </Link>
             <Link
               to="https://open.spotify.com/show/7k1np91Bo6cmAjxdDTJwtg?si=9iBm3wdCRn21jy3RsCRGog"
               target="_blank"
               className="express-link"
             >
-              <img src={podcast} alt="" /> 
+              <img src={podcast} alt="" />
             </Link>
             <Link
               to='mailto:thejesustalksradio@gmail.com?subject=Your Subject&body=Your message body"'
               className="express-link"
               target="_blank"
             >
-              <img src={emailIcon} alt="" /> 
+              <img src={emailIcon} alt="" />
             </Link>
             <Link
               to="https://theyellowblog.medium.com/"
               target="_blank"
               className="express-link"
             >
-              <img src={vector} alt="" /> 
+              <img src={vector} alt="" />
             </Link>
           </div>
         </div>
@@ -625,7 +653,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="yellow-blog">
+        {/* <section className="yellow-blog">
           <h3 data-aos="fade-right" data-aos-duration="1000">
             <span ref={pl} />
           </h3>
@@ -641,23 +669,18 @@ export default function Home() {
           <div className="yellow-blog-content">
             <div className="yellow-blog-left">
               <img
-                src={image8}
-                alt="image"
+                src={posts[0]?.mainImage?.asset?.url}
+                alt={posts[0].title}
                 data-aos="fade-right"
                 data-aos-duration="2000"
               />
               <h3 data-aos="fade-right" data-aos-duration="2000">
-                Thriving in a new work place
+                {posts[0].title}
               </h3>
-              <p data-aos="fade-right" data-aos-duration="2500">
-                The Jesus Talks Radio is a Christian radio station that
-                broadcasts with the goal of bringing men to a deeper
-                understanding of Christ Jesus and envisioning all mankind as
-                being firmly anchored in Him.
-              </p>
+              <PortableText value={[posts[0].body[0]]} />
               <Link
                 className="blog-link"
-                to="/blog-posts"
+                to={`/blogs/${posts[0].slug.current}`}
                 data-aos="fade-left"
                 data-aos-duration="1500"
               >
@@ -665,89 +688,34 @@ export default function Home() {
               </Link>
             </div>
             <div className="yellow-blog-right">
-              <div className="right1">
-                <img
-                  src={image8}
-                  alt="image"
-                  data-aos="fade-right"
-                  data-aos-duration="1000"
-                />
-                <div className="right1-text">
-                  <h3>The Effect of Christian Music on New Converts</h3>
-                  <p data-aos="fade-left" data-aos-duration="1500">
-                    The Jesus Talks Radio is a Christian radio station that
-                    broadcasts with the goal of bringing men to a deeper
-                    understanding of Christ Jesus and envisioning all mankind as
-                    being firmly
-                  </p>
-                  <Link
-                    className="blog-link"
-                    to="/blog-posts"
-                    data-aos="fade-left"
-                    data-aos-duration="1500"
-                  >
-                    Read more
-                  </Link>
-                </div>
-              </div>
-              <div className="right2">
-                <img src={image8} alt="image" data-aos="fade-right" />
-                <div className="right2-text">
-                  <h3 data-aos="fade-left" data-aos-duration="1500">
-                    Exploring the Evolution of Contemporary and Alternative
-                    Gospel Music
+              {posts.length > 0 && (
+                <div className="yellow-blog-left">
+                  <img
+                    src={posts[0]?.mainImage?.asset?.url}
+                    alt={posts[0]?.title || "Blog"}
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
+                  />
+                  <h3 data-aos="fade-right" data-aos-duration="2000">
+                    {posts[0]?.title}
                   </h3>
-                  <p data-aos="fade-left" data-aos-duration="1500">
-                    The Jesus Talks Radio is a Christian radio station that
-                    broadcasts with the goal of bringing men to a deeper
-                    understanding of Christ Jesus and envisioning all mankind as
-                    being firmly
-                  </p>
+                  <PortableText value={posts[0]?.body?.[0] || []} />
                   <Link
+                    className="blog-link"
+                    to={`/blogs/${posts[0]?.slug?.current}`}
                     data-aos="fade-left"
                     data-aos-duration="1500"
-                    className="blog-link"
-                    to="/blog-posts"
                   >
                     Read more
                   </Link>
                 </div>
-              </div>
-              <div className="right3">
-                <img
-                  src={image8}
-                  alt="image"
-                  data-aos="fade-right"
-                  data-aos-duration="1000"
-                />
-                <div className="right3-text">
-                  <h3 data-aos="fade-left" data-aos-duration="1500">
-                    Aigbeh Dgong’s Upcoming Single ‘Sandalili’{" "}
-                  </h3>
-                  <p data-aos="fade-left" data-aos-duration="1500">
-                    {" "}
-                    A Joyful Fusion of Childhood Memories and Divine Love The
-                    Jesus Talks Radio is a Christian radio station that
-                    broadcasts with the goal of bringing men to a deeper
-                    understanding of Christ Jesus and envisioning all mankind as
-                    being firmly
-                  </p>
-                  <Link
-                    data-aos="fade-left"
-                    data-aos-duration="1500"
-                    className="blog-link"
-                    to="/blog-posts"
-                  >
-                    Read more
-                  </Link>
-                </div>
-              </div>
+              )}
             </div>
           </div>
           <Link to="/blog-posts" className="blog-link see-more">
             See all
           </Link>
-        </section>
+        </section> */}
 
         <div className="social-platform">
           <img src={connect} alt="" className="connect-bg" />
