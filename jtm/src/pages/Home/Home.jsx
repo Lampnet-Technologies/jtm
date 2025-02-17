@@ -815,7 +815,7 @@ export default function Home() {
                 </div>
               </SplideSlide>
 
-              <SplideSlide>
+              {/* <SplideSlide>
                 <div className="splide1">
                   <div className="wots-left">
                     <img src={image9} alt="person" />
@@ -849,7 +849,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-              </SplideSlide>
+              </SplideSlide> */}
 
               <SplideSlide>
                 <div className="splide1">
@@ -861,16 +861,16 @@ export default function Home() {
                     <div className="wot-text">
                       <p>
                         The Jesus Talks Media provided exceptional support for
-                        Believers Bond 2024, demonstrating their expertise in
-                        social media and content creation.They developed a
-                        strategic content plan that effectively engaged our
-                        audience generating excitement for the event with
-                        captivating posts. Additionally, their media coverage
-                        beautifully captured the spirit of Believers Bond 2024,
-                        showcasing the enthusiasm and joy of attendees In
-                        summary, Jesus Talks Media’s partnership with Believers
-                        Bond 2024 was a tremendous success, and we eagerly
-                        anticipate collaborating with them again in the future.
+                        Believers Bond in 2024, showcasing expertise in social
+                        media management and content creation. Their strategic
+                        content plan effectively engaged our audience,
+                        generating excitement with captivating posts.
+                        Additionally, their media coverage beautifully captured
+                        the event’s spirit, highlighting the enthusiasm and joy
+                        of attendees. In summary, their partnership with
+                        Believers Bond 2024 was a tremendous success. We eagerly
+                        anticipate collaborating with Jesus Talks Media again in
+                        the future.
                       </p>
                       <div className="wot-name">Believers Bond</div>
                     </div>
@@ -883,18 +883,16 @@ export default function Home() {
                     <div className="wot-text">
                       <p>
                         Working with The Jesus Talks Media was an outstanding
-                        and vibrant experience that far exceeded our
-                        expectations. The Jesus Talks Media team showcased
-                        exceptional skills in managing the media aspects of our
-                        event. They not only documented the entire conference
-                        through igh quality video but also created engaging
-                        media content and provided comprehensive coverage. Their
-                        meticulous attention to detail and creativity ensured
-                        that we not only surpassed them. Overall, collaborating
-                        with The Jesus Talks Media was a remarkable experience.
-                        I highly recommend them to anyone seeking a reliable and
-                        innovative media team that consistently delivers
-                        outstanding results.
+                        experience that exceeded our expectations. The team
+                        displayed exceptional skill in managing the media
+                        aspects of our event. They documented the entire
+                        conference with high-quality video, created engaging
+                        media content, and provided comprehensive coverage.
+                        Their attention to detail and creativity ensured we not
+                        only met but surpassed our goals. Overall, collaborating
+                        with them was remarkable. I highly recommend The Jesus
+                        Talks Media to anyone seeking a reliable, innovative
+                        team that delivers outstanding results.
                       </p>
                       <div className="wot-name">The Baton</div>
                     </div>
