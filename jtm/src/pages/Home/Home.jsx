@@ -56,26 +56,26 @@ export default function Home() {
 
   //Blogs
 
-  // useEffect(() => {
-  //   client
-  //     .fetch(
-  //       `*[_type == "post"] | order(datePublished desc)[0..3] {
-  //         title,
-  //         slug,
-  //         body,
-  //         mainImage {
-  //           asset -> {
-  //             _id,
-  //             url
-  //           },
-  //           alt
-  //         },
-  //         datePublished
-  //       }`
-  //     )
-  //     .then((data) => setPosts(data))
-  //     .catch(console.error);
-  // }, []);
+  useEffect(() => {
+    client
+      .fetch(
+        `*[_type == "post"] | order(datePublished desc)[0..3] {
+          title,
+          slug,
+          body,
+          mainImage {
+            asset -> {
+              _id,
+              url
+            },
+            alt
+          },
+          datePublished
+        }`
+      )
+      .then((data) => setPosts(data))
+      .catch(console.error);
+  }, []);
 
   //AOS
   useEffect(() => {
@@ -162,21 +162,21 @@ export default function Home() {
     };
   }, []);
 
-  // const pl = React.useRef(null);
+  const pl = React.useRef(null);
 
-  // React.useEffect(() => {
-  //   const typed = new Typed(pl.current, {
-  //     strings: ["The Yellow Blog"],
-  //     typeSpeed: 150,
-  //     backSpeed: 100,
-  //     loop: true,
-  //   });
+  React.useEffect(() => {
+    const typed = new Typed(pl.current, {
+      strings: ["The Yellow Blog"],
+      typeSpeed: 150,
+      backSpeed: 100,
+      loop: true,
+    });
 
-  //   return () => {
-  //     // Destroy Typed instance during cleanup to stop animation
-  //     typed.destroy();
-  //   };
-  // }, []);
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
 
   //Email
   const [email, setEmail] = useState("");
@@ -653,7 +653,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* <section className="yellow-blog">
+        <section className="yellow-blog">
           <h3 data-aos="fade-right" data-aos-duration="1000">
             <span ref={pl} />
           </h3>
@@ -670,17 +670,17 @@ export default function Home() {
             <div className="yellow-blog-left">
               <img
                 src={posts[0]?.mainImage?.asset?.url}
-                alt={posts[0].title}
+                alt={posts[0]?.title}
                 data-aos="fade-right"
                 data-aos-duration="2000"
               />
               <h3 data-aos="fade-right" data-aos-duration="2000">
-                {posts[0].title}
+                {posts[0]?.title}
               </h3>
-              <PortableText value={[posts[0].body[0]]} />
+              <PortableText value={[posts[0]?.body?.[0]]} />
               <Link
                 className="blog-link"
-                to={`/blogs/${posts[0].slug.current}`}
+                to={`/blogs/${posts[0]?.slug?.current}`}
                 data-aos="fade-left"
                 data-aos-duration="1500"
               >
@@ -688,34 +688,39 @@ export default function Home() {
               </Link>
             </div>
             <div className="yellow-blog-right">
-              {posts.length > 0 && (
-                <div className="yellow-blog-left">
+              {posts.slice(1, 4).map((post) => (
+                <div
+                  className="yellow-blog-left right-flex"
+                  key={post.slug.current}
+                >
                   <img
-                    src={posts[0]?.mainImage?.asset?.url}
-                    alt={posts[0]?.title || "Blog"}
+                    src={post.mainImage?.asset?.url}
+                    alt={post.title}
                     data-aos="fade-right"
                     data-aos-duration="2000"
                   />
-                  <h3 data-aos="fade-right" data-aos-duration="2000">
-                    {posts[0]?.title}
-                  </h3>
-                  <PortableText value={posts[0]?.body?.[0] || []} />
-                  <Link
-                    className="blog-link"
-                    to={`/blogs/${posts[0]?.slug?.current}`}
-                    data-aos="fade-left"
-                    data-aos-duration="1500"
-                  >
-                    Read more
-                  </Link>
+                  <div>
+                    <h3 data-aos="fade-right" data-aos-duration="2000">
+                      {post.title}
+                    </h3>
+                    <PortableText value={post.body?.[0] || []} />
+                    <Link
+                      className="blog-link"
+                      to={`/blogs/${post.slug.current}`}
+                      data-aos="fade-left"
+                      data-aos-duration="1500"
+                    >
+                      Read more
+                    </Link>
+                  </div>
                 </div>
-              )}
+              ))}
             </div>
           </div>
           <Link to="/blog-posts" className="blog-link see-more">
             See all
           </Link>
-        </section> */}
+        </section>
 
         <div className="social-platform">
           <img src={connect} alt="" className="connect-bg" />
@@ -810,7 +815,7 @@ export default function Home() {
                 </div>
               </SplideSlide>
 
-              <SplideSlide>
+              {/* <SplideSlide>
                 <div className="splide1">
                   <div className="wots-left">
                     <img src={image9} alt="person" />
@@ -844,7 +849,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-              </SplideSlide>
+              </SplideSlide> */}
 
               <SplideSlide>
                 <div className="splide1">
@@ -856,16 +861,16 @@ export default function Home() {
                     <div className="wot-text">
                       <p>
                         The Jesus Talks Media provided exceptional support for
-                        Believers Bond 2024, demonstrating their expertise in
-                        social media and content creation.They developed a
-                        strategic content plan that effectively engaged our
-                        audience generating excitement for the event with
-                        captivating posts. Additionally, their media coverage
-                        beautifully captured the spirit of Believers Bond 2024,
-                        showcasing the enthusiasm and joy of attendees In
-                        summary, Jesus Talks Media’s partnership with Believers
-                        Bond 2024 was a tremendous success, and we eagerly
-                        anticipate collaborating with them again in the future.
+                        Believers Bond in 2024, showcasing expertise in social
+                        media management and content creation. Their strategic
+                        content plan effectively engaged our audience,
+                        generating excitement with captivating posts.
+                        Additionally, their media coverage beautifully captured
+                        the event’s spirit, highlighting the enthusiasm and joy
+                        of attendees. In summary, their partnership with
+                        Believers Bond 2024 was a tremendous success. We eagerly
+                        anticipate collaborating with Jesus Talks Media again in
+                        the future.
                       </p>
                       <div className="wot-name">Believers Bond</div>
                     </div>
@@ -878,18 +883,16 @@ export default function Home() {
                     <div className="wot-text">
                       <p>
                         Working with The Jesus Talks Media was an outstanding
-                        and vibrant experience that far exceeded our
-                        expectations. The Jesus Talks Media team showcased
-                        exceptional skills in managing the media aspects of our
-                        event. They not only documented the entire conference
-                        through igh quality video but also created engaging
-                        media content and provided comprehensive coverage. Their
-                        meticulous attention to detail and creativity ensured
-                        that we not only surpassed them. Overall, collaborating
-                        with The Jesus Talks Media was a remarkable experience.
-                        I highly recommend them to anyone seeking a reliable and
-                        innovative media team that consistently delivers
-                        outstanding results.
+                        experience that exceeded our expectations. The team
+                        displayed exceptional skill in managing the media
+                        aspects of our event. They documented the entire
+                        conference with high-quality video, created engaging
+                        media content, and provided comprehensive coverage.
+                        Their attention to detail and creativity ensured we not
+                        only met but surpassed our goals. Overall, collaborating
+                        with them was remarkable. I highly recommend The Jesus
+                        Talks Media to anyone seeking a reliable, innovative
+                        team that delivers outstanding results.
                       </p>
                       <div className="wot-name">The Baton</div>
                     </div>

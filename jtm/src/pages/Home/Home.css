@@ -433,6 +433,7 @@ button {
 }
 .yellow-blog-content h3 {
   font-size: 20px !important;
+  margin-bottom: 20px !important;
 }
 .yellow-blog-content img {
   width: 100%;
@@ -789,7 +790,7 @@ button {
   .yellow-blog-content {
     display: flex;
     gap: 20px;
-    align-items: flex-start;
+    align-items: start;
   }
   .yellow-mail-left button {
     padding: 8px 25px;
@@ -808,12 +809,19 @@ button {
   .yellow-blog-left {
     margin-top: 20px;
   }
+  .yellow-mail-left img{
+    width: 473px;
+    height: 488px;
+  }
   .yellow-blog-right h3 {
     font-size: 25px;
   }
+  .yellow-blog-right{
+    margin-top: -19px;
+  }
   .yellow-blog-right img {
-    width: 350px;
-    height: 150px;
+    width: 306px;
+    height: 204px;
     object-fit: cover;
   }
   .right1,
@@ -826,6 +834,10 @@ button {
   .right2-text,
   .right3-text {
     width: 80%;
+  }
+  .yellow-blog-right .right-flex{
+    display: flex;
+    gap: 20px;
   }
   /* Social Platform*/
   .social-platform img {
