@@ -333,7 +333,7 @@ export default function AboutPage() {
                 <div className="card1-text">
                   <p>Haddy Onyemaka </p>
                   <p className="positions">
-                    creativedirector@thejesustalksmedia.com
+                  @thejtm.com.ng
                   </p>
                 </div>
                 <div className="card1-icon">
