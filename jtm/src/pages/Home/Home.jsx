@@ -310,9 +310,10 @@ export default function Home() {
             <p data-aos="fade-left" data-aos-duration="1000">
               We are a Christian Media Company driven by a profound vision: to
               anchor individuals deeply in their faith through the
-              transformative power of media; and our different expressions which
-              include: The Jesus talks radio, The Jesus talks Tv, The yellow
-              blog and The yellow email
+              transformative power of media; and our different expressions.
+              Through our platform, we offer meaningful media and create a
+              community where believers and creatives can explore and express
+              their faith in diverse, impactful ways.
             </p>
             <p data-aos="fade-left" data-aos-duration="2000">
               Through our platform, we offer meaningful media and create a
@@ -420,7 +421,7 @@ export default function Home() {
               </div>
               <div className="yellow-mail-text">
                 <p>
-                  Stay in the loop with Buzz--your go-to source for first-hand
+                  Stay in the loop with Buzz your go to source for first-hand
                   information about events, concerts, new music releases, book
                   launches, Christian films, and all things happening in the
                   Christian creative space.
@@ -860,7 +861,10 @@ export default function Home() {
                     />
                     <div className="wot-text">
                       <p>
-                      Jesus Talks Media excelled in social media and content creation for Believers Bond 2024, effectively engaging the audience and capturing the event's spirit. We look forward to future collaborations.
+                        Jesus Talks Media excelled in social media and content
+                        creation for Believers Bond 2024, effectively engaging
+                        the audience and capturing the event's spirit. We look
+                        forward to future collaborations.
                       </p>
                       <div className="wot-name">Believers Bond</div>
                     </div>
@@ -872,7 +876,11 @@ export default function Home() {
                     />
                     <div className="wot-text">
                       <p>
-                      The Jesus Talks Media excelled in event media management, providing high-quality videos and engaging content. Their creativity and attention to detail exceeded expectations. Highly recommended for outstanding results.
+                        The Jesus Talks Media excelled in event media
+                        management, providing high-quality videos and engaging
+                        content. Their creativity and attention to detail
+                        exceeded expectations. Highly recommended for
+                        outstanding results.
                       </p>
                       <div className="wot-name">The Baton</div>
                     </div>

@@ -55,7 +55,7 @@ export default function Featured() {
 
   const faqs = [
     {
-      question: "What is The Jesus Talks Media?",
+      question: "Who is The Jesus Talks Media?",
       answer:
         "The Jesus Talks Media is a Christian Media Company driven by a profound vision: to anchor individuals deeply in their faith through the transformative power of media. Founded during the pandemic, our mission is to provide a platform for believers to immerse themselves in uplifting, inspiring, and clean Christian media content anytime.",
     },
@@ -66,17 +66,17 @@ export default function Featured() {
     },
     {
       question: "How can I get my project featured on The Jesus Talks Media? ",
-      answer: "Yes, we offer international shipping to select countries.",
+      answer: "To have your work featured, you can reach out to us through our contact form or email. Please include a brief introduction, links to your project, and any relevant information. Our team will review your submission and get back to you with the next steps."
     },
     {
       question: " Can I request an interview on The Jesus Talks Media?",
       answer:
-        "We accept Visa, MasterCard, PayPal, and other major payment methods.",
+        "Absolutely! If you're a Christian artist, creative, or leader interested in sharing your story, you can request an interview by contacting us. We love to feature inspiring stories and insights that align with our mission.",
     },
     {
       question: "  What is included in your music promotion services?",
       answer:
-        "We accept Visa, MasterCard, PayPal, and other major payment methods.",
+        "Our music promotion services include radio play, inclusion in our curated playlists, social media promotion, and press releases. We tailor our approach to fit your needs and help you reach your target audience effectively.",
     },
     {
       question: " How can I promote my event through The Jesus Talks Radio?",
@@ -86,17 +86,17 @@ export default function Featured() {
     {
       question: " How do your social media promotion services work?",
       answer:
-        "You can promote your event through our press release and social media promotion services. We’ll help you craft a compelling press release and distribute it across our platforms, ensuring your event reaches the right audience.",
+        "Our social media promotion services involve creating and executing targeted campaigns across platforms like Instagram, Facebook, X (formerly Twitter), and more. We help increase your visibility, engage with your audience, and drive results that matter to your goals.",
     },
     {
       question: " What is the “Faith-God-Life Podcast”?",
       answer:
-        "You can promote your event through our press release and social media promotion services. We’ll help you craft a compelling press release and distribute it across our platforms, ensuring your event reaches the right audience.",
+        "The “Faith-God-Life Podcast” is an evolution of our original radio show, TJTRSeries. It offers listeners Bible study conversations, discussions on faith, and insights into living a God-centered life. The podcast is one of the many ways we connect with our audience and provide valuable content.",
     },
     {
       question: " How can I stay updated with The Jesus Talks Media?",
       answer:
-        "You can promote your event through our press release and social media promotion services. We’ll help you craft a compelling press release and distribute it across our platforms, ensuring your event reaches the right audience.",
+        "You can stay updated by following us on our social media channels, subscribing to our newsletter, YouTube channel, and tuning into our radio shows and podcasts. We regularly share new content, updates, and promotions to keep you connected with our community.",
     },
   ];
 
@@ -123,18 +123,21 @@ export default function Featured() {
             <div className="advert">
               <div className="advert-left">
                 <p data-aos="fade-right" data-aos-duration="1000">
-                  Effective advertising and promotional strategies are crucial
-                  for capturing your audience's attention and driving
-                  engagement.
+                Effective advertising and promotional strategies are essential
+                  for capturing your audience’s attention and driving
+                  engagement. 
                 </p>
                 <p data-aos="fade-right" data-aos-duration="1500">
-                  We exists to give visibility and accessibility of christian
-                  content in mainstream media by connecting creatives with
-                  audiences through our platforms also known as our expressions
+                 We exist to amplify Christian content in
+                  mainstream media by bridging the gap between creatives and
+                  their audience through our platforms, also known as our
+                  expressions. Let’s give your brand the visibility it truly
+                  deserves through our diverse expressions. Reach out to us to
+                  get started!
                 </p>
                 <p data-aos="fade-right" data-aos-duration="2000">
                   Reach out to us to give your brand the visibility it truly
-                  deserves through our expressions such as -  The Jesus talks
+                  deserves through our expressions such as - The Jesus talks
                   radio, our youtube, yellow blog, yellow mail and life podcast
                 </p>
               </div>
