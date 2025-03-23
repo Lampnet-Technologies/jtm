@@ -140,7 +140,7 @@ export default function AboutPage() {
     {
       question: "What services does The Jesus Talks Media offer?",
       answer:
-        "We offer a range of services, including:\n- **Interviews**: We conduct interviews with Christian artists and creatives to share their stories and insights with our audience.\n- **Press Releases**: We create and distribute press releases to help promote your music, events, or announcements.\n- **Music Promotions**: We promote Christian music through our radio shows, playlists, and social media channels to help artists reach a wider audience.\n- **Social Media Promotions**: We provide targeted social media campaigns to increase your visibility and engage with your audience effectively.",
+        "We offer a range of services, including:\n- Interviews: We conduct interviews with Christian artists and creatives to share their stories and insights with our audience.\n- Press Releases: We create and distribute press releases to help promote your music, events, or announcements.\n- Music Promotions: We promote Christian music through our radio shows, playlists, and social media channels to help artists reach a wider audience.\n- Social Media Promotions: We provide targeted social media campaigns to increase your visibility and engage with your audience effectively.",
     },
     {
       question: "How can I get my project featured on The Jesus Talks Media? ",
