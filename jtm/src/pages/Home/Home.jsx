@@ -311,9 +311,7 @@ export default function Home() {
               We are a Christian Media Company driven by a profound vision: to
               anchor individuals deeply in their faith through the
               transformative power of media; and our different expressions.
-              Through our platform, we offer meaningful media and create a
-              community where believers and creatives can explore and express
-              their faith in diverse, impactful ways.
+              
             </p>
             <p data-aos="fade-left" data-aos-duration="2000">
               Through our platform, we offer meaningful media and create a

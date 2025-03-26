@@ -115,7 +115,7 @@ export default function Featured() {
     <div>
       <div className="featured">
         <div className="banner">
-          <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1742759976/billboard_qeu3jz.jpg' alt="banner" />
+          <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1742997646/bill_smr4l6.jpg' alt="banner" />
         </div>
         <div className="featured-content">
           <section>
