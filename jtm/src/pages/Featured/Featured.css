@@ -93,6 +93,7 @@ overflow: hidden;
     cursor: pointer;
     transition: .3s ease;
     color: black;
+    font-weight: bold;
 }
 .faq-answer p{
   color: black;

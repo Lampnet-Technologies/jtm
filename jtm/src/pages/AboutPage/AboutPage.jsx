@@ -314,6 +314,7 @@ export default function AboutPage() {
               <div className="card1-content">
                 <div className="card1-text">
                   <p>OMOLADE ADEKANLE</p>
+                  <p>HR</p>
                   <p className="positions">hr@thejtm.com.ng</p>
                 </div>
                 <div className="card1-icon">
@@ -332,6 +333,7 @@ export default function AboutPage() {
               <div className="card1-content">
                 <div className="card1-text">
                   <p>Haddy Onyemaka </p>
+                  <p>Creative Director</p>
                   <p className="positions">
                   @thejtm.com.ng
                   </p>
