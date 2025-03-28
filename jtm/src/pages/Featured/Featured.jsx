@@ -66,7 +66,8 @@ export default function Featured() {
     },
     {
       question: "How can I get my project featured on The Jesus Talks Media? ",
-      answer: "To have your work featured, you can reach out to us through our contact form or email. Please include a brief introduction, links to your project, and any relevant information. Our team will review your submission and get back to you with the next steps."
+      answer:
+        "To have your work featured, you can reach out to us through our contact form or email. Please include a brief introduction, links to your project, and any relevant information. Our team will review your submission and get back to you with the next steps.",
     },
     {
       question: " Can I request an interview on The Jesus Talks Media?",
@@ -115,7 +116,10 @@ export default function Featured() {
     <div>
       <div className="featured">
         <div className="banner">
-          <img src='https://res.cloudinary.com/dn4hkronr/image/upload/v1742997646/bill_smr4l6.jpg' alt="banner" />
+          <img
+            src="https://res.cloudinary.com/dn4hkronr/image/upload/v1742997646/bill_smr4l6.jpg"
+            alt="banner"
+          />
         </div>
         <div className="featured-content">
           <section>
@@ -123,17 +127,16 @@ export default function Featured() {
             <div className="advert">
               <div className="advert-left">
                 <p data-aos="fade-right" data-aos-duration="1000">
-                Effective advertising and promotional strategies are essential
+                  Effective advertising and promotional strategies are essential
                   for capturing your audience’s attention and driving
-                  engagement. 
+                  engagement.
                 </p>
                 <p data-aos="fade-right" data-aos-duration="1500">
-                 We exist to amplify Christian content in
-                  mainstream media by bridging the gap between creatives and
-                  their audience through our platforms, also known as our
-                  expressions. Let’s give your brand the visibility it truly
-                  deserves through our diverse expressions. Reach out to us to
-                  get started!
+                  We exist to amplify Christian content in mainstream media by
+                  bridging the gap between creatives and their audience through
+                  our platforms, also known as our expressions. Let’s give your
+                  brand the visibility it truly deserves through our diverse
+                  expressions. Reach out to us to get started!
                 </p>
                 <p data-aos="fade-right" data-aos-duration="2000">
                   Reach out to us to give your brand the visibility it truly
@@ -219,7 +222,15 @@ export default function Featured() {
                     {openIndex === index && (
                       <div className="faq-answer">
                         <hr />
-                        <p>{faq.answer}</p>
+                        <p>
+                          {" "}
+                          {faq.answer.split("\n").map((line, idx) => (
+                            <React.Fragment key={idx}>
+                              {line}
+                              <br />
+                            </React.Fragment>
+                          ))}
+                        </p>
                       </div>
                     )}
                   </div>

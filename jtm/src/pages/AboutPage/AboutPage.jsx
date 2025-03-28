@@ -144,7 +144,8 @@ export default function AboutPage() {
     },
     {
       question: "How can I get my project featured on The Jesus Talks Media? ",
-      answer: "To have your work featured, you can reach out to us through our contact form or email. Please include a brief introduction, links to your project, and any relevant information. Our team will review your submission and get back to you with the next steps."
+      answer:
+        "To have your work featured, you can reach out to us through our contact form or email. Please include a brief introduction, links to your project, and any relevant information. Our team will review your submission and get back to you with the next steps.",
     },
     {
       question: " Can I request an interview on The Jesus Talks Media?",
@@ -334,9 +335,7 @@ export default function AboutPage() {
                 <div className="card1-text">
                   <p>Haddy Onyemaka </p>
                   <p>Creative Director</p>
-                  <p className="positions">
-                  @thejtm.com.ng
-                  </p>
+                  <p className="positions">@thejtm.com.ng</p>
                 </div>
                 <div className="card1-icon">
                   <Link to="">
@@ -366,7 +365,15 @@ export default function AboutPage() {
                 {openIndex === index && (
                   <div className="faq-answer">
                     <hr />
-                    <p>{faq.answer}</p>
+                    <p>
+                      {" "}
+                      {faq.answer.split("\n").map((line, idx) => (
+                        <React.Fragment key={idx}>
+                          {line}
+                          <br />
+                        </React.Fragment>
+                      ))}
+                    </p>
                   </div>
                 )}
               </div>
