@@ -129,7 +129,7 @@ export default function Contact() {
               </div>
               <div className="contact-content-info">
                 <FaPhoneAlt />
-                <p>07086432110</p>
+                <p>0815 021 5723</p>
               </div>
             </div>
           </div>

@@ -333,7 +333,7 @@ const handleCloseForm = () => {
         <div className="clients">
           <main className="clients-container">
             <div className='client-header'>
-            <h1>We can be trusted, we are sure to deliver</h1>
+            <h1>Who We’ve Worked With</h1>
             <p>Companies and artists we have worked with</p>
             </div>
             <div className="clients-contents">

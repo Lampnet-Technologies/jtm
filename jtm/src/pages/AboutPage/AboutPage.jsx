@@ -300,8 +300,7 @@ export default function AboutPage() {
         </div>
         <div className="team">
           <h3 data-aos="fade-down" data-aos-duration="1000">
-            Meet the team unlocking new possibilities for the promotion of
-            gospel contents
+          Meet The Team
           </h3>
           <div className="team-card">
             <div
