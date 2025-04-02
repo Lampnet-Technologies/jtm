@@ -107,6 +107,7 @@ body {
 }
 .client-header{
   text-align: center;
+  margin-bottom: 20px;
 }
 .client-header h1 {
   font-size: 35px;
