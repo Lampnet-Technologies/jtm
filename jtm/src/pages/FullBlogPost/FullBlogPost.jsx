@@ -11,12 +11,18 @@ import "./FullBlogPost.css";
 
 const FullBlogPost = () => {
   const [bodyImage, setBodyImage] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     client
       .fetch(`*[_type == "post"][0]{ bodyImage { asset -> { url }, alt } }`)
-      .then((data) => setBodyImage(data.bodyImage)) 
-      .catch(console.error);
+      .then((data) => {
+        if (data?.bodyImage?.asset?.url) {
+          setBodyImage(data.bodyImage);
+        }
+      })
+      .catch(console.error)
+      .finally(() => setLoading(false)); // Set loading to false after fetch
   }, []);
 
   return (
@@ -33,10 +39,12 @@ const FullBlogPost = () => {
           <SocialProps />
         </div>
         <div>
-          {bodyImage ? (
-            <HeroImage image={bodyImage} />
-          ) : (
+          {loading ? (
             <p>Loading image...</p>
+          ) : bodyImage ? (
+            <HeroImage image={bodyImage} /> // Pass the image object correctly
+          ) : (
+            <p>Image not available</p>
           )}
         </div>
         <div>

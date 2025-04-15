@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 'JTM-BLOG',
 
-  projectId: 'azosrrog',
+  projectId: 'l8q5fbz7',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool()],
