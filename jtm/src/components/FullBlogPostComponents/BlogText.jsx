@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import client from "../../client"; // Adjust the path based on your project structure
+import client from "../../client";
 
 const BlogText = () => {
   const [bodyText, setBodyText] = useState([]);
