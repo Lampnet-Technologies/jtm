@@ -1,0 +1,155 @@
+.contact {
+  overflow: hidden;
+}
+.contact-banner img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+ 
+}
+.contact-detail {
+  width: 80%;
+  margin: auto;
+}
+.contact-team {
+  position: relative;
+}
+.contact-team img {
+  width: 100%;
+  height: 400px;
+}
+.contactBg-content {
+  text-align: center;
+  color: black;
+  position: absolute;
+  top: 10%;
+  padding: 30px;
+  left: 5%;
+}
+.contactBg-content p {
+  font-size: 20px !important;
+}
+.contactBg-content h2{
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.contact-content-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.contact-left {
+  background-color: #ede0cf;
+  padding: 10px 30px;
+  margin: 30px 0;
+  color: black;
+  opacity: 0.8;
+}
+.message-form {
+  margin: 40px 0;
+}
+.form {
+  background-color: #2b2d38;
+  color: white;
+  padding: 40px 30px;
+  border-radius: 5px;
+}
+.form span {
+  color: red;
+}
+.form input {
+  width: 98%;
+  border: 1px solid #ede0cf;
+  outline: none;
+  height: 30px;
+  border-radius: 5px;
+  padding-left: 5px;
+  margin: 10px 0;
+  background-color: transparent;
+  color: white;
+}
+.form textarea {
+  width: 98%;
+  border: 1px solid #ede0cf;
+  outline: none;
+  height: 100px;
+  border-radius: 5px;
+  padding-left: 5px;
+  margin: 20px 0;
+  margin: 20px 0;
+  background-color: transparent;
+  color: white;
+}
+.form select {
+  width: 100%;
+  border: 1px solid #ede0cf;
+  outline: none;
+  height: 30px;
+  border-radius: 5px;
+  margin: 20px 0;
+  background-color: #2b2d38;
+  color: white;
+}
+.form button {
+  outline: none;
+  border: none;
+  padding: 8px;
+  margin: auto;
+  width: 30%;
+  display: block;
+  border-radius: 40px;
+  background-color: #fabc52;
+}
+
+@media screen and (min-width: 1120px) {
+  .contact-banner img {
+    height: 90vh;
+  }
+  .contact-detail {
+    display: flex;
+    width: 100%;
+    margin-top: -4px;
+  }
+  .contact-left {
+    width: 50%;
+    margin: 0;
+    padding-top: 170px;
+    padding-left: 180px;
+  }
+  .contact-left h3 {
+    font-size: 38px;
+  }
+  .contact-left p {
+    width: 80%;
+    font-size: 20px;
+    margin-top: -10px;
+  }
+
+  .contact-right {
+    width: 70%;
+    background-color: #2b2d38;
+  }
+  .contact-right .form {
+    margin-top: 80px;
+    border: 2px solid gray;
+    height: 400px;
+    width: 60%;
+    margin: 50px auto;
+  }
+  .contactBg-content {
+    left: 17%;
+  }
+  .contactBg-content h2{
+    font-size: 35px;
+  }
+  .form input,
+  textarea,
+  select {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .form button {
+    width: 130px;
+  }
+}

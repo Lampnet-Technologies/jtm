@@ -1,0 +1,126 @@
+.footer li {
+  list-style: none;
+  font-size: 15px;
+}
+li {
+  list-style: none;
+}
+body {
+  background-color: black;
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  border-radius: 0 140px 0 0;
+  border-top: 2px solid white;
+}
+.footer-items {
+  padding: 10px 20px;
+}
+.footer-links {
+  margin-left: -40px;
+}
+.footer-links .link {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease;
+}
+.footer-links li {
+  padding: 5px;
+}
+.footer-links .link:hover {
+  color: #fabc52;
+}
+.input-field {
+  display: flex;
+  margin-top: 10px;
+}
+.subscribe input {
+  padding: 11px;
+  border: 1px solid white;
+  color: white;
+  outline: none;
+  width: 250px;
+  background-color: transparent;
+  /* margin-top: 10px; */
+}
+.subscribe button {
+  border: 1px solid #fabc52;
+  outline: none;
+  padding: 6px 24px;
+  border-radius: 0 50px 50px 0;
+  background-color: transparent;
+  color: #fabc52;
+  position: relative;
+}
+.subscribe label {
+  font-size: 14px;
+}
+.email .email-link {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  color: white;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.social-icons .icons {
+  font-size: 20px;
+  border: 2px solid white;
+  padding: 5px !important;
+  border-radius: 50%;
+  width: 20px !important;
+  height: 21px !important;
+  transition: 0.3s ease;
+}
+.social-icons .icons:hover {
+  background-color: #fabc52;
+  border: #fabc52 1px solid;
+}
+.copyrights {
+  text-align: center;
+  margin-bottom: -15px;
+  padding-bottom: 8px;
+}
+.copyrights p {
+  font-size: 16px !important;
+}
+.footer-items hr {
+  display: none;
+}
+@media screen and (min-width: 1120px) {
+  .footer-items {
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer-right {
+    width: 40%;
+  }
+  .footer-links {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    width: 100%;
+  }
+  .email p {
+    justify-content: center;
+  }
+
+  .first-link {
+    width: 50%;
+  }
+  .footer-items hr {
+    display: block;
+  }
+}

@@ -1,0 +1,223 @@
+li {
+  list-style: none;
+}
+
+body {
+  background-color: black;
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+.img {
+  width: 100%;
+}
+/* services.css */
+.services{
+  overflow: hidden;
+}
+.services-container {
+  position: relative;
+}
+.services .services-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: calc(80%);
+}
+/* Hero section styling */
+
+.hero-content {
+  position: absolute;
+  top: 45%;
+  left: 40px;
+}
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+.hero-content h1 {
+  font-size: 40px;
+}
+.hero-content p {
+  width: 90%;
+  font-size: 19px;
+  margin-top: -6px;
+}
+
+/* Advertise */
+.all-content {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.all-content h3{
+  font-size: 25px;
+}
+.all-content p {
+  font-size: 17px !important;
+  color: rgb(226, 223, 223);
+}
+.advert-content {
+  width: 80%;
+  margin: 20px auto;
+}
+.list-btn-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.service-btn {
+  background-color: #fabc52;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.list-btn {
+  background-color: gainsboro;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+/* Consulting */
+.grid-2 .list-btn-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/* Clients */
+.clients {
+  background-color: #fabc52;
+  color: black;
+  padding: 40px 0;
+  margin-bottom: 70px;
+}
+.client-header{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.client-header h1 {
+  font-size: 35px;
+  margin-bottom: 2px;
+}
+.clients-container{
+  width: 80%;
+  margin: 30px auto;
+}
+.partner {
+  padding: 8px 20px;
+  background-color: white;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  text-align: center;
+  height: 340px;
+  border-radius: 10px;
+  padding-top: 20px;
+}
+.partners-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.partner-image img{
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 100%;
+  margin-top: 30px;
+  border: 1px solid gray;
+}
+.artists {
+  padding: 8px 20px;
+  background-color: white;
+  text-align: center;
+  height: 340px;
+  border-radius: 10px;
+  padding-top: 20px;
+
+}
+.artists-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+.artist-image img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.artist-image h4{
+  font-size: 12px;
+}
+@media screen and (min-width: 1120px) {
+  /* Hero section styling */
+  .services .services-img {
+    height: 90vh;
+  }
+  .img {
+    width: fit-content;
+  }
+  .hero-content {
+    left: 10%;
+  }
+  .hero-content h1 {
+    font-size: 45px;
+  }
+  .hero-content p {
+    width: 70%;
+    font-size: 20px !important;
+    margin-top: -6px;
+    color: rgb(212, 211, 211);
+  }
+  .hero-overlay {
+    height: 90vh;
+  }
+  /* Advertise */
+  .all-content {
+    flex-direction: row;
+    gap: 20px;
+    width: 80%;
+    margin: 50px auto;
+    justify-content: space-around;
+  }
+
+  .grid-2 {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+  }
+  .list-btn {
+    padding: 12px 5px;
+  }
+  .list-btn-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Client */
+  .clients-contents{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+  }
+  .partner{
+    margin: 0;
+    width: 340px;
+  }
+  .artists{
+    width: 340px;
+  }
+}
